@@ -1,0 +1,1017 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 29-May-2024, 5:13:28â€¯pm
+    Author     : ADC
+*/
+
+#navbar_top{
+    
+    
+    background-color: #27408b !important;
+    opacity: 0.8;
+    padding: 0px;
+    margin: 0px;
+    
+    
+}
+
+#main_nav ul > .nav-item{
+    
+ text-align: center;  
+justify-content: center !important;
+padding: 6px;
+
+    
+}
+
+#main_nav ul > .nav-item a{
+    color: whitesmoke;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+
+#main_nav ul li:hover{
+        background-image: linear-gradient(navy, #27408b);
+        
+}
+
+.nav-selected
+{
+    background-image: linear-gradient(navy, #27408b);
+        
+    color: white;
+border-bottom: 3px solid #f89221;
+font-weight: bold;
+
+}
+
+
+#sub-nav-menu{
+    background-color: white !important;
+    
+}
+
+#sub-nav-menu li a{
+    text-align: left !important;
+    color: black !important;
+}
+
+
+#sub-nav-menu  li a:hover{
+
+background-image: linear-gradient(navy, #27408b);
+color: white !important;
+}
+
+
+
+/*   ==========================   Profile Page CSS   ====================================    */
+
+
+.common-bg{
+    
+
+    background-color: #e2e8f055;
+    margin: 0px;
+    max-width: 100% !important;
+    
+    padding-left: 150px;
+    padding-right: 150px;
+    
+}
+.custom-card{
+    border-width: 0px; 
+
+
+    border-radius: 4px;
+
+    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-right: 0px;
+    
+}
+.custom-card-claim-summary{
+    border-width: 0px; 
+
+
+    border-radius: 4px;
+
+    padding-top: 15px;
+    padding-right: 0px;
+    
+}
+
+#profile_img{
+
+
+    border: 1px solid lightgrey;
+    background-image:  linear-gradient(#5DA3B6, #2088A4);
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+    color: #f8f8f8;
+    opacity: 0.6;
+    font-size: 22px;
+    text-shadow:1px 1px 1px black;
+    box-shadow: 2px 2px 2px lightgrey;
+    
+}
+#profile_data1{
+
+    text-align: center;
+}
+#profile_data1 table tr td{
+    
+    text-align: right;
+    
+}
+.align-left{
+    text-align: left !important;
+}
+
+.profile-text{
+
+    padding: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+.profile-text-sub{
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    padding: 3px;
+
+}
+.profile-text-sub-custom{
+        text-transform: lowercase;
+}
+
+.padding_zero{
+
+    padding: 0px;
+    
+}
+
+.card-header{
+    
+    background-color: transparent !important;
+    
+    
+}
+.cheader{
+    background-image: none;
+    border:0px solid red;
+
+}
+
+
+.box-shadow{
+
+        box-shadow: 1px 1px 1px lightgrey;    
+}
+.box-shadow:hover{
+
+        box-shadow: 2px 2px 2px lightgrey;    
+}
+.common-border{
+            border: 1px solid #e8e8e8;
+}
+
+.custom-basic-details{
+
+padding-left:30px;
+padding-right:30px;
+
+padding-top: 20px;
+padding-bottom:  25px;
+
+   
+}
+
+.profile-sub-heading{
+    
+    color: #27408b;
+    font-size: 16px;
+
+}
+.profile-sub-underline{
+    border-bottom:  3px solid #f8922188;
+    width:70px;
+    animation-name: underline;
+    animation-duration: 1s;
+    
+}
+
+@keyframes underline{
+    
+          0%   {width:0px;    border-bottom:  3px solid #f89221;}
+          
+  100%  {width:70px;border-bottom:  3px solid #f8922199;}
+    
+}
+
+.margin-top-minus-ten{
+    margin-top: -10px;
+}
+
+.hr1{
+    
+    border-color: lightgrey;
+    
+}
+.border-text{
+    border:1px solid #e8e8e8;
+    padding: 3px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+.border-text1{
+    border:1px solid #e8e8e8;
+    padding: 4px;
+    font-size: 13px;
+    border-radius: 5px;
+
+}
+
+
+
+
+.icon-size{
+    
+    font-size: 16px;
+    
+}
+.float-right{
+    float: right;
+}
+
+.border-text-member-balance{
+    
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+    
+}
+.custom-padding-8{
+    padding: 7px;
+}
+.bg-color{
+    background-color: #0088cc !important;
+}
+
+.font-weight-bold-size{
+    font-weight: bold;
+
+    font-size: 14px;
+}
+.past-service-btn{
+    margin-top: 15px;
+    
+}
+.past-service-a{
+    padding: 6px;
+    box-shadow: 1px 1px 1px grey;
+}
+.past-service-a:hover{
+color: white;
+}
+
+
+/* =========================   Claims     =============================  */
+
+.custom-total-balance{
+    
+    background-color: #f8f8f8;
+    padding: 5px;
+    font-weight: bold;
+    
+}
+#claims5_div{
+    height:300px;
+}
+.tr-style{
+    
+    border:1px solid #e8e8e8;
+    padding: 3px;
+    font-size: 13px;
+    border-radius: 15px;
+    text-align: center;
+}
+.padding-claims-summary{
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+.text-align-center{
+    text-align: center;
+}
+.margin-top-ten{
+    margin-top: 10px;
+}
+
+.card-body-custom-cs{
+
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+.claim-details-custom-tab{
+    
+    border: 0px solid red !important;
+    border-radius:3px;
+    background: transparent !important;
+}
+.number-tab{
+    border: 1px solid lightgrey;
+    border-right: 0px solid lightgrey;
+    
+    background-color: #f8f8f8;
+    width: 40px;
+       padding: 12px;
+    float: left;
+    align-content: center;
+    text-align: center;
+    border-radius: 3px 0px 0px 3px;
+    font-weight: bold;
+    
+
+}
+.tab-label{
+    border: 1px solid lightgrey;
+        float: right;
+         align-content: center;
+        padding: 12px;
+        border-radius: 0px 3px 3px 0px;
+}
+
+.ui-state-active a > .number-tab{
+ color: white;
+ background: #5DA3B6;
+ border: 1px solid  #5DA3B6;
+ 
+ 
+}
+
+.ui-state-active a > .tab-label{
+ 
+
+    color: #27408b;
+     border: 1px solid  #5DA3B6;
+     font-weight: bold;
+    
+}
+
+.ui-tabs-tab a:hover > .number-tab{
+ 
+    color: white;
+ background: #5DA3B6;
+ border: 1px solid  #5DA3B6;
+    
+}
+
+.ui-tabs-tab a:hover > .tab-label{
+ 
+    background: #f8f8f8;
+    color: black;
+     border: 1px solid  #5DA3B6;
+     
+    
+}
+.ui-widget-header{
+
+
+border-bottom:  0px solid lightgrey;
+
+
+    
+}
+.hline{
+    margin-top: 0px;
+    border-bottom:  2px solid lightgrey;
+}
+.va-middle{
+    
+    background-image: linear-gradient(#5DA3B6,#5494A5);
+    
+    
+}
+.va-middle th{
+    
+    color: #f8f8f8 !important;
+    text-shadow:0px 0px 0px grey;
+    
+}
+
+.settled-amount-style{
+    
+    font-size: 11px;
+    
+}
+.color-lightcoral{
+    color: #606060;
+
+    font-size: 14px;
+    background-color: #f8f8f8;
+    
+}
+.lower-case{
+    text-transform: lowercase;
+}
+.align-content-center{
+    
+
+    align-content: center;
+    
+    
+}
+
+.red-border{
+    color:red !important;
+    opacity: 0.6;
+}
+.timeline{
+    border-left:3px solid royalblue;
+    z-index: 1;
+}
+/*
+.timeline-item{
+    border: 1px solid blue;
+}
+*/
+.service-history-heading{
+    border: 3px solid royalblue;
+    
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: -1;
+    margin-left: -48px;
+    color: #f89221;
+    font-weight: bold;
+    background: #f8f8f8;
+    
+}
+.tlp{
+    border: 1px solid lightgrey;
+    margin-top: -32px;
+    margin-left: 0px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 1px 1px 1px lightgrey;
+    background-color:#e8e8e8;
+    
+
+    
+    
+}
+
+.tlp-green{
+    
+    background-color: #27408b;
+    color: white;
+    font-weight: bold;
+    opacity: 0.9;
+    color: #f8f8f8;
+    
+}
+.service-history-hr{
+    
+
+border-width: 2px;    
+}
+
+.epf-card-header{
+    border: 0px solid red;
+    color: black;
+}
+
+#calculateEpf{
+ margin-left:0px;   
+}
+
+.epf-calculator-main{
+    
+    
+    
+}
+
+/*
+#calculateEpf{
+background-color: #27408b;
+font-weight: bold;
+box-shadow:2px 2px 2px lightgrey;
+opacity: 0.9;
+}
+#resetEpf{
+    background-color: lightgrey;
+    border-width: 0px;
+    box-shadow:2px 2px 2px lightgrey;
+    font-weight: bold;
+    color: black;
+    
+}
+*/
+
+#epf_cal_chart_layout{
+    
+    
+    border-right: 3px solid royalblue;
+    padding-right: 40px;
+    
+}
+.circle{
+    border: 3px solid royalblue;
+    
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 613px;
+    margin-top: -30px;
+    color: #f89221;
+    font-weight: bold;
+    background: #f8f8f8;
+    cursor: pointer;
+}
+
+
+.epf_cal_chart{
+    
+
+    padding-left: 30px;
+}
+
+.custom-pen-card{
+    
+    border: 1px solid lightgrey;
+    border-radius:8px;
+    margin-top: 60px;
+}
+.limits{
+    border-left: 3px solid royalblue;
+    margin-left: 50px;
+    padding-left: 50px;
+    
+    
+}
+
+.custom-card-header{
+    
+background-image: linear-gradient(#e8e8e8, #f8f8f8);
+    
+}
+.cal-pension-approximate{
+    border: 1px solid lightgrey;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f8f8f899;
+}
+
+.pen-col-div-1{
+    border:1px solid red;
+    height: 500px;
+    border-radius: 8px;
+    border:1px solid lightgrey;
+    
+}
+.custom-va-middle-pension td{
+    color: white !important;
+    text-shadow:0px 0px 0px grey;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+   height: 4px;               /* width of vertical scrollbar */
+ 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.edli-btn-align{
+
+    justify-content: center;
+}
+.part-a-cal-label{
+    border: 0px solid red;
+    padding: 10px;
+    box-shadow: 1px 1px 1px lightgrey;
+}
+
+
+.border-bottom-width-1{
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.tdp5-1{
+    background-image: linear-gradient(#e8e8e8,#f8f8f8);
+}
+.font-size-14{
+    font-size: 11px;
+}
+ 
+.table > :not(:last-child) > :last-child > * {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.v-tab-menu{
+    
+    border: 0px solid lightgrey;
+    
+    border-radius: 8px;
+
+}
+
+.list-group-item{
+    border-bottom:  0px solid #f89221;
+        background-color: #27408b;
+        color: white;
+        margin-bottom: 0px !important;
+        border-bottom: 1px solid grey;
+        
+}
+
+.list-group-item:hover{
+    
+    color: white;
+        background-image: linear-gradient(navy, #27408b);
+    
+}
+.v-tab-container{
+    border: 0px solid green !important;
+    background-color: transparent !important;
+    
+}
+.pb-container-div-1{
+    border:0px solid red;
+    padding: 0px;
+    margin: 0px;
+}
+.passboox-common-bg{
+    
+
+    background-color: #e2e8f055;
+    margin: 0px;
+    max-width: 100% !important;
+    
+    padding-left: 100px;
+    padding-right: 100px;
+    
+}
+.custom-passbook-summary{
+    
+    padding-left: 20px;
+
+    
+}
+.pb-container-div-2{
+    border-radius: 8px;
+    padding-bottom: 10px;
+}
+.pb-tab-container{
+    border: 0px solid red !important;
+    margin-top: -40px;
+}
+
+div.v-tab-menu div.list-group>a.active, div.v-tab-menu div.list-group>a.active .glyphicon, div.v-tab-menu div.list-group>a.active .fa{
+            background-image: linear-gradient(darkseagreen,darkcyan);
+            border: 1px solid lightgrey;
+            color: white;
+            font-weight: bold;
+            opacity: 0.9;
+}
+.v-tab-content{
+    border:1px solid lightgrey;
+    border-radius: 5px;
+    box-shadow:2px 2px 2px lightgrey;
+}
+.custom-passbook-summary-main-div{
+    
+    overflow: hidden;
+}
+
+.modal-custom-header{
+    padding: 15px;
+    margin: 0px;
+    background-image: linear-gradient(#e8e8e8,lightgrey);
+    position: absolute;
+    width: 100%;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+}
+.modal-custom-body{
+
+    padding: 0px;
+    margin: 0px;
+}
+.btn-close{
+    border:2px solid #000;
+    box-shadow: 1px 1px 1px black;
+    color: red;
+    
+}
+.custom-modal-layout{
+    border: 0px solid red;
+    padding-top: 60px;
+    overflow: auto;
+    height: 700px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+.custom-download-modal-layout{
+    padding-top: 70px;
+    overflow: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+.color-bg-1{
+    background-image: linear-gradient(#e8e8e8,#f8f8f8);
+    
+}
+.custom-user-label{
+    border: 0px solid red;
+    padding-top: 14px;
+    padding-right: 10px;
+}
+
+
+.sidebar.collapse.show,
+.sidebar.collapse.show + .col {
+    transition: .18s linear;
+    left: 0;
+}
+
+.sidebar.collapse ,
+.sidebar.collapsing,
+.sidebar.collapsing + .col {
+    transition: .18s linear;
+    z-index: 1050;
+    left: -25%;
+    height: auto !important;
+}
+
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+
+.loader {
+
+        
+  width: 60px;
+  aspect-ratio: 1;
+  color: #0088cc;
+  background:
+    linear-gradient(currentColor 0 0) 100%  0,
+    linear-gradient(currentColor 0 0) 0  100%;
+  background-size: 50.1% 50.1%;
+  background-repeat: no-repeat;
+  animation:  l7-0 1s infinite steps(1);
+}
+.loader::before,
+.loader::after {
+  content:"";
+  position: absolute;
+  inset: 0 50% 50% 0;
+  background: currentColor;
+  transform: scale(var(--s,1)) perspective(150px) rotateY(0deg);
+  transform-origin: bottom right; 
+  animation: l7-1 .5s infinite linear alternate;
+}
+.loader::after {
+  --s:-1,-1;
+}
+@keyframes l7-0 {
+  0%  {transform: scaleX(1)  rotate(0deg)}
+  50% {transform: scaleX(-1) rotate(-90deg)}
+}
+@keyframes l7-1 {
+  49.99% {transform:scale(var(--s,1)) perspective(150px) rotateX(-90deg) ;filter:grayscale(0)}
+  50%    {transform:scale(var(--s,1)) perspective(150px) rotateX(-90deg) ;filter:grayscale(0.8)}
+  100%   {transform:scale(var(--s,1)) perspective(150px) rotateX(-180deg);filter:grayscale(0.8)}
+}
+
+#progstat{
+    font-size:20px;
+}
+
+.loading-main{
+    
+    margin-top: 50px;
+    
+}
+
+.font-size-12{
+    font-size: 12px;
+}
+.color-primary{
+    color: #27408b;
+}
+.opacity-09{
+    opacity: 0.7;
+}
+
+.animation-balance{
+
+    position: relative;
+    animation-name: tot_bal;
+    animation-duration: 2s;
+
+}
+@keyframes tot_bal
+{
+      0%   {left:0px; top:0px;}
+  100%  {left:0px; top:0px; transform:rotateY(360deg);}
+  
+}
+
+.home-balance-custom-style
+{
+    padding-left: 0px;
+    padding-top: 20px;
+    
+}
+
+
+
+/* =================   Media queries   ===================  */
+
+@media(min-width: 320px) and (max-width: 480px){
+  
+    .common-bg{
+        padding: 10px;
+    }
+    .passboox-common-bg{
+        padding: 10px;
+    }
+    .member-wise-balance{
+        padding: 10px;
+        margin-top: -15px;
+    }
+    
+    .profile-main{
+        margin-top:-40px;
+    }
+    
+    .profile-basic-details{
+        padding: 10px;
+        margin-top: -15px;
+    }
+    .padding-claims-summary{
+        padding: 0px;
+    }
+    .claims-main{
+        margin-top: -50px;
+    }
+    .home-epf-contribution-main{
+        margin-top: -50px;
+    }
+    .service-history-main{
+        margin-top: -50px;
+    }
+    .service-history-timeline{
+        padding: 10px;
+        margin-top:5px;
+    }
+    #calculateEpf_icon
+    {
+        display: none;
+    }
+    #epf_cal_chart_layout{
+        border-right-width: 0px;
+    }
+    .epf-calculation-main{
+        margin-top: -20px;
+    }
+    .edli-calculation-main{
+        margin-top: -20px;
+    }
+    .edli-parts-calculation{
+        margin-top: 15px;
+        padding: 0px;
+    }
+    .pension-calculator-main{
+        
+        margin-top: -20px;
+        
+    }
+    .limits{
+        border-width: 0px;
+        padding: 0px;
+        margin-left: 0px;
+    }
+    .last-60-wages{
+        
+        padding: 0px;
+        margin-top: 10px;
+        
+    }
+    .passbook-main
+    {
+        margin-top: -20px;
+    }
+    .passbook-overview-table{
+        padding: 0px;
+            
+    }
+    .custom-year-tabs{
+
+        width: 268%;
+        overflow: auto;
+    }
+    .list-group{
+        flex-direction: row;
+     
+    }
+    .list-group-item{
+        margin-right: 2px;
+    }
+    .custom-passbook-summary{
+        
+        overflow: auto;
+        margin-left:-140px;
+    }
+    
+    .custom-passbook-summary-main-div{
+        
+        padding: 0px;
+        margin-top: 50px;
+        
+    }
+    .tax-btn, .download-btn{
+        
+        width: 261px;
+        margin-bottom: 3px;
+    }
+}2ôz™å|      góg„góg„Hž²iÔìÂ   ‰    O^partitionKey=%28https%2Cepfindia.gov.in%29,:https://passbook.epfindia.gov.in/MemberPassBook/static/css/common.css?token=bVnvEWhO4OPFrXU necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Date: Mon, 07 Apr 2025 05:49:56 GMT
+Server: N/A
+Access-Control-Allow-Headers: x-requested-with
+Access-Control-Allow-Methods: POST, GET, HEAD
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31556926, must-revalidate
+Pragma: no-cache
+Content-Security-Policy: default-src 'self' https://translation-plugin.bhashini.co.in; object-src 'self' https://translation-plugin.bhashini.co.in ; script-src 'nonce-6817186826120128' 'strict-dynamic';  style-src 'self' https://translation-plugin.bhashini.co.in; img-src 'self' https://translation-plugin.bhashini.co.in data:;
+Referrer-Policy: strict-origin-when-cross-origin
+Permissions-Policy: geolocation=(self)
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-Powered-By: N/A
+Expires: Tue, 07 Apr 2026 11:38:42 GMT
+Last-Modified: Fri, 11 Oct 2024 08:56:22 GMT
+Content-Type: text/css
+Content-Length: 15889
+ original-response-headers Date: Mon, 07 Apr 2025 05:49:56 GMT
+Server: N/A
+Access-Control-Allow-Headers: x-requested-with
+Access-Control-Allow-Methods: POST, GET, HEAD
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31556926, must-revalidate
+Pragma: no-cache
+Content-Security-Policy: default-src 'self' https://translation-plugin.bhashini.co.in; object-src 'self' https://translation-plugin.bhashini.co.in ; script-src 'nonce-6817186826120128' 'strict-dynamic';  style-src 'self' https://translation-plugin.bhashini.co.in; img-src 'self' https://translation-plugin.bhashini.co.in data:;
+Referrer-Policy: strict-origin-when-cross-origin
+Permissions-Policy: geolocation=(self)
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+SET-COOKIE: HttpOnly; SameSite=Strict; Secure;
+X-Powered-By: N/A
+Expires: Tue, 07 Apr 2026 11:38:42 GMT
+Last-Modified: Fri, 11 Oct 2024 08:56:22 GMT
+Content-Type: text/css
+Content-Length: 15889
+ ctid 5 uncompressed-len 0 net-response-time-onstart 214 net-response-time-onstop 214   >

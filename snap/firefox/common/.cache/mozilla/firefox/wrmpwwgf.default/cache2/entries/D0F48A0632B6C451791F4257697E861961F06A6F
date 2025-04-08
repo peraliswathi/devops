@@ -1,0 +1,1984 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; object-src 'none'; script-src resource: chrome:; connect-src https:; img-src https: data: blob: chrome:; style-src 'unsafe-inline';">
+    <meta name="color-scheme" content="light dark">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-l10n-id="newtab-page-title"></title>
+    <link rel="icon" type="image/png" href="chrome://branding/content/icon32.png"/>
+    <link rel="localization" href="branding/brand.ftl" />
+    <link rel="localization" href="toolkit/branding/brandings.ftl" />
+    <link rel="localization" href="browser/newtab/newtab.ftl" />
+    <link rel="localization" href="toolkit/global/mozMessageBar.ftl" />
+    <link rel="stylesheet" href="chrome://global/skin/design-system/tokens-brand.css">
+    <link rel="stylesheet" href="chrome://browser/content/contentSearchUI.css" />
+    <link rel="stylesheet" href="chrome://activity-stream/content/css/activity-stream.css" />
+  </head>
+  <!-- Cached: Mon, 07 Apr 2025 06:52:54 GMT -->
+  <body class="activity-stream">
+    <div id="header-asrouter-container" role="presentation"></div>
+    <div id="root">
+      <div class="has-weather has-search layout-variant-b has-recommended-stories"><menu class="personalizeButtonWrapper"><span><button class="icon icon-settings personalize-button" data-l10n-id="newtab-personalize-settings-icon-label"></button><div class="customize-menu" role="dialog" data-l10n-id="newtab-settings-dialog-label"><div class="close-button-wrapper"><button class="close-button" data-l10n-id="newtab-custom-close-button"></button></div><div class="home-section"><div class="wallpapers-section"><div><div class="category-header"><h2 data-l10n-id="newtab-wallpaper-title"></h2><button class="wallpapers-reset" data-l10n-id="newtab-wallpaper-reset"></button></div><fieldset class="category-list"><div><input type="radio" id="solid-colors" style="background-color:#76C1FF" class="wallpaper-input"/><label for="solid-colors" data-l10n-id="newtab-wallpaper-category-title-colors">newtab-wallpaper-category-title-colors</label></div><div><input type="radio" id="abstracts" style="background-image:url(https://firefox-settings-attachments.cdn.mozilla.net/main-workspace/newtab-wallpapers-v2/e1108381-5c19-4cb4-a630-69f9e45503fb.avif)" class="wallpaper-input"/><label for="abstracts" data-l10n-id="newtab-wallpaper-category-title-abstract">newtab-wallpaper-category-title-abstract</label></div><div><input type="radio" id="photographs" style="background-image:url(https://firefox-settings-attachments.cdn.mozilla.net/main-workspace/newtab-wallpapers-v2/e94b1e49-c518-40d6-98e3-dffab6cc370d.avif)" class="wallpaper-input"/><label for="photographs" data-l10n-id="newtab-wallpaper-category-title-photographs">newtab-wallpaper-category-title-photographs</label></div></fieldset></div></div><div class="settings-toggles"><div id="shortcuts-section" class="section"><moz-toggle id="shortcuts-toggle" pressed="true" onToggle="function() {
+    [native code]
+}" data-preference="feeds.topsites" data-eventSource="TOP_SITES" data-l10n-id="newtab-custom-shortcuts-toggle"><div slot="nested"><div class="more-info-top-wrapper"><div class="more-information"><select id="row-selector" class="selector" name="row-count" data-preference="topSitesRows" aria-labelledby="custom-shortcuts-title"><option selected="" value="1" data-l10n-id="newtab-custom-row-selector" data-l10n-args="{&quot;num&quot;: 1}"></option><option value="2" data-l10n-id="newtab-custom-row-selector" data-l10n-args="{&quot;num&quot;: 2}"></option><option value="3" data-l10n-id="newtab-custom-row-selector" data-l10n-args="{&quot;num&quot;: 3}"></option><option value="4" data-l10n-id="newtab-custom-row-selector" data-l10n-args="{&quot;num&quot;: 4}"></option></select><div class="check-wrapper" role="presentation"><input type="checkbox" id="sponsored-shortcuts" class="sponsored-checkbox" checked="" data-preference="showSponsoredTopSites" data-eventSource="SPONSORED_TOP_SITES"/><label class="sponsored" for="sponsored-shortcuts" data-l10n-id="newtab-custom-sponsored-sites"></label></div></div></div></div></moz-toggle></div><div id="pocket-section" class="section"><moz-toggle id="pocket-toggle" pressed="true" onToggle="function() {
+    [native code]
+}" aria-describedby="custom-pocket-subtitle" data-preference="feeds.section.topstories" data-eventSource="TOP_STORIES" data-l10n-id="newtab-custom-stories-toggle"><div slot="nested"></div></moz-toggle></div><div id="recent-section" class="section"><moz-toggle id="highlights-toggle" onToggle="function() {
+    [native code]
+}" data-preference="feeds.section.highlights" data-eventSource="HIGHLIGHTS" data-l10n-id="newtab-custom-recent-toggle"></moz-toggle></div><div id="weather-section" class="section"><moz-toggle id="weather-toggle" pressed="true" onToggle="function() {
+    [native code]
+}" data-preference="showWeather" data-eventSource="WEATHER" data-l10n-id="newtab-custom-weather-toggle"></moz-toggle></div></div><span class="divider" role="separator"></span><div><button id="settings-link" class="external-link" data-l10n-id="newtab-custom-settings"></button></div></div></div></span></menu><div class="weatherWrapper"><div class="weather active"><div class="weatherCard"><a data-l10n-id="newtab-weather-see-forecast" data-l10n-args="{&quot;provider&quot;: &quot;AccuWeather&quot;}" href="https://www.accuweather.com/en/in/hyderabad/202190/daily-weather-forecast/202190?lang=en-us&amp;partner=web_mozilla_adc" class="weatherInfoLink"><div class="weatherIconCol"><span class="weatherIcon iconId5"></span></div><div class="weatherText"><div class="weatherForecastRow"><span class="weatherTemperature">94<!-- -->°<!-- -->f</span></div><div class="weatherCityRow"><span class="weatherCity">Hyderabad</span></div></div></a><div class="weatherButtonContextMenuWrapper"><button aria-haspopup="true" data-l10n-id="newtab-menu-section-tooltip" class="weatherButtonContextMenu"></button></div></div><span class="weatherSponsorText"><span data-l10n-id="newtab-weather-sponsored" data-l10n-args="{&quot;provider&quot;: &quot;AccuWeather&quot;}"></span></span></div></div><div class="outer-wrapper ds-outer-wrapper-search-alignment ds-outer-wrapper-breakpoint-override visible-logo"><main class="newtab-main"><div class="non-collapsible-section"><div class="search-wrapper"><h1 class="logo-and-wordmark-wrapper"><div class="logo-and-wordmark " role="img" data-l10n-id="newtab-logo-and-wordmark"><div class="logo "></div><div class="wordmark"></div></div></h1><div class="search-inner-wrapper"><button class="search-handoff-button" tabindex="-1"><div class="fake-textbox"></div><input type="search" class="fake-editable" tabindex="-1" aria-hidden="true"/><div class="fake-caret"></div></button></div></div></div><div class="body-wrapper on"><div class="discovery-stream ds-layout ds-layout-topsites"><div class="ds-column ds-column-12"><div class="ds-column-grid"><div><div class="ds-top-sites"><section class="collapsible-section top-sites" data-section-id="topsites"><div class="section-top-bar"><h2 class="section-title-container " style="visibility:hidden"><span class="section-title"><span data-l10n-id="newtab-section-header-topsites"></span></span></h2></div><div><div class="top-sites-list-wrapper"><ul class="top-sites-list"><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://mail.google.com/mail/u/0/" tabindex="0" draggable="true" data-is-sponsored-link="false" title="Gmail"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="G"><div></div><div class="top-site-icon default-icon" data-fallback="" style="background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAGM0lEQVRoQ+2Za2wUVRTHz73z2N3SammrhbS1tQ8iCWh4RQkR03bREKKkRB4iJOonQUwsaPiAIg8Bq9IaBWvA+IoYHgGCHySmDzCmVkJrNDFBaEtoCgGSSnm03cfMvddzt52y23a2u9uWlmTvl92ZvffM+d/zO+fMzBK4zwe5z/2HuICxjmA8AvEIDHMHBiB0KidnkovCCgFiFqa4F4BUa8mpx2Y3NhrDvFZUy0UDaOyOsgQddAugTvxs9HQbBxMXwbVgQyEC6vKz56oCftAIyRWiZ5r8MAF+YYS9Ma+5rSUqL2Kc7K1x5OmU7SUqPBeok9IJCsANcZGbZJXmNust030CzjyWkWr61TMOQvJ8lve9s/AcihCXGSHr5jVfOhGjXxEtM6uUxUQle6gKmaYvdImqAzCDtHR3G0898Dy0y1/7BNTl5ryKcfra2895y4SKIoQQLC0tqSwvNWsbOXmyn/mI/LOd1JS/0DFp8YXNCYtaN1IKiolhH2yoThThI6+pxcY3oQLysj9xAtlgJ8AyVpCRAppLr/Kb5pr02sYRQep60aw8hWmViVNuL1BXngfB7Ku7FGB4YbfuNt8OEfB7bnY5olIaToBEMWtyMqROcIFf8MtckHVp1WeGhVS7+8nFlIg9KqOZZs5NSFrVhLCHF4BoVWjF5vqYBSS4HKD25BbjAso69BvbCk42R4VU08J8x0R/ymZKYCO6qxhY49S827ELqM/JKNcVLaIISAGYD4EEcioU/IxXmYJHjJRERiW0UlfoAi/jgSIDJolYAPh4BSnmoRH4aWZhedbN5lIPWhMEa9Ygw0LIEmBNcWHWGViluOCIVENYpNrdsxEZukcDkunh/O5VIhBAUSrFHLjYlVSR99zNUAHu7bfK558/VFpY/yF2EC8wqg2QYCdATsTeERapAcj0r3ZDCFCBY1dV4CtzOhy4lV3xx/LjoQIKd3WXc6erNL/lFJT89i483NEChkz5oBFOgJVQAaQEIsXuIhVARkFkSBAy/bcnjACVMGhlSbDrzgyoJxmgGr6KP5cfDRVQtKOzXNETSr0Y1ol3rsALdVvg8ZafwVT0PqSGEmD55JRIcUQKYI08h0BWapRkStu2YxABAWQIhxpfJnzU+QRcZQngwj3lflbRYCeA+buBYxskgsP8v/eBu+GzPqQiFSCdlI3PFGik5zvF7/bOD5LEFjL7uqbC954CYFgyVCnIoQwtQNoT0gHFCVPafu1Dyo9IyT7QP4ntPLOq+RCu9ywPioCKultNRKZzBtT508GBCFm2IhZgOSXzwEJqOiI1OTMdXAnOQBkd0YECdOwDD67+F2o9WVDWi4x0PnhELUAu7kGKwTN/7RevXDtAkh0E/NjBRnJonAJ7tBN+XELFd51TAnsukek/YhJgIWUoLv5y097tK5v3L6O6a6oHm9BIDBdWLu5j576dm3x4/8yU9xycYYMefMQsQJojGIk24Zh//kTuhf8SH6p0UFLiQ15jDYb00oFN08fF8dTbXWsn7ZyW80gHqxdhDA5bAD5VFNVsSjp1eOlSpajj0jsUyPvoiDNapHRchH568Tlj6+mJOR8vO3KEzTq0pBC7dO09EWAF+Lp7jlsH8oVKSUGkSElkTC6a/CDWplefrbZsjYkAefG2orkZLmJ+rlNagl3YFimJDHZjLAD8uEeob2bV1l8JJn3MBEgngpHCFuLEThyShdiJsfSCF+89t9b2ItM/TcdUgOVM+4I5xUSQSmS8DymJDOZIkyBiTVrV2Rq7yjUuBAQj5VBoiTz2scGRGZcRsJwKIHWjdaM8rk3JLpNVZqieMW4iMJSj4x6huIB70Ylj3eVw64aXAzs7KxQt4S35QGM35L2QdSsxtgLMTxuWHysN3J9ZjhTv7Fyv6BN2m76ucS1AcWlgeowNjSuOlocIeHpH12R8d1qjOBKmcptnV4LPuuDrcldtSrRtRsOJzIwjLxbrmlJtdzNHsCEyr3FO+EVx4+pjV0MEyINnP+jOYqryOhGigHFjwMshiq9a8PyW05uS/hmOo3ZrZx8smUaIuqX3UTpkGlGIfOHYJEzjy7MvnWizfoz/RzYakYjGZjwC0ezWaMyNR2A0djUam/EIRLNbozH3f+HM817RWozJAAAAAElFTkSuQmCC)"></div></div></div><div class="title"><span class="title-label" dir="auto">Gmail</span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Gmail&quot;}" class="context-menu-button icon"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://unifiedportal-mem.epfindia.gov.in/memberinterface/" tabindex="0" draggable="true" data-is-sponsored-link="false" title="Member Home"><div class="tile" aria-hidden="true"><div class="icon-wrapper letter-fallback" data-fallback="M" style="background-color:#B63B39"><div class=""></div></div></div><div class="title"><span class="title-label" dir="auto">Member Home</span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Member Home&quot;}" class="context-menu-button icon"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://passbook.epfindia.gov.in/MemberPassBook/login" tabindex="0" draggable="true" data-is-sponsored-link="false" title="EPFO | Member Passbook"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="E"><div></div><div class="top-site-icon default-icon" data-fallback="" style="background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACnklEQVQ4T6VTa0iTURh+tm+bumnmLmalhoKQXajNTdPSwlB0qKRFF4ouWkbRn6DwTz+CQvRHEYY/pZufKXhZWWtasf2RvN/QlCzQYYjoUGnT+X3fvtPnRrNBEtH5cTjnvO/znPc873NE+M8h+hteW0QTx3g97J9b/5j7x8O0kzQhHBAtAWISQ2HtdEIiBfggoK/pbAAmYKPNpUlIGNDRUISKCisiwmOxR6/AZrUCjnk3Bse/o+XtEjpaL4FdnvFiAwmMNKkuO4LUDCVYlodr1okVSobhiWmotythH3EiVRcJY6kZAxZfJd5JTEnJ/mNP0VaTj7qGXsRFbUX60Avg4UuvRKyUAz8+ii1KKR5UfQWoFTRYJ9AjPMdfweVrJlJSnIQDejUWM/LATTqgqLoHWcpOiDXb4LpVidrkQhRmxYMSYHlX6tFlKvURaLNo8qTqIMJVofg240Ty3dtgFnhIotWQFReAa/8EZmoO4vkFRLQ/w4f+WRRkHsbK0pSPQJ9NE3NtOjQaDaanXVDWPIckPhbLvX2AxQxPWCSo6CiAYTFyvxqHdHIkFbbA3v94XUTzx1GSmxkPm20RetMjcPU1gDQE8IjAXb0A+awDkpIzkCXpvbrE7T2HyZEmXwWG3HLi5lUYtpz3BofGXNhRsE8Qy4NNde/A2qzgFYIfYvJgNEZgdZVH2ikT+l/9JuIasLt7jhgMoX5zer7Y8ePGHYQ3VmNVpkBwsNgb0+U0QyykrZnK34W4RD1R7b6JuvJsJCT4SBiGB8cRyOWUn1SX3YyB9+tuDDBSYkoZGeuqFGmP0sTWmA+3QMC4PFBFBuF1mx2nj+8SJQtm6zZvQPDrGkMOTXoEp621l1AsBi0XRRknaNL55joY99LGf8Ff5z8sfgJcvPh7Vs52FgAAAABJRU5ErkJggg==)"></div></div></div><div class="title"><span class="title-label" dir="auto">EPFO | Member Passbook</span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;EPFO | Member Passbook&quot;}" class="context-menu-button icon"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://www.wikipedia.org/" tabindex="0" draggable="true" data-is-sponsored-link="false" title="Wikipedia"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="W"><div class="top-site-icon rich-icon" style="background-image:url(chrome://activity-stream/content/data/content/tippytop/images/wikipedia-org@2x.png)"></div></div></div><div class="title"><span class="title-label" dir="auto">Wikipedia</span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Wikipedia&quot;}" class="context-menu-button icon"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://www.youtube.com/" tabindex="0" draggable="true" data-is-sponsored-link="false" title="YouTube"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="Y"><div class="top-site-icon rich-icon" style="background-image:url(chrome://activity-stream/content/data/content/tippytop/images/youtube-com@2x.png)"></div></div></div><div class="title"><span class="title-label" dir="auto">YouTube</span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;YouTube&quot;}" class="context-menu-button icon"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://www.reddit.com/" tabindex="0" draggable="true" data-is-sponsored-link="false" title="Reddit"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="R"><div class="top-site-icon rich-icon" style="background-image:url(chrome://activity-stream/content/data/content/tippytop/images/reddit-com@2x.png)"></div></div></div><div class="title"><span class="title-label" dir="auto">Reddit</span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Reddit&quot;}" class="context-menu-button icon"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer placeholder hide-for-narrow add-button"><div class="top-site-inner"><a class="top-site-button" tabindex="0" draggable="true" data-is-sponsored-link="false" title="newtab-topsites-add-shortcut-label"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="n"><div class=""></div></div></div><div class="title"><span class="title-label" dir="auto" data-l10n-id="newtab-topsites-add-shortcut-label">newtab-topsites-add-shortcut-label</span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div class="topsite-impression-observer"></div></div></li></ul></div><div class="edit-topsites-wrapper"></div></div></section></div></div></div></div><style data-styles="[[null]]"></style></div><section class="collapsible-section ds-layout" data-section-id="topstories"><div class="section-top-bar"><h2 class="section-title-container "><span class="section-title"><span data-l10n-id="newtab-section-header-stories"></span></span></h2></div><div><div class="discovery-stream ds-layout "><div class="ds-column ds-column-12"><div class="ds-column-grid"><div><div><div class="ds-card-grid    ds-card-grid-include-descriptions  "><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.ndtv.com/world-news/us-tariffs-donald-trump-trump-tariffs-the-surprise-upside-for-india-8098423?utm_source=firefox-newtab-en-intl" title="Trump Tariffs: The Surprise Upside for India" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/8e269f23-755c-4a53-b207-94121c0fbed5.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F8e269f23-755c-4a53-b207-94121c0fbed5.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F8e269f23-755c-4a53-b207-94121c0fbed5.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F8e269f23-755c-4a53-b207-94121c0fbed5.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F8e269f23-755c-4a53-b207-94121c0fbed5.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F8e269f23-755c-4a53-b207-94121c0fbed5.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F8e269f23-755c-4a53-b207-94121c0fbed5.jpeg 404w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">NDTV</p><h3 class="title clamp">Trump Tariffs: The Surprise Upside for India</h3><p class="excerpt clamp">As Indian equity markets panic turn and exporters brace for US President Donald Trump&#x27;s &quot;Liberation Day&quot; tariffs to kick in, the question is - will it be as harsh as feared? Regardless of gloom forecasters, pragmatism is the key.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Trump Tariffs: The Surprise Upside for India&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.timesnownews.com/health/are-healthy-smoothies-making-you-gain-weight-heres-what-dietician-says-article-151356804?utm_source=firefox-newtab-en-intl" title="Are ‘Healthy’ Smoothies Making You Gain Weight? Here’s What Dietician Says" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/e2a4b26f-6297-4d55-b4de-4269502d87a2.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe2a4b26f-6297-4d55-b4de-4269502d87a2.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe2a4b26f-6297-4d55-b4de-4269502d87a2.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe2a4b26f-6297-4d55-b4de-4269502d87a2.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe2a4b26f-6297-4d55-b4de-4269502d87a2.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe2a4b26f-6297-4d55-b4de-4269502d87a2.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe2a4b26f-6297-4d55-b4de-4269502d87a2.jpeg 404w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">Times Now News</p><h3 class="title clamp">Are ‘Healthy’ Smoothies Making You Gain Weight? Here’s What Dietician Says</h3><p class="excerpt clamp">Are ‘Healthy’ Smoothies Making You Gain Weight? Here’s What Dietician Says </p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Are ‘Healthy’ Smoothies Making You Gain Weight? Here’s What Dietician Says&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.fortuneindia.com/personal-finance/is-fintech-consolidation-the-key-to-innovation-or-a-threat-to-consumerchoice/121642?utm_source=firefox-newtab-en-intl" title="Is Fintech Consolidation the Key to Innovation or a Threat to Consumer Choice?" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/553ccafa-5417-4c70-a745-fc5d6f6849e5.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F553ccafa-5417-4c70-a745-fc5d6f6849e5.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F553ccafa-5417-4c70-a745-fc5d6f6849e5.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F553ccafa-5417-4c70-a745-fc5d6f6849e5.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F553ccafa-5417-4c70-a745-fc5d6f6849e5.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F553ccafa-5417-4c70-a745-fc5d6f6849e5.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F553ccafa-5417-4c70-a745-fc5d6f6849e5.jpeg 404w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">Fortune India</p><h3 class="title clamp">Is Fintech Consolidation the Key to Innovation or a Threat to Consumer Choice?</h3><p class="excerpt clamp">Consolidation boosts scalability and efficiency, with larger, well-funded firms better positioned to offer improved rates and services.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Is Fintech Consolidation the Key to Innovation or a Threat to Consumer Choice?&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.businessinsider.com/cheating-tech-interviews-soaring-managers-lost-gen-ai-chatgpt-coding-2025-4?utm_source=firefox-newtab-en-intl" title="Hiring for Tech Jobs Is Broken" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://i.insider.com/67ec55c769253ccddf9af461?width=1200&amp;format=jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fi.insider.com%2F67ec55c769253ccddf9af461%3Fwidth%3D1200%26format%3Djpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fi.insider.com%2F67ec55c769253ccddf9af461%3Fwidth%3D1200%26format%3Djpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fi.insider.com%2F67ec55c769253ccddf9af461%3Fwidth%3D1200%26format%3Djpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fi.insider.com%2F67ec55c769253ccddf9af461%3Fwidth%3D1200%26format%3Djpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fi.insider.com%2F67ec55c769253ccddf9af461%3Fwidth%3D1200%26format%3Djpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fi.insider.com%2F67ec55c769253ccddf9af461%3Fwidth%3D1200%26format%3Djpeg 404w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">Business Insider</p><h3 class="title clamp">Hiring for Tech Jobs Is Broken</h3><p class="excerpt clamp">A ‘perfect storm’ has made coding interviews a cheater’s paradise</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Hiring for Tech Jobs Is Broken&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.architecturaldigest.in/story/a-new-restaurant-in-bengaluru-gaia-finds-a-luxurious-home-in-a-forty-year-old-bungalow/?utm_source=firefox-newtab-en-intl" title="A New Restaurant in Bengaluru, Gaia Finds a Luxurious Home in a Forty-Year-Old Bungalow" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/0424d1df-95e9-426d-81c0-ad98537aa075.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F0424d1df-95e9-426d-81c0-ad98537aa075.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F0424d1df-95e9-426d-81c0-ad98537aa075.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F0424d1df-95e9-426d-81c0-ad98537aa075.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F0424d1df-95e9-426d-81c0-ad98537aa075.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F0424d1df-95e9-426d-81c0-ad98537aa075.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F0424d1df-95e9-426d-81c0-ad98537aa075.jpeg 404w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">Architectural Digest</p><h3 class="title clamp">A New Restaurant in Bengaluru, Gaia Finds a Luxurious Home in a Forty-Year-Old Bungalow</h3><p class="excerpt clamp">Restored and designed by Andre Camara of Studio Camarada, Gaia combines the sustainability of tropical modernism with a vision of a bygone era.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;A New Restaurant in Bengaluru, Gaia Finds a Luxurious Home in a Forty-Year-Old Bungalow&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://thewire.in/environment/decoding-the-land-fiasco-behind-controversial-deforestation-and-protest-at-hyderabad-university?utm_source=firefox-newtab-en-intl" title="Decoding the Land Fiasco Behind Controversial Deforestation and Protest at Hyderabad University" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/e32da2d7-dd42-4708-99f7-c928804d47a1.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe32da2d7-dd42-4708-99f7-c928804d47a1.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe32da2d7-dd42-4708-99f7-c928804d47a1.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe32da2d7-dd42-4708-99f7-c928804d47a1.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe32da2d7-dd42-4708-99f7-c928804d47a1.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe32da2d7-dd42-4708-99f7-c928804d47a1.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe32da2d7-dd42-4708-99f7-c928804d47a1.jpeg 404w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">The Wire</p><h3 class="title clamp">Decoding the Land Fiasco Behind Controversial Deforestation and Protest at Hyderabad University</h3><p class="excerpt clamp">The forest land, which is situated within the Hyderabad University campus, was never registered in the five decades of the varsity’s existence. However, the university has been its custodian.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Decoding the Land Fiasco Behind Controversial Deforestation and Protest at Hyderabad University&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.nytimes.com/2025/04/03/well/mind/brain-health-simple-tips.html?utm_source=firefox-newtab-en-intl" title="10 Small Things Neurologists Wish You’d Do for Your Brain" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/ea1d05c4-5609-4bec-ba67-5c3c509a0dee.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fea1d05c4-5609-4bec-ba67-5c3c509a0dee.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fea1d05c4-5609-4bec-ba67-5c3c509a0dee.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fea1d05c4-5609-4bec-ba67-5c3c509a0dee.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fea1d05c4-5609-4bec-ba67-5c3c509a0dee.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fea1d05c4-5609-4bec-ba67-5c3c509a0dee.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fea1d05c4-5609-4bec-ba67-5c3c509a0dee.jpeg 404w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">The New York Times</p><h3 class="title clamp">10 Small Things Neurologists Wish You’d Do for Your Brain</h3><p class="excerpt clamp">Small tweaks to your daily routine can go a long way toward protecting your body’s control center and preventing cognitive decline down the road.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;10 Small Things Neurologists Wish You’d Do for Your Brain&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://hbr.org/2018/08/boost-your-emotional-intelligence-with-these-3-questions?utm_source=firefox-newtab-en-intl" title="Boost Your Emotional Intelligence with These 3 Questions" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/bb076973-2a3f-42d5-ae9c-94da21802017.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fbb076973-2a3f-42d5-ae9c-94da21802017.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fbb076973-2a3f-42d5-ae9c-94da21802017.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fbb076973-2a3f-42d5-ae9c-94da21802017.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fbb076973-2a3f-42d5-ae9c-94da21802017.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fbb076973-2a3f-42d5-ae9c-94da21802017.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fbb076973-2a3f-42d5-ae9c-94da21802017.jpeg 404w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">Harvard Business Review</p><h3 class="title clamp">Boost Your Emotional Intelligence with These 3 Questions</h3><p class="excerpt clamp">Professionals sometimes founder as they try to improve their emotional intelligence, because they either don’t know where to focus their efforts or they haven’t understood how to improve these skills on a practical level.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Boost Your Emotional Intelligence with These 3 Questions&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.bbc.com/news/articles/cg70pprzegyo?utm_source=firefox-newtab-en-intl" title="India’s Rivers Are Home to 6,000 Dolphins - but They Are in Trouble" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/e43f26ec-9c2f-43bb-80e4-76b29c67b374.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe43f26ec-9c2f-43bb-80e4-76b29c67b374.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe43f26ec-9c2f-43bb-80e4-76b29c67b374.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe43f26ec-9c2f-43bb-80e4-76b29c67b374.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe43f26ec-9c2f-43bb-80e4-76b29c67b374.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe43f26ec-9c2f-43bb-80e4-76b29c67b374.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe43f26ec-9c2f-43bb-80e4-76b29c67b374.jpeg 404w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">BBC</p><h3 class="title clamp">India’s Rivers Are Home to 6,000 Dolphins - but They Are in Trouble</h3><p class="excerpt clamp">Gangetic and Indus river dolphins are found in over two-dozen rivers in India.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;India’s Rivers Are Home to 6,000 Dolphins - but They Are in Trouble&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://thewire.in/culture/tomb-of-bibi-zarrina-dholpurs-hidden-treasure-now-rests-in-dust-and-decay?utm_source=firefox-newtab-en-intl" title="Tomb of Bibi Zarrina, Dholpur’s Hidden Treasure, Now Rests in Dust and Decay" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/4fca8881-5879-45d7-b1c2-ae34f44ddb80.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4fca8881-5879-45d7-b1c2-ae34f44ddb80.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4fca8881-5879-45d7-b1c2-ae34f44ddb80.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4fca8881-5879-45d7-b1c2-ae34f44ddb80.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4fca8881-5879-45d7-b1c2-ae34f44ddb80.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4fca8881-5879-45d7-b1c2-ae34f44ddb80.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4fca8881-5879-45d7-b1c2-ae34f44ddb80.jpeg 404w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">The Wire</p><h3 class="title clamp">Tomb of Bibi Zarrina, Dholpur’s Hidden Treasure, Now Rests in Dust and Decay</h3><p class="excerpt clamp">Local inhabitants have long passed down an oral tradition that Bībī Zarrīna, mother of Sikandar Lodī died here in Dholpur, apparently while residing with her son in the final years of his reign.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Tomb of Bibi Zarrina, Dholpur’s Hidden Treasure, Now Rests in Dust and Decay&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.nytimes.com/2025/04/05/world/americas/penguins-tariffs-island.html?utm_source=firefox-newtab-en-intl" title="After Trump’s Tariffs, Stocks Plunged but Penguin Memes Ticked Up" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://static01.nyt.com/images/2025/04/05/multimedia/05int-tariffs-penguins-kbgj/05int-tariffs-penguins-kbgj-facebookJumbo.jpg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fstatic01.nyt.com%2Fimages%2F2025%2F04%2F05%2Fmultimedia%2F05int-tariffs-penguins-kbgj%2F05int-tariffs-penguins-kbgj-facebookJumbo.jpg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fstatic01.nyt.com%2Fimages%2F2025%2F04%2F05%2Fmultimedia%2F05int-tariffs-penguins-kbgj%2F05int-tariffs-penguins-kbgj-facebookJumbo.jpg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fstatic01.nyt.com%2Fimages%2F2025%2F04%2F05%2Fmultimedia%2F05int-tariffs-penguins-kbgj%2F05int-tariffs-penguins-kbgj-facebookJumbo.jpg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fstatic01.nyt.com%2Fimages%2F2025%2F04%2F05%2Fmultimedia%2F05int-tariffs-penguins-kbgj%2F05int-tariffs-penguins-kbgj-facebookJumbo.jpg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fstatic01.nyt.com%2Fimages%2F2025%2F04%2F05%2Fmultimedia%2F05int-tariffs-penguins-kbgj%2F05int-tariffs-penguins-kbgj-facebookJumbo.jpg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fstatic01.nyt.com%2Fimages%2F2025%2F04%2F05%2Fmultimedia%2F05int-tariffs-penguins-kbgj%2F05int-tariffs-penguins-kbgj-facebookJumbo.jpg 404w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">The New York Times</p><h3 class="title clamp">After Trump’s Tariffs, Stocks Plunged but Penguin Memes Ticked Up</h3><p class="excerpt clamp">The internet poked fun at the Trump administration’s decision to impose new tariffs on Heard Island and McDonald Islands, Australian territories near Antarctica where many penguins but no people live.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;After Trump’s Tariffs, Stocks Plunged but Penguin Memes Ticked Up&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.cnbc.com/2025/04/05/harvard-psychologist-phrases-narcissists-love-to-use-and-how-to-respond.html?utm_source=firefox-newtab-en-intl" title="‘Highly Narcissistic’ People Love to Say These 7 Phrases—Here’s How to Respond: Harvard-Trained Psychologist" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://image.cnbcfm.com/api/v1/image/107232875-1682699784125-Narcissist_Feature_Image_Pink.jpg?v=1682863206&amp;w=1920&amp;h=1080" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fimage.cnbcfm.com%2Fapi%2Fv1%2Fimage%2F107232875-1682699784125-Narcissist_Feature_Image_Pink.jpg%3Fv%3D1682863206%26w%3D1920%26h%3D1080 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fimage.cnbcfm.com%2Fapi%2Fv1%2Fimage%2F107232875-1682699784125-Narcissist_Feature_Image_Pink.jpg%3Fv%3D1682863206%26w%3D1920%26h%3D1080 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fimage.cnbcfm.com%2Fapi%2Fv1%2Fimage%2F107232875-1682699784125-Narcissist_Feature_Image_Pink.jpg%3Fv%3D1682863206%26w%3D1920%26h%3D1080 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fimage.cnbcfm.com%2Fapi%2Fv1%2Fimage%2F107232875-1682699784125-Narcissist_Feature_Image_Pink.jpg%3Fv%3D1682863206%26w%3D1920%26h%3D1080 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fimage.cnbcfm.com%2Fapi%2Fv1%2Fimage%2F107232875-1682699784125-Narcissist_Feature_Image_Pink.jpg%3Fv%3D1682863206%26w%3D1920%26h%3D1080 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fimage.cnbcfm.com%2Fapi%2Fv1%2Fimage%2F107232875-1682699784125-Narcissist_Feature_Image_Pink.jpg%3Fv%3D1682863206%26w%3D1920%26h%3D1080 404w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">CNBC</p><h3 class="title clamp">‘Highly Narcissistic’ People Love to Say These 7 Phrases—Here’s How to Respond: Harvard-Trained Psychologist</h3><p class="excerpt clamp">It’s nearly impossible to avoid narcissists. To spot them, notice the phrases they use. Here are the ones they love to use, says Harvard psychologist Dr. Cortney Warren — and how she responds to them every time.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;‘Highly Narcissistic’ People Love to Say These 7 Phrases—Here’s How to Respond: Harvard-Trained Psychologist&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.bbc.com/future/article/20250403-the-best-activities-for-finding-friends?utm_source=firefox-newtab-en-intl" title="I Tested Some of the Most Popular Ways of Meeting New People. Here’s What I Found" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/497c2e02-5b4d-45ab-a63f-6c37fb507ec6.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F497c2e02-5b4d-45ab-a63f-6c37fb507ec6.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F497c2e02-5b4d-45ab-a63f-6c37fb507ec6.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F497c2e02-5b4d-45ab-a63f-6c37fb507ec6.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F497c2e02-5b4d-45ab-a63f-6c37fb507ec6.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F497c2e02-5b4d-45ab-a63f-6c37fb507ec6.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F497c2e02-5b4d-45ab-a63f-6c37fb507ec6.jpeg 404w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">BBC</p><h3 class="title clamp">I Tested Some of the Most Popular Ways of Meeting New People. Here’s What I Found</h3><p class="excerpt clamp">Journalist Molly Gorman tested which hobbies are best for meeting new people – and discovered surprising facts about how and why we bond as a species.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;I Tested Some of the Most Popular Ways of Meeting New People. Here’s What I Found&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.nytimes.com/2025/04/05/opinion/globalization-collapse.html?utm_source=firefox-newtab-en-intl" title="Opinion | Globalization Is Collapsing. Brace Yourselves." class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://static01.nyt.com/images/2025/04/06/opinion/06SOcover/06SOcover-facebookJumbo.jpg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fstatic01.nyt.com%2Fimages%2F2025%2F04%2F06%2Fopinion%2F06SOcover%2F06SOcover-facebookJumbo.jpg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fstatic01.nyt.com%2Fimages%2F2025%2F04%2F06%2Fopinion%2F06SOcover%2F06SOcover-facebookJumbo.jpg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fstatic01.nyt.com%2Fimages%2F2025%2F04%2F06%2Fopinion%2F06SOcover%2F06SOcover-facebookJumbo.jpg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fstatic01.nyt.com%2Fimages%2F2025%2F04%2F06%2Fopinion%2F06SOcover%2F06SOcover-facebookJumbo.jpg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fstatic01.nyt.com%2Fimages%2F2025%2F04%2F06%2Fopinion%2F06SOcover%2F06SOcover-facebookJumbo.jpg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fstatic01.nyt.com%2Fimages%2F2025%2F04%2F06%2Fopinion%2F06SOcover%2F06SOcover-facebookJumbo.jpg 404w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">The New York Times</p><h3 class="title clamp">Opinion | Globalization Is Collapsing. Brace Yourselves.</h3><p class="excerpt clamp">The world was just as intertwined 100 years ago, and its unraveling was a disaster. Can we avoid the same outcome?</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Opinion | Globalization Is Collapsing. Brace Yourselves.&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.npr.org/2025/04/05/nx-s1-5311920/want-to-raise-bilingual-kids-first-let-go-of-a-common-myth?utm_source=firefox-newtab-en-intl" title="Want to Raise Bilingual Kids? First, Let Go of a Common Myth" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/7998x4499+0+556/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F64%2Ffb%2F7f1b1c2c413c8c1d19607689bd6e%2Flk-bilingual-1-lead.jpg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fnpr.brightspotcdn.com%2Fdims3%2Fdefault%2Fstrip%2Ffalse%2Fcrop%2F7998x4499%2B0%2B556%2Fresize%2F1400%2Fquality%2F100%2Fformat%2Fjpeg%2F%3Furl%3Dhttp%253A%252F%252Fnpr-brightspot.s3.amazonaws.com%252F64%252Ffb%252F7f1b1c2c413c8c1d19607689bd6e%252Flk-bilingual-1-lead.jpg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fnpr.brightspotcdn.com%2Fdims3%2Fdefault%2Fstrip%2Ffalse%2Fcrop%2F7998x4499%2B0%2B556%2Fresize%2F1400%2Fquality%2F100%2Fformat%2Fjpeg%2F%3Furl%3Dhttp%253A%252F%252Fnpr-brightspot.s3.amazonaws.com%252F64%252Ffb%252F7f1b1c2c413c8c1d19607689bd6e%252Flk-bilingual-1-lead.jpg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fnpr.brightspotcdn.com%2Fdims3%2Fdefault%2Fstrip%2Ffalse%2Fcrop%2F7998x4499%2B0%2B556%2Fresize%2F1400%2Fquality%2F100%2Fformat%2Fjpeg%2F%3Furl%3Dhttp%253A%252F%252Fnpr-brightspot.s3.amazonaws.com%252F64%252Ffb%252F7f1b1c2c413c8c1d19607689bd6e%252Flk-bilingual-1-lead.jpg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fnpr.brightspotcdn.com%2Fdims3%2Fdefault%2Fstrip%2Ffalse%2Fcrop%2F7998x4499%2B0%2B556%2Fresize%2F1400%2Fquality%2F100%2Fformat%2Fjpeg%2F%3Furl%3Dhttp%253A%252F%252Fnpr-brightspot.s3.amazonaws.com%252F64%252Ffb%252F7f1b1c2c413c8c1d19607689bd6e%252Flk-bilingual-1-lead.jpg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fnpr.brightspotcdn.com%2Fdims3%2Fdefault%2Fstrip%2Ffalse%2Fcrop%2F7998x4499%2B0%2B556%2Fresize%2F1400%2Fquality%2F100%2Fformat%2Fjpeg%2F%3Furl%3Dhttp%253A%252F%252Fnpr-brightspot.s3.amazonaws.com%252F64%252Ffb%252F7f1b1c2c413c8c1d19607689bd6e%252Flk-bilingual-1-lead.jpg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fnpr.brightspotcdn.com%2Fdims3%2Fdefault%2Fstrip%2Ffalse%2Fcrop%2F7998x4499%2B0%2B556%2Fresize%2F1400%2Fquality%2F100%2Fformat%2Fjpeg%2F%3Furl%3Dhttp%253A%252F%252Fnpr-brightspot.s3.amazonaws.com%252F64%252Ffb%252F7f1b1c2c413c8c1d19607689bd6e%252Flk-bilingual-1-lead.jpg 404w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">NPR</p><h3 class="title clamp">Want to Raise Bilingual Kids? First, Let Go of a Common Myth</h3><p class="excerpt clamp">Speech pathologists offer parents real-world advice on how to incorporate a second language with their kids at home — and demystify a misconception about bilingualism. </p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Want to Raise Bilingual Kids? First, Let Go of a Common Myth&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://timesofindia.indiatimes.com/business/india-business/govt-unlikely-to-ease-checks-on-investments-from-china/articleshow/120044427.cms?utm_source=firefox-newtab-en-intl" title="Govt Unlikely to Ease Checks on Investments From China" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/a772966b-577c-4d41-87f3-859d8ec7d159.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fa772966b-577c-4d41-87f3-859d8ec7d159.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fa772966b-577c-4d41-87f3-859d8ec7d159.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fa772966b-577c-4d41-87f3-859d8ec7d159.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fa772966b-577c-4d41-87f3-859d8ec7d159.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fa772966b-577c-4d41-87f3-859d8ec7d159.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fa772966b-577c-4d41-87f3-859d8ec7d159.jpeg 404w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">The Times of India</p><h3 class="title clamp">Govt Unlikely to Ease Checks on Investments From China</h3><p class="excerpt clamp">India Business News: The Indian government is unlikely to relax investment restrictions on Chinese companies due to concerns over their opaque ownership and ties with the </p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Govt Unlikely to Ease Checks on Investments From China&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.bbc.com/sport/cricket/articles/c8rg536x706o?utm_source=firefox-newtab-en-intl" title="India Bowler Bumrah Set for IPL Return After Injury" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/dc5ee4b3-2c75-4948-b484-4b209c01fa7d.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fdc5ee4b3-2c75-4948-b484-4b209c01fa7d.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fdc5ee4b3-2c75-4948-b484-4b209c01fa7d.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fdc5ee4b3-2c75-4948-b484-4b209c01fa7d.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fdc5ee4b3-2c75-4948-b484-4b209c01fa7d.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fdc5ee4b3-2c75-4948-b484-4b209c01fa7d.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fdc5ee4b3-2c75-4948-b484-4b209c01fa7d.jpeg 404w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">BBC</p><h3 class="title clamp">India Bowler Bumrah Set for IPL Return After Injury</h3><p class="excerpt clamp">India fast bowler Jasprit Bumrah is set to make his return to competitive cricket in the Indian Premier League after three months out injured.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;India Bowler Bumrah Set for IPL Return After Injury&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.indiatoday.in/lifestyle/relationship/story/does-a-happy-relationship-really-make-you-gain-weight-2703613-2025-04-06?utm_source=firefox-newtab-en-intl" title="Does Being in a Happy Relationship Really Make You Gain Weight?" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/c6e54028-f81d-41e9-a394-1556087fecb6.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fc6e54028-f81d-41e9-a394-1556087fecb6.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fc6e54028-f81d-41e9-a394-1556087fecb6.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fc6e54028-f81d-41e9-a394-1556087fecb6.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fc6e54028-f81d-41e9-a394-1556087fecb6.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fc6e54028-f81d-41e9-a394-1556087fecb6.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fc6e54028-f81d-41e9-a394-1556087fecb6.jpeg 404w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">India Today</p><h3 class="title clamp">Does Being in a Happy Relationship Really Make You Gain Weight?</h3><p class="excerpt clamp">Experts explains that having a healthy relationship at times leads to one&#x27;s weight gain, but it varies with everyone too. </p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Does Being in a Happy Relationship Really Make You Gain Weight?&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.cnbc.com/2025/04/05/economists-take-issue-with-trumps-tariff-formula-arguing-rate-is-inflated.html?utm_source=firefox-newtab-en-intl" title="Economists Take Issue With Trump’s Tariff Formula, Arguing Rate Is Inflated" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/9bd04bdc-b6c0-4729-bd94-1ba893dc5233.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F9bd04bdc-b6c0-4729-bd94-1ba893dc5233.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F9bd04bdc-b6c0-4729-bd94-1ba893dc5233.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F9bd04bdc-b6c0-4729-bd94-1ba893dc5233.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F9bd04bdc-b6c0-4729-bd94-1ba893dc5233.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F9bd04bdc-b6c0-4729-bd94-1ba893dc5233.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F9bd04bdc-b6c0-4729-bd94-1ba893dc5233.jpeg 404w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">CNBC</p><h3 class="title clamp">Economists Take Issue With Trump’s Tariff Formula, Arguing Rate Is Inflated</h3><p class="excerpt clamp">The formula at the core of President Donald Trump&#x27;s tariff announcement that continues to rattle markets is bewildering economists, who say it is based on flawed assumptions.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Economists Take Issue With Trump’s Tariff Formula, Arguing Rate Is Inflated&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.ft.com/content/5f9e1573-8031-41ca-b858-6c20d3b019ca?utm_source=firefox-newtab-en-intl" title="Welcome to Patti Smith’s Antique Book Club " class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/b0217f36-5252-4859-a9d7-37c950738ccb.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fb0217f36-5252-4859-a9d7-37c950738ccb.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fb0217f36-5252-4859-a9d7-37c950738ccb.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fb0217f36-5252-4859-a9d7-37c950738ccb.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fb0217f36-5252-4859-a9d7-37c950738ccb.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fb0217f36-5252-4859-a9d7-37c950738ccb.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fb0217f36-5252-4859-a9d7-37c950738ccb.jpeg 404w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">Financial Times</p><h3 class="title clamp">Welcome to Patti Smith’s Antique Book Club </h3><p class="excerpt clamp">The punk-poet legend and her daughter Jesse Paris Smith are bound by their shared love of rare books</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Welcome to Patti Smith’s Antique Book Club &quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.huffpost.com/entry/best-snacks-for-aging-well_l_67eaa6a4e4b008c5a2ecc111?utm_source=firefox-newtab-en-intl" title="The Best Snacks for Aging Well and Preventing Cognitive Decline, According to Nutrition Experts" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://img.huffingtonpost.com/asset/67eaec6f1700002400e1b4e0.jpeg?ops=1200_630" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fimg.huffingtonpost.com%2Fasset%2F67eaec6f1700002400e1b4e0.jpeg%3Fops%3D1200_630 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fimg.huffingtonpost.com%2Fasset%2F67eaec6f1700002400e1b4e0.jpeg%3Fops%3D1200_630 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fimg.huffingtonpost.com%2Fasset%2F67eaec6f1700002400e1b4e0.jpeg%3Fops%3D1200_630 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fimg.huffingtonpost.com%2Fasset%2F67eaec6f1700002400e1b4e0.jpeg%3Fops%3D1200_630 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fimg.huffingtonpost.com%2Fasset%2F67eaec6f1700002400e1b4e0.jpeg%3Fops%3D1200_630 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fimg.huffingtonpost.com%2Fasset%2F67eaec6f1700002400e1b4e0.jpeg%3Fops%3D1200_630 404w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">HuffPost</p><h3 class="title clamp">The Best Snacks for Aging Well and Preventing Cognitive Decline, According to Nutrition Experts</h3><p class="excerpt clamp">Munch your way to longevity.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;The Best Snacks for Aging Well and Preventing Cognitive Decline, According to Nutrition Experts&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.cntraveler.com/story/unwritten-rules-for-traveling-in-thailand?utm_source=firefox-newtab-en-intl" title="15 Unwritten Rules for Traveling in Thailand" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://media.cntraveler.com/photos/67effd64e89015cbaf6eb516/16:9/w_1280,c_limit/GettyImages-1772867295.jpg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fmedia.cntraveler.com%2Fphotos%2F67effd64e89015cbaf6eb516%2F16%3A9%2Fw_1280%2Cc_limit%2FGettyImages-1772867295.jpg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fmedia.cntraveler.com%2Fphotos%2F67effd64e89015cbaf6eb516%2F16%3A9%2Fw_1280%2Cc_limit%2FGettyImages-1772867295.jpg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fmedia.cntraveler.com%2Fphotos%2F67effd64e89015cbaf6eb516%2F16%3A9%2Fw_1280%2Cc_limit%2FGettyImages-1772867295.jpg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fmedia.cntraveler.com%2Fphotos%2F67effd64e89015cbaf6eb516%2F16%3A9%2Fw_1280%2Cc_limit%2FGettyImages-1772867295.jpg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fmedia.cntraveler.com%2Fphotos%2F67effd64e89015cbaf6eb516%2F16%3A9%2Fw_1280%2Cc_limit%2FGettyImages-1772867295.jpg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fmedia.cntraveler.com%2Fphotos%2F67effd64e89015cbaf6eb516%2F16%3A9%2Fw_1280%2Cc_limit%2FGettyImages-1772867295.jpg 404w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">Condé Nast Traveler</p><h3 class="title clamp">15 Unwritten Rules for Traveling in Thailand</h3><p class="excerpt clamp">From always carrying cash to keeping displays of affection private, this is what you need to know about Thai etiquette.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;15 Unwritten Rules for Traveling in Thailand&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.cnbc.com/2025/04/02/the-top-soft-skills-you-need-to-get-hired-in-2025-according-to-linkedin.html?utm_source=firefox-newtab-en-intl" title="The No. 1 Soft Skill You Need to Get Hired Now—People Who Have It ‘Are Going to Win,’ Says LinkedIn Expert" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://image.cnbcfm.com/api/v1/image/108071386-1733337103519-gettyimages-1335872429-amv-coworkcenter1098.jpeg?v=1743104478&amp;w=1920&amp;h=1080" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fimage.cnbcfm.com%2Fapi%2Fv1%2Fimage%2F108071386-1733337103519-gettyimages-1335872429-amv-coworkcenter1098.jpeg%3Fv%3D1743104478%26w%3D1920%26h%3D1080 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fimage.cnbcfm.com%2Fapi%2Fv1%2Fimage%2F108071386-1733337103519-gettyimages-1335872429-amv-coworkcenter1098.jpeg%3Fv%3D1743104478%26w%3D1920%26h%3D1080 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fimage.cnbcfm.com%2Fapi%2Fv1%2Fimage%2F108071386-1733337103519-gettyimages-1335872429-amv-coworkcenter1098.jpeg%3Fv%3D1743104478%26w%3D1920%26h%3D1080 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fimage.cnbcfm.com%2Fapi%2Fv1%2Fimage%2F108071386-1733337103519-gettyimages-1335872429-amv-coworkcenter1098.jpeg%3Fv%3D1743104478%26w%3D1920%26h%3D1080 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fimage.cnbcfm.com%2Fapi%2Fv1%2Fimage%2F108071386-1733337103519-gettyimages-1335872429-amv-coworkcenter1098.jpeg%3Fv%3D1743104478%26w%3D1920%26h%3D1080 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fimage.cnbcfm.com%2Fapi%2Fv1%2Fimage%2F108071386-1733337103519-gettyimages-1335872429-amv-coworkcenter1098.jpeg%3Fv%3D1743104478%26w%3D1920%26h%3D1080 404w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">CNBC</p><h3 class="title clamp">The No. 1 Soft Skill You Need to Get Hired Now—People Who Have It ‘Are Going to Win,’ Says LinkedIn Expert</h3><p class="excerpt clamp">Soft skills made up a majority of LinkedIn’s 2025 Skills on the Rise. Here’s how a LinkedIn career expert suggests you show them in the job search.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;The No. 1 Soft Skill You Need to Get Hired Now—People Who Have It ‘Are Going to Win,’ Says LinkedIn Expert&quot;}" class="context-menu-button icon"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://scroll.in/article/1080864/jane-austen-at-250-shashi-deshpande-on-the-perfect-artist-who-reinvented-the-novel?utm_source=firefox-newtab-en-intl" title="Jane Austen at 250: Shashi Deshpande on the ‘Perfect Artist’ Who Reinvented the Novel" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/7139ccf7-7e1d-4ac0-87c7-7a170bee4a3f.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F7139ccf7-7e1d-4ac0-87c7-7a170bee4a3f.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F7139ccf7-7e1d-4ac0-87c7-7a170bee4a3f.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F7139ccf7-7e1d-4ac0-87c7-7a170bee4a3f.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F7139ccf7-7e1d-4ac0-87c7-7a170bee4a3f.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F7139ccf7-7e1d-4ac0-87c7-7a170bee4a3f.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F7139ccf7-7e1d-4ac0-87c7-7a170bee4a3f.jpeg 404w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">Scroll</p><h3 class="title clamp">Jane Austen at 250: Shashi Deshpande on the ‘Perfect Artist’ Who Reinvented the Novel</h3><p class="excerpt clamp">But, after her death, strangely enough, her family, even with the best intentions, wronged her. </p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Jane Austen at 250: Shashi Deshpande on the ‘Perfect Artist’ Who Reinvented the Novel&quot;}" class="context-menu-button icon"></button></div></div></div></article></div></div></div><div><div class="ds-navigation ds-navigation-left-align "><ul></ul><a href="https://www.mozilla.org/privacy/firefox/#recommend-relevant-content" class="ds-navigation-privacy"><span data-l10n-id="newtab-section-menu-privacy-notice"></span></a></div></div></div></div><style data-styles="[[null,{&quot;.ds-navigation&quot;:&quot;margin-top: -10px;&quot;}]]"></style></div></div></section><div class="discovery-stream ds-layout "><div class="ds-column ds-column-12"><div class="ds-column-grid"><div></div></div></div><style data-styles="[[null]]"></style></div></div></main><aside></aside></div></div>
+    </div>
+    <div id="footer-asrouter-container" role="presentation"></div>
+    <script src="about:home?jscache"></script>
+    <script async type="module" src="chrome://global/content/elements/moz-toggle.mjs"></script>
+    <script async type="module" src="chrome://global/content/elements/moz-button.mjs"></script>
+    <script async type="module" src="chrome://global/content/elements/moz-button-group.mjs"></script>
+    <script async type="module" src="chrome://global/content/elements/moz-box-button.mjs"></script>
+    <script async type="module" src="chrome://global/content/elements/moz-message-bar.mjs"></script>
+  </body>
+</html>
+window.__FROM_STARTUP_CACHE__ = true;
+window.__STARTUP_STATE__ = {
+	"TopSites": {
+		"initialized": true,
+		"rows": [
+			{
+				"bookmarkGuid": null,
+				"frecency": 2150,
+				"guid": "3RGZN21iNS3S",
+				"lastVisitDate": 1744007235174,
+				"title": "Gmail",
+				"url": "https://mail.google.com/mail/u/0/",
+				"type": "history",
+				"favicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAGM0lEQVRoQ+2Za2wUVRTHz73z2N3SammrhbS1tQ8iCWh4RQkR03bREKKkRB4iJOonQUwsaPiAIg8Bq9IaBWvA+IoYHgGCHySmDzCmVkJrNDFBaEtoCgGSSnm03cfMvddzt52y23a2u9uWlmTvl92ZvffM+d/zO+fMzBK4zwe5z/2HuICxjmA8AvEIDHMHBiB0KidnkovCCgFiFqa4F4BUa8mpx2Y3NhrDvFZUy0UDaOyOsgQddAugTvxs9HQbBxMXwbVgQyEC6vKz56oCftAIyRWiZ5r8MAF+YYS9Ma+5rSUqL2Kc7K1x5OmU7SUqPBeok9IJCsANcZGbZJXmNust030CzjyWkWr61TMOQvJ8lve9s/AcihCXGSHr5jVfOhGjXxEtM6uUxUQle6gKmaYvdImqAzCDtHR3G0898Dy0y1/7BNTl5ryKcfra2895y4SKIoQQLC0tqSwvNWsbOXmyn/mI/LOd1JS/0DFp8YXNCYtaN1IKiolhH2yoThThI6+pxcY3oQLysj9xAtlgJ8AyVpCRAppLr/Kb5pr02sYRQep60aw8hWmViVNuL1BXngfB7Ku7FGB4YbfuNt8OEfB7bnY5olIaToBEMWtyMqROcIFf8MtckHVp1WeGhVS7+8nFlIg9KqOZZs5NSFrVhLCHF4BoVWjF5vqYBSS4HKD25BbjAso69BvbCk42R4VU08J8x0R/ymZKYCO6qxhY49S827ELqM/JKNcVLaIISAGYD4EEcioU/IxXmYJHjJRERiW0UlfoAi/jgSIDJolYAPh4BSnmoRH4aWZhedbN5lIPWhMEa9Ygw0LIEmBNcWHWGViluOCIVENYpNrdsxEZukcDkunh/O5VIhBAUSrFHLjYlVSR99zNUAHu7bfK558/VFpY/yF2EC8wqg2QYCdATsTeERapAcj0r3ZDCFCBY1dV4CtzOhy4lV3xx/LjoQIKd3WXc6erNL/lFJT89i483NEChkz5oBFOgJVQAaQEIsXuIhVARkFkSBAy/bcnjACVMGhlSbDrzgyoJxmgGr6KP5cfDRVQtKOzXNETSr0Y1ol3rsALdVvg8ZafwVT0PqSGEmD55JRIcUQKYI08h0BWapRkStu2YxABAWQIhxpfJnzU+QRcZQngwj3lflbRYCeA+buBYxskgsP8v/eBu+GzPqQiFSCdlI3PFGik5zvF7/bOD5LEFjL7uqbC954CYFgyVCnIoQwtQNoT0gHFCVPafu1Dyo9IyT7QP4ntPLOq+RCu9ywPioCKultNRKZzBtT508GBCFm2IhZgOSXzwEJqOiI1OTMdXAnOQBkd0YECdOwDD67+F2o9WVDWi4x0PnhELUAu7kGKwTN/7RevXDtAkh0E/NjBRnJonAJ7tBN+XELFd51TAnsukek/YhJgIWUoLv5y097tK5v3L6O6a6oHm9BIDBdWLu5j576dm3x4/8yU9xycYYMefMQsQJojGIk24Zh//kTuhf8SH6p0UFLiQ15jDYb00oFN08fF8dTbXWsn7ZyW80gHqxdhDA5bAD5VFNVsSjp1eOlSpajj0jsUyPvoiDNapHRchH568Tlj6+mJOR8vO3KEzTq0pBC7dO09EWAF+Lp7jlsH8oVKSUGkSElkTC6a/CDWplefrbZsjYkAefG2orkZLmJ+rlNagl3YFimJDHZjLAD8uEeob2bV1l8JJn3MBEgngpHCFuLEThyShdiJsfSCF+89t9b2ItM/TcdUgOVM+4I5xUSQSmS8DymJDOZIkyBiTVrV2Rq7yjUuBAQj5VBoiTz2scGRGZcRsJwKIHWjdaM8rk3JLpNVZqieMW4iMJSj4x6huIB70Ylj3eVw64aXAzs7KxQt4S35QGM35L2QdSsxtgLMTxuWHysN3J9ZjhTv7Fyv6BN2m76ucS1AcWlgeowNjSuOlocIeHpH12R8d1qjOBKmcptnV4LPuuDrcldtSrRtRsOJzIwjLxbrmlJtdzNHsCEyr3FO+EVx4+pjV0MEyINnP+jOYqryOhGigHFjwMshiq9a8PyW05uS/hmOo3ZrZx8smUaIuqX3UTpkGlGIfOHYJEzjy7MvnWizfoz/RzYakYjGZjwC0ezWaMyNR2A0djUam/EIRLNbozH3f+HM817RWozJAAAAAElFTkSuQmCC",
+				"faviconLength": 1644,
+				"faviconRef": "",
+				"faviconSize": 48,
+				"smallFavicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACX0lEQVQ4T63TQUhUQRgA4H/mvbfPfau7trlltVHaVqylIbUqRGWlYXTosLtJUt0k8BBdCiqSpahLl7AQqlsQkrJdAg/umloi4qaCkVutkRe7rKWu+9a1eTPTm4VObRHYf5lh5v3fzPzzBsEaA60xH3LAiNvtVCxS3QpWYodnZpJ/Q3kvuKhd8ulpOupogu8oBIAby7d12zD2Zzmbdtitbd7JD0P5kOW7pUe02m+dWOMVhg5hedg4g3o9HtVJ9CmQ1V3YzNpU6tA1TW13Hhy7b+pMQDwEeD5ad1mtWLxVdG7GBtQcNGgCCK9E9SFe0PK6dWLfbJ+XcgbuzSVQbFOBMPacYOWSABRGOiQmNUP5EhS1fASMEEQyW+IvP5+uzgFcXZ2o/RT2No3cgd1ODBabBqr5UZbRuAAKsOTNEg6aZwmMs7PwIFMFL9Lb48uOdDU62WGmp/RJQ7V53XMxfnW6fX4Hm3etcASyiYgwOIcCjuFr2Wry9ilnyZSxAamMxBftmV9AehJJipdgmZelEsGHw8FjhqK15QpghqiNTGjn+cDWV182Kj0WBIhT9jtglgt0kI+OXlMGkw2+VgnQPQFQ4Fdc0diTvT2BeiuHATB39keAMdowcKOwXyQmG2sOiNYVGXsrWl9X4DhIEM0HvMOyulPswCCkcfBmYTTff+B75m8AFUcEAIQmFuyZShQKcTwk608l2XKCcWoeDvz9161v8gE1XYFDXIKweY/ADNo33lx1IVfm/Y+4sj4F60R/TofF9yH0Ix+wpztocchGsZhbTboWxi8+Jv/nMeVb7V/HfgLPpQtNTnvn4gAAAABJRU5ErkJggg==",
+				"smallFaviconLength": 664,
+				"smallFaviconRef": "",
+				"smallFaviconSize": 16,
+				"screenshot": "moz-page-thumb://thumbnails/?url=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&revision=3912",
+				"hostname": "mail.google",
+				"typedBonus": true
+			},
+			{
+				"bookmarkGuid": null,
+				"frecency": 570,
+				"guid": "D7e6xI4RkqyD",
+				"lastVisitDate": 1744007229959,
+				"title": "Member Home",
+				"url": "https://unifiedportal-mem.epfindia.gov.in/memberinterface/",
+				"type": "history",
+				"screenshot": "moz-page-thumb://thumbnails/?url=https%3A%2F%2Funifiedportal-mem.epfindia.gov.in%2Fmemberinterface%2F&revision=3547",
+				"hostname": "unifiedportal-mem.epfindia",
+				"typedBonus": true
+			},
+			{
+				"bookmarkGuid": null,
+				"frecency": 400,
+				"guid": "sEvy48TeNVQJ",
+				"lastVisitDate": 1744005836538,
+				"title": "EPFO | Member Passbook",
+				"url": "https://passbook.epfindia.gov.in/MemberPassBook/login",
+				"type": "history",
+				"favicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACnklEQVQ4T6VTa0iTURh+tm+bumnmLmalhoKQXajNTdPSwlB0qKRFF4ouWkbRn6DwTz+CQvRHEYY/pZufKXhZWWtasf2RvN/QlCzQYYjoUGnT+X3fvtPnRrNBEtH5cTjnvO/znPc873NE+M8h+hteW0QTx3g97J9b/5j7x8O0kzQhHBAtAWISQ2HtdEIiBfggoK/pbAAmYKPNpUlIGNDRUISKCisiwmOxR6/AZrUCjnk3Bse/o+XtEjpaL4FdnvFiAwmMNKkuO4LUDCVYlodr1okVSobhiWmotythH3EiVRcJY6kZAxZfJd5JTEnJ/mNP0VaTj7qGXsRFbUX60Avg4UuvRKyUAz8+ii1KKR5UfQWoFTRYJ9AjPMdfweVrJlJSnIQDejUWM/LATTqgqLoHWcpOiDXb4LpVidrkQhRmxYMSYHlX6tFlKvURaLNo8qTqIMJVofg240Ty3dtgFnhIotWQFReAa/8EZmoO4vkFRLQ/w4f+WRRkHsbK0pSPQJ9NE3NtOjQaDaanXVDWPIckPhbLvX2AxQxPWCSo6CiAYTFyvxqHdHIkFbbA3v94XUTzx1GSmxkPm20RetMjcPU1gDQE8IjAXb0A+awDkpIzkCXpvbrE7T2HyZEmXwWG3HLi5lUYtpz3BofGXNhRsE8Qy4NNde/A2qzgFYIfYvJgNEZgdZVH2ikT+l/9JuIasLt7jhgMoX5zer7Y8ePGHYQ3VmNVpkBwsNgb0+U0QyykrZnK34W4RD1R7b6JuvJsJCT4SBiGB8cRyOWUn1SX3YyB9+tuDDBSYkoZGeuqFGmP0sTWmA+3QMC4PFBFBuF1mx2nj+8SJQtm6zZvQPDrGkMOTXoEp621l1AsBi0XRRknaNL55joY99LGf8Ff5z8sfgJcvPh7Vs52FgAAAABJRU5ErkJggg==",
+				"faviconLength": 727,
+				"faviconRef": "",
+				"faviconSize": 16,
+				"smallFavicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACnklEQVQ4T6VTa0iTURh+tm+bumnmLmalhoKQXajNTdPSwlB0qKRFF4ouWkbRn6DwTz+CQvRHEYY/pZufKXhZWWtasf2RvN/QlCzQYYjoUGnT+X3fvtPnRrNBEtH5cTjnvO/znPc873NE+M8h+hteW0QTx3g97J9b/5j7x8O0kzQhHBAtAWISQ2HtdEIiBfggoK/pbAAmYKPNpUlIGNDRUISKCisiwmOxR6/AZrUCjnk3Bse/o+XtEjpaL4FdnvFiAwmMNKkuO4LUDCVYlodr1okVSobhiWmotythH3EiVRcJY6kZAxZfJd5JTEnJ/mNP0VaTj7qGXsRFbUX60Avg4UuvRKyUAz8+ii1KKR5UfQWoFTRYJ9AjPMdfweVrJlJSnIQDejUWM/LATTqgqLoHWcpOiDXb4LpVidrkQhRmxYMSYHlX6tFlKvURaLNo8qTqIMJVofg240Ty3dtgFnhIotWQFReAa/8EZmoO4vkFRLQ/w4f+WRRkHsbK0pSPQJ9NE3NtOjQaDaanXVDWPIckPhbLvX2AxQxPWCSo6CiAYTFyvxqHdHIkFbbA3v94XUTzx1GSmxkPm20RetMjcPU1gDQE8IjAXb0A+awDkpIzkCXpvbrE7T2HyZEmXwWG3HLi5lUYtpz3BofGXNhRsE8Qy4NNde/A2qzgFYIfYvJgNEZgdZVH2ikT+l/9JuIasLt7jhgMoX5zer7Y8ePGHYQ3VmNVpkBwsNgb0+U0QyykrZnK34W4RD1R7b6JuvJsJCT4SBiGB8cRyOWUn1SX3YyB9+tuDDBSYkoZGeuqFGmP0sTWmA+3QMC4PFBFBuF1mx2nj+8SJQtm6zZvQPDrGkMOTXoEp621l1AsBi0XRRknaNL55joY99LGf8Ff5z8sfgJcvPh7Vs52FgAAAABJRU5ErkJggg==",
+				"smallFaviconLength": 727,
+				"smallFaviconRef": "",
+				"smallFaviconSize": 16,
+				"screenshot": "moz-page-thumb://thumbnails/?url=https%3A%2F%2Fpassbook.epfindia.gov.in%2FMemberPassBook%2Flogin&revision=267",
+				"hostname": "passbook.epfindia",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.wikipedia.org/",
+				"hostname": "wikipedia",
+				"sendAttributionRequest": false,
+				"label": "Wikipedia",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/wikipedia-org@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/wikipedia-org.ico",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.youtube.com/",
+				"hostname": "youtube",
+				"sendAttributionRequest": false,
+				"label": "YouTube",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/youtube-com@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/youtube-com.png",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.reddit.com/",
+				"hostname": "reddit",
+				"sendAttributionRequest": false,
+				"label": "Reddit",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/reddit-com@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/reddit-com.png",
+				"typedBonus": true
+			}
+		],
+		"editForm": null,
+		"showSearchShortcutsForm": false,
+		"searchShortcuts": [
+			{
+				"keyword": "@google",
+				"shortURL": "google",
+				"url": "https://google.com",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/google-com@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/google-com.ico"
+			},
+			{
+				"keyword": "@bing",
+				"shortURL": "bing",
+				"url": "https://bing.com",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/bing-com@2x.svg",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/bing-com.ico"
+			},
+			{
+				"keyword": "@duckduckgo",
+				"shortURL": "duckduckgo",
+				"url": "https://duckduckgo.com",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/duckduckgo-com@2x.svg",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/duckduckgo-com.ico"
+			},
+			{
+				"keyword": "@wikipedia",
+				"shortURL": "wikipedia",
+				"url": "https://wikipedia.org",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/wikipedia-org@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/wikipedia-org.ico"
+			}
+		],
+		"sov": {
+			"ready": false,
+			"positions": []
+		}
+	},
+	"App": {
+		"initialized": true,
+		"locale": "en-US",
+		"isForStartupCache": true,
+		"customizeMenuVisible": false,
+		"lastUpdated": 1744004634730,
+		"spocs": {},
+		"links": [
+			{
+				"bookmarkGuid": null,
+				"frecency": 2150,
+				"guid": "3RGZN21iNS3S",
+				"lastVisitDate": 1744007235174,
+				"title": "Gmail",
+				"url": "https://mail.google.com/mail/u/0/",
+				"type": "history",
+				"favicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAGM0lEQVRoQ+2Za2wUVRTHz73z2N3SammrhbS1tQ8iCWh4RQkR03bREKKkRB4iJOonQUwsaPiAIg8Bq9IaBWvA+IoYHgGCHySmDzCmVkJrNDFBaEtoCgGSSnm03cfMvddzt52y23a2u9uWlmTvl92ZvffM+d/zO+fMzBK4zwe5z/2HuICxjmA8AvEIDHMHBiB0KidnkovCCgFiFqa4F4BUa8mpx2Y3NhrDvFZUy0UDaOyOsgQddAugTvxs9HQbBxMXwbVgQyEC6vKz56oCftAIyRWiZ5r8MAF+YYS9Ma+5rSUqL2Kc7K1x5OmU7SUqPBeok9IJCsANcZGbZJXmNust030CzjyWkWr61TMOQvJ8lve9s/AcihCXGSHr5jVfOhGjXxEtM6uUxUQle6gKmaYvdImqAzCDtHR3G0898Dy0y1/7BNTl5ryKcfra2895y4SKIoQQLC0tqSwvNWsbOXmyn/mI/LOd1JS/0DFp8YXNCYtaN1IKiolhH2yoThThI6+pxcY3oQLysj9xAtlgJ8AyVpCRAppLr/Kb5pr02sYRQep60aw8hWmViVNuL1BXngfB7Ku7FGB4YbfuNt8OEfB7bnY5olIaToBEMWtyMqROcIFf8MtckHVp1WeGhVS7+8nFlIg9KqOZZs5NSFrVhLCHF4BoVWjF5vqYBSS4HKD25BbjAso69BvbCk42R4VU08J8x0R/ymZKYCO6qxhY49S827ELqM/JKNcVLaIISAGYD4EEcioU/IxXmYJHjJRERiW0UlfoAi/jgSIDJolYAPh4BSnmoRH4aWZhedbN5lIPWhMEa9Ygw0LIEmBNcWHWGViluOCIVENYpNrdsxEZukcDkunh/O5VIhBAUSrFHLjYlVSR99zNUAHu7bfK558/VFpY/yF2EC8wqg2QYCdATsTeERapAcj0r3ZDCFCBY1dV4CtzOhy4lV3xx/LjoQIKd3WXc6erNL/lFJT89i483NEChkz5oBFOgJVQAaQEIsXuIhVARkFkSBAy/bcnjACVMGhlSbDrzgyoJxmgGr6KP5cfDRVQtKOzXNETSr0Y1ol3rsALdVvg8ZafwVT0PqSGEmD55JRIcUQKYI08h0BWapRkStu2YxABAWQIhxpfJnzU+QRcZQngwj3lflbRYCeA+buBYxskgsP8v/eBu+GzPqQiFSCdlI3PFGik5zvF7/bOD5LEFjL7uqbC954CYFgyVCnIoQwtQNoT0gHFCVPafu1Dyo9IyT7QP4ntPLOq+RCu9ywPioCKultNRKZzBtT508GBCFm2IhZgOSXzwEJqOiI1OTMdXAnOQBkd0YECdOwDD67+F2o9WVDWi4x0PnhELUAu7kGKwTN/7RevXDtAkh0E/NjBRnJonAJ7tBN+XELFd51TAnsukek/YhJgIWUoLv5y097tK5v3L6O6a6oHm9BIDBdWLu5j576dm3x4/8yU9xycYYMefMQsQJojGIk24Zh//kTuhf8SH6p0UFLiQ15jDYb00oFN08fF8dTbXWsn7ZyW80gHqxdhDA5bAD5VFNVsSjp1eOlSpajj0jsUyPvoiDNapHRchH568Tlj6+mJOR8vO3KEzTq0pBC7dO09EWAF+Lp7jlsH8oVKSUGkSElkTC6a/CDWplefrbZsjYkAefG2orkZLmJ+rlNagl3YFimJDHZjLAD8uEeob2bV1l8JJn3MBEgngpHCFuLEThyShdiJsfSCF+89t9b2ItM/TcdUgOVM+4I5xUSQSmS8DymJDOZIkyBiTVrV2Rq7yjUuBAQj5VBoiTz2scGRGZcRsJwKIHWjdaM8rk3JLpNVZqieMW4iMJSj4x6huIB70Ylj3eVw64aXAzs7KxQt4S35QGM35L2QdSsxtgLMTxuWHysN3J9ZjhTv7Fyv6BN2m76ucS1AcWlgeowNjSuOlocIeHpH12R8d1qjOBKmcptnV4LPuuDrcldtSrRtRsOJzIwjLxbrmlJtdzNHsCEyr3FO+EVx4+pjV0MEyINnP+jOYqryOhGigHFjwMshiq9a8PyW05uS/hmOo3ZrZx8smUaIuqX3UTpkGlGIfOHYJEzjy7MvnWizfoz/RzYakYjGZjwC0ezWaMyNR2A0djUam/EIRLNbozH3f+HM817RWozJAAAAAElFTkSuQmCC",
+				"faviconLength": 1644,
+				"faviconRef": "",
+				"faviconSize": 48,
+				"smallFavicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACX0lEQVQ4T63TQUhUQRgA4H/mvbfPfau7trlltVHaVqylIbUqRGWlYXTosLtJUt0k8BBdCiqSpahLl7AQqlsQkrJdAg/umloi4qaCkVutkRe7rKWu+9a1eTPTm4VObRHYf5lh5v3fzPzzBsEaA60xH3LAiNvtVCxS3QpWYodnZpJ/Q3kvuKhd8ulpOupogu8oBIAby7d12zD2Zzmbdtitbd7JD0P5kOW7pUe02m+dWOMVhg5hedg4g3o9HtVJ9CmQ1V3YzNpU6tA1TW13Hhy7b+pMQDwEeD5ad1mtWLxVdG7GBtQcNGgCCK9E9SFe0PK6dWLfbJ+XcgbuzSVQbFOBMPacYOWSABRGOiQmNUP5EhS1fASMEEQyW+IvP5+uzgFcXZ2o/RT2No3cgd1ODBabBqr5UZbRuAAKsOTNEg6aZwmMs7PwIFMFL9Lb48uOdDU62WGmp/RJQ7V53XMxfnW6fX4Hm3etcASyiYgwOIcCjuFr2Wry9ilnyZSxAamMxBftmV9AehJJipdgmZelEsGHw8FjhqK15QpghqiNTGjn+cDWV182Kj0WBIhT9jtglgt0kI+OXlMGkw2+VgnQPQFQ4Fdc0diTvT2BeiuHATB39keAMdowcKOwXyQmG2sOiNYVGXsrWl9X4DhIEM0HvMOyulPswCCkcfBmYTTff+B75m8AFUcEAIQmFuyZShQKcTwk608l2XKCcWoeDvz9161v8gE1XYFDXIKweY/ADNo33lx1IVfm/Y+4sj4F60R/TofF9yH0Ix+wpztocchGsZhbTboWxi8+Jv/nMeVb7V/HfgLPpQtNTnvn4gAAAABJRU5ErkJggg==",
+				"smallFaviconLength": 664,
+				"smallFaviconRef": "",
+				"smallFaviconSize": 16,
+				"screenshot": "moz-page-thumb://thumbnails/?url=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&revision=3912",
+				"hostname": "mail.google",
+				"typedBonus": true
+			},
+			{
+				"bookmarkGuid": null,
+				"frecency": 570,
+				"guid": "D7e6xI4RkqyD",
+				"lastVisitDate": 1744007229959,
+				"title": "Member Home",
+				"url": "https://unifiedportal-mem.epfindia.gov.in/memberinterface/",
+				"type": "history",
+				"screenshot": "moz-page-thumb://thumbnails/?url=https%3A%2F%2Funifiedportal-mem.epfindia.gov.in%2Fmemberinterface%2F&revision=3547",
+				"hostname": "unifiedportal-mem.epfindia",
+				"typedBonus": true
+			},
+			{
+				"bookmarkGuid": null,
+				"frecency": 400,
+				"guid": "sEvy48TeNVQJ",
+				"lastVisitDate": 1744005836538,
+				"title": "EPFO | Member Passbook",
+				"url": "https://passbook.epfindia.gov.in/MemberPassBook/login",
+				"type": "history",
+				"favicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACnklEQVQ4T6VTa0iTURh+tm+bumnmLmalhoKQXajNTdPSwlB0qKRFF4ouWkbRn6DwTz+CQvRHEYY/pZufKXhZWWtasf2RvN/QlCzQYYjoUGnT+X3fvtPnRrNBEtH5cTjnvO/znPc873NE+M8h+hteW0QTx3g97J9b/5j7x8O0kzQhHBAtAWISQ2HtdEIiBfggoK/pbAAmYKPNpUlIGNDRUISKCisiwmOxR6/AZrUCjnk3Bse/o+XtEjpaL4FdnvFiAwmMNKkuO4LUDCVYlodr1okVSobhiWmotythH3EiVRcJY6kZAxZfJd5JTEnJ/mNP0VaTj7qGXsRFbUX60Avg4UuvRKyUAz8+ii1KKR5UfQWoFTRYJ9AjPMdfweVrJlJSnIQDejUWM/LATTqgqLoHWcpOiDXb4LpVidrkQhRmxYMSYHlX6tFlKvURaLNo8qTqIMJVofg240Ty3dtgFnhIotWQFReAa/8EZmoO4vkFRLQ/w4f+WRRkHsbK0pSPQJ9NE3NtOjQaDaanXVDWPIckPhbLvX2AxQxPWCSo6CiAYTFyvxqHdHIkFbbA3v94XUTzx1GSmxkPm20RetMjcPU1gDQE8IjAXb0A+awDkpIzkCXpvbrE7T2HyZEmXwWG3HLi5lUYtpz3BofGXNhRsE8Qy4NNde/A2qzgFYIfYvJgNEZgdZVH2ikT+l/9JuIasLt7jhgMoX5zer7Y8ePGHYQ3VmNVpkBwsNgb0+U0QyykrZnK34W4RD1R7b6JuvJsJCT4SBiGB8cRyOWUn1SX3YyB9+tuDDBSYkoZGeuqFGmP0sTWmA+3QMC4PFBFBuF1mx2nj+8SJQtm6zZvQPDrGkMOTXoEp621l1AsBi0XRRknaNL55joY99LGf8Ff5z8sfgJcvPh7Vs52FgAAAABJRU5ErkJggg==",
+				"faviconLength": 727,
+				"faviconRef": "",
+				"faviconSize": 16,
+				"smallFavicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACnklEQVQ4T6VTa0iTURh+tm+bumnmLmalhoKQXajNTdPSwlB0qKRFF4ouWkbRn6DwTz+CQvRHEYY/pZufKXhZWWtasf2RvN/QlCzQYYjoUGnT+X3fvtPnRrNBEtH5cTjnvO/znPc873NE+M8h+hteW0QTx3g97J9b/5j7x8O0kzQhHBAtAWISQ2HtdEIiBfggoK/pbAAmYKPNpUlIGNDRUISKCisiwmOxR6/AZrUCjnk3Bse/o+XtEjpaL4FdnvFiAwmMNKkuO4LUDCVYlodr1okVSobhiWmotythH3EiVRcJY6kZAxZfJd5JTEnJ/mNP0VaTj7qGXsRFbUX60Avg4UuvRKyUAz8+ii1KKR5UfQWoFTRYJ9AjPMdfweVrJlJSnIQDejUWM/LATTqgqLoHWcpOiDXb4LpVidrkQhRmxYMSYHlX6tFlKvURaLNo8qTqIMJVofg240Ty3dtgFnhIotWQFReAa/8EZmoO4vkFRLQ/w4f+WRRkHsbK0pSPQJ9NE3NtOjQaDaanXVDWPIckPhbLvX2AxQxPWCSo6CiAYTFyvxqHdHIkFbbA3v94XUTzx1GSmxkPm20RetMjcPU1gDQE8IjAXb0A+awDkpIzkCXpvbrE7T2HyZEmXwWG3HLi5lUYtpz3BofGXNhRsE8Qy4NNde/A2qzgFYIfYvJgNEZgdZVH2ikT+l/9JuIasLt7jhgMoX5zer7Y8ePGHYQ3VmNVpkBwsNgb0+U0QyykrZnK34W4RD1R7b6JuvJsJCT4SBiGB8cRyOWUn1SX3YyB9+tuDDBSYkoZGeuqFGmP0sTWmA+3QMC4PFBFBuF1mx2nj+8SJQtm6zZvQPDrGkMOTXoEp621l1AsBi0XRRknaNL55joY99LGf8Ff5z8sfgJcvPh7Vs52FgAAAABJRU5ErkJggg==",
+				"smallFaviconLength": 727,
+				"smallFaviconRef": "",
+				"smallFaviconSize": 16,
+				"screenshot": "moz-page-thumb://thumbnails/?url=https%3A%2F%2Fpassbook.epfindia.gov.in%2FMemberPassBook%2Flogin&revision=267",
+				"hostname": "passbook.epfindia",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.wikipedia.org/",
+				"hostname": "wikipedia",
+				"sendAttributionRequest": false,
+				"label": "Wikipedia",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/wikipedia-org@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/wikipedia-org.ico",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.youtube.com/",
+				"hostname": "youtube",
+				"sendAttributionRequest": false,
+				"label": "YouTube",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/youtube-com@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/youtube-com.png",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.reddit.com/",
+				"hostname": "reddit",
+				"sendAttributionRequest": false,
+				"label": "Reddit",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/reddit-com@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/reddit-com.png",
+				"typedBonus": true
+			}
+		]
+	},
+	"Ads": {
+		"initialized": false,
+		"lastUpdated": null,
+		"topsites": {}
+	},
+	"Prefs": {
+		"initialized": true,
+		"values": {
+			"default.sites": "https://www.youtube.com/,https://www.facebook.com/,https://www.wikipedia.org/,https://www.reddit.com/,https://twitter.com/",
+			"feeds.section.topstories.options": "{\"api_key_pref\":\"extensions.pocket.oAuthConsumerKey\",\"hidden\":false,\"provider_icon\":\"chrome://global/skin/icons/pocket.svg\",\"provider_name\":\"Pocket\",\"read_more_endpoint\":\"https://getpocket.com/explore/trending?src=fx_new_tab\",\"stories_endpoint\":\"https://getpocket.cdn.mozilla.net/v3/firefox/global-recs?version=3&consumer_key=$apiKey&locale_lang=en-US&feed_variant=default_spocs_off\",\"stories_referrer\":\"https://getpocket.com/recommendations\",\"topics_endpoint\":\"https://getpocket.cdn.mozilla.net/v3/firefox/trending-topics?version=2&consumer_key=$apiKey&locale_lang=en-US\",\"show_spocs\":false}",
+			"feeds.topsites": true,
+			"hideTopSitesTitle": false,
+			"showSponsored": true,
+			"system.showSponsored": false,
+			"showSponsoredTopSites": true,
+			"unifiedAds.adsFeed.enabled": false,
+			"unifiedAds.adsFeed.tiles.enabled": false,
+			"unifiedAds.adsFeed.spocs.enabled": false,
+			"unifiedAds.tiles.enabled": true,
+			"unifiedAds.spocs.enabled": true,
+			"unifiedAds.endpoint": "https://ads.mozilla.org/",
+			"unifiedAds.blockedAds": "",
+			"system.showWeather": true,
+			"showWeather": true,
+			"weather.query": "",
+			"weather.locationSearchEnabled": true,
+			"weather.temperatureUnits": "f",
+			"weather.display": "simple",
+			"pocketCta": "{\"cta_button\":\"\",\"cta_text\":\"\",\"cta_url\":\"\",\"use_cta\":false}",
+			"showSearch": true,
+			"logowordmark.alwaysVisible": true,
+			"newtabLogo.aprilfools": false,
+			"topSitesRows": 1,
+			"telemetry": true,
+			"telemetry.ut.events": false,
+			"telemetry.structuredIngestion.endpoint": "https://incoming.telemetry.mozilla.org/submit",
+			"section.highlights.includeVisited": true,
+			"section.highlights.includeBookmarks": true,
+			"section.highlights.includePocket": true,
+			"section.highlights.includeDownloads": true,
+			"section.highlights.rows": 1,
+			"section.topstories.rows": 1,
+			"sectionOrder": "topsites,topstories,highlights",
+			"newtabWallpapers.enabled": true,
+			"newtabWallpapers.v2.enabled": true,
+			"newtabWallpapers.customColor.enabled": false,
+			"newtabAdSize.variant-a": false,
+			"newtabAdSize.variant-b": false,
+			"newtabAdSize.leaderboard": false,
+			"newtabAdSize.leaderboard.position": "3",
+			"newtabAdSize.billboard": false,
+			"newtabAdSize.billboard.position": "3",
+			"newtabLayouts.variant-a": false,
+			"newtabLayouts.variant-b": true,
+			"newtabShortcuts.refresh": false,
+			"discoverystream.sections.enabled": false,
+			"discoverystream.sections.personalization.enabled": false,
+			"discoverystream.sections.customizeMenuPanel.enabled": false,
+			"discoverystream.sections.cards.enabled": true,
+			"discoverystream.sections.cards.thumbsUpDown.enabled": true,
+			"discoverystream.sections.following": "",
+			"discoverystream.sections.blocked": "",
+			"discoverystream.sections.topicSelection.enabled": false,
+			"discoverystream.spoc-positions": "1,5,7,11,18,20",
+			"discoverystream.placements.spocs": "newtab_spocs",
+			"discoverystream.placements.spocs.counts": "6",
+			"discoverystream.placements.tiles": "newtab_tile_1, newtab_tile_2, newtab_tile_3",
+			"discoverystream.placements.tiles.counts": "1, 1, 1",
+			"newtabWallpapers.highlightEnabled": false,
+			"newtabWallpapers.highlightDismissed": false,
+			"newtabWallpapers.highlightSeenCounter": 0,
+			"newtabWallpapers.highlightHeaderText": "",
+			"newtabWallpapers.highlightContentText": "",
+			"newtabWallpapers.highlightCtaText": "",
+			"newtabWallpapers.wallpaper-light": "",
+			"newtabWallpapers.wallpaper-dark": "",
+			"newtabWallpapers.wallpaper": "",
+			"improvesearch.noDefaultSearchTile": true,
+			"improvesearch.topSiteSearchShortcuts.searchEngines": "google",
+			"improvesearch.topSiteSearchShortcuts.havePinned": "",
+			"asrouter.devtoolsEnabled": false,
+			"discoverystream.flight.blocks": "{}",
+			"discoverystream.config": "{\"api_key_pref\":\"extensions.pocket.oAuthConsumerKey\",\"collapsible\":true,\"enabled\":true}",
+			"discoverystream.endpoints": "https://getpocket.cdn.mozilla.net/,https://firefox-api-proxy.cdn.mozilla.net/,https://spocs.getpocket.com/,https://merino.services.mozilla.com/,https://ads.mozilla.org/",
+			"discoverystream.isCollectionDismissible": true,
+			"discoverystream.onboardingExperience.dismissed": false,
+			"discoverystream.thumbsUpDown.enabled": false,
+			"discoverystream.thumbsUpDown.searchTopsitesCompact": true,
+			"discoverystream.region-basic-layout": false,
+			"discoverystream.spoc.impressions": "{}",
+			"discoverystream.endpointSpocsClear": "https://spocs.getpocket.com/user",
+			"discoverystream.rec.impressions": "{}",
+			"discoverystream.topicSelection.enabled": false,
+			"discoverystream.topicSelection.topics": "business, arts, food, health, finance, government, sports, tech, travel, education-science, society",
+			"discoverystream.topicSelection.selectedTopics": "",
+			"discoverystream.topicSelection.suggestedTopics": "business, arts, government",
+			"discoverystream.topicSelection.hasBeenUpdatedPreviously": false,
+			"discoverystream.topicSelection.onboarding.displayCount": 0,
+			"discoverystream.topicSelection.onboarding.maybeDisplay": true,
+			"discoverystream.topicSelection.onboarding.lastDisplayed": "",
+			"discoverystream.topicSelection.onboarding.displayTimeout": 0,
+			"discoverystream.topicSelection.onboarding.enabled": false,
+			"discoverystream.topicLabels.enabled": false,
+			"showRecentSaves": true,
+			"discoverystream.spocs.startupCache.enabled": false,
+			"discoverystream.contextualContent.enabled": false,
+			"discoverystream.contextualContent.feeds": "need_to_know, fakespot",
+			"discoverystream.contextualContent.selectedFeed": "need_to_know",
+			"discoverystream.contextualContent.listFeedTitle": "",
+			"discoverystream.contextualContent.fakespot.defaultCategoryTitle": "",
+			"discoverystream.contextualContent.fakespot.footerCopy": "",
+			"discoverystream.contextualContent.fakespot.enabled": true,
+			"discoverystream.contextualContent.fakespot.ctaCopy": "",
+			"discoverystream.contextualContent.fakespot.ctaUrl": "",
+			"support.url": "https://support.mozilla.org/1/firefox/136.0.3/Linux/en-US/new-tab",
+			"feeds.aboutpreferences": true,
+			"feeds.newtabinit": true,
+			"feeds.places": true,
+			"feeds.prefs": true,
+			"feeds.sections": true,
+			"feeds.section.highlights": false,
+			"feeds.system.topstories": true,
+			"feeds.systemtick": true,
+			"feeds.telemetry": true,
+			"feeds.favicon": true,
+			"feeds.system.topsites": true,
+			"feeds.recommendationprovider": true,
+			"feeds.discoverystreamfeed": true,
+			"feeds.wallpaperfeed": true,
+			"feeds.weatherfeed": true,
+			"feeds.adsfeed": true,
+			"isPrivateBrowsingEnabled": true,
+			"platform": "linux",
+			"region": "IN",
+			"fxa_endpoint": "https://accounts.firefox.com/",
+			"appUpdateChannel": "release",
+			"improvesearch.topSiteSearchShortcuts": true,
+			"mayHaveSponsoredTopSites": true,
+			"improvesearch.handoffToAwesomebar": true,
+			"featureConfig": {
+				"customizationMenuEnabled": null,
+				"topSitesContileEnabled": true
+			},
+			"pocketConfig": {
+				"spocTopsitesPositions": "2",
+				"contileTopsitesPositions": "0,1,2",
+				"spocAdTypes": "",
+				"spocZoneIds": "",
+				"spocTopsitesAdTypes": "",
+				"spocTopsitesZoneIds": "",
+				"spocTopsitesPlacementEnabled": true,
+				"spocSiteId": "",
+				"widgetPositions": "",
+				"hybridLayout": false,
+				"hideCardBackground": false,
+				"fourCardLayout": false,
+				"newFooterSection": false,
+				"saveToPocketCard": true,
+				"saveToPocketCardRegions": "",
+				"hideDescriptions": false,
+				"hideDescriptionsRegions": "",
+				"compactGrid": false,
+				"compactImages": false,
+				"imageGradient": false,
+				"titleLines": 3,
+				"descLines": 3,
+				"onboardingExperience": false,
+				"essentialReadsHeader": false,
+				"editorsPicksHeader": false,
+				"recentSavesEnabled": false,
+				"readTime": true,
+				"newSponsoredLabel": false,
+				"sendToPocket": true,
+				"recsPersonalized": false,
+				"spocsPersonalized": true,
+				"ctaButtonSponsors": "",
+				"ctaButtonVariant": "",
+				"spocMessageVariant": "",
+				"regionStoriesConfig": "US,DE,CA,GB,IE,CH,AT,BE,IN,FR,IT,ES",
+				"regionBffConfig": "US,DE,CA,GB,IE,CH,AT,BE,IN,FR,IT,ES",
+				"merinoProviderEnabled": true,
+				"merinoProviderEndpoint": "merino.services.mozilla.com",
+				"regionStoriesBlock": "",
+				"localeListConfig": "",
+				"regionSpocsConfig": "US,CA,DE,GB,FR,IT,ES",
+				"topSitesContileSovEnabled": true,
+				"pocketFeedParameters": "",
+				"regionWeatherConfig": "IN, BD, PK, TR",
+				"localeWeatherConfig": "hi-IN, kn, mr, pa-IN, ta, te, tr, ur, en-US, en-CA, en-GB, bn",
+				"weatherLocationSearch": true,
+				"pocketStoriesHeadlineId": "newtab-section-header-stories"
+			},
+			"feeds.section.topstories": true,
+			"discoverystream.enabled": true,
+			"discoverystream.sponsored-collections.enabled": false,
+			"discoverystream.hardcoded-basic-layout": false,
+			"discoverystream.personalization.enabled": true,
+			"discoverystream.personalization.override": false,
+			"discoverystream.personalization.modelKeys": "nb_model_arts_and_entertainment, nb_model_autos_and_vehicles, nb_model_beauty_and_fitness, nb_model_blogging_resources_and_services, nb_model_books_and_literature, nb_model_business_and_industrial, nb_model_computers_and_electronics, nb_model_finance, nb_model_food_and_drink, nb_model_games, nb_model_health, nb_model_hobbies_and_leisure, nb_model_home_and_garden, nb_model_internet_and_telecom, nb_model_jobs_and_education, nb_model_law_and_government, nb_model_online_communities, nb_model_people_and_society, nb_model_pets_and_animals, nb_model_real_estate, nb_model_reference, nb_model_science, nb_model_shopping, nb_model_sports, nb_model_travel",
+			"discoverystream.spocs-endpoint": "",
+			"discoverystream.spocs-endpoint-query": "",
+			"newNewtabExperience.colors": "#004CA4,#009E97,#7550C2,#B63B39,#C96A00,#CA9600,#CC527F"
+		}
+	},
+	"Dialog": {
+		"visible": false,
+		"data": {}
+	},
+	"Sections": [
+		{
+			"title": {
+				"id": "newtab-section-header-stories"
+			},
+			"rows": [],
+			"enabled": true,
+			"id": "topstories",
+			"pref": {
+				"titleString": {
+					"id": "home-prefs-recommended-by-header-generic"
+				},
+				"descString": {
+					"id": "home-prefs-recommended-by-description-generic"
+				},
+				"nestedPrefs": [],
+				"learnMore": {
+					"link": {
+						"href": "https://getpocket.com/firefox/new_tab_learn_more",
+						"id": "home-prefs-recommended-by-learn-more"
+					}
+				},
+				"feed": "feeds.section.topstories"
+			},
+			"shouldHidePref": false,
+			"eventSource": "TOP_STORIES",
+			"icon": "chrome://global/skin/icons/pocket.svg",
+			"learnMore": {
+				"link": {
+					"href": "https://getpocket.com/firefox/new_tab_learn_more",
+					"message": {
+						"id": "newtab-pocket-learn-more"
+					}
+				}
+			},
+			"compactCards": false,
+			"rowsPref": "section.topstories.rows",
+			"maxRows": 4,
+			"availableLinkMenuOptions": [
+				"CheckBookmarkOrArchive",
+				"CheckSavedToPocket",
+				"Separator",
+				"OpenInNewWindow",
+				"OpenInPrivateWindow",
+				"Separator",
+				"BlockUrl"
+			],
+			"emptyState": {
+				"message": {
+					"id": "newtab-empty-section-topstories-generic"
+				},
+				"icon": "check"
+			},
+			"shouldSendImpressionStats": true,
+			"dedupeFrom": [
+				"highlights"
+			],
+			"options": {
+				"api_key_pref": "extensions.pocket.oAuthConsumerKey",
+				"hidden": false,
+				"provider_icon": "chrome://global/skin/icons/pocket.svg",
+				"provider_name": "Pocket",
+				"read_more_endpoint": "https://getpocket.com/explore/trending?src=fx_new_tab",
+				"stories_endpoint": "https://getpocket.cdn.mozilla.net/v3/firefox/global-recs?version=3&consumer_key=$apiKey&locale_lang=en-US&feed_variant=default_spocs_off",
+				"stories_referrer": "https://getpocket.com/recommendations",
+				"topics_endpoint": "https://getpocket.cdn.mozilla.net/v3/firefox/trending-topics?version=2&consumer_key=$apiKey&locale_lang=en-US",
+				"show_spocs": false
+			},
+			"contextMenuOptions": [
+				"CheckBookmarkOrArchive",
+				"CheckSavedToPocket",
+				"Separator",
+				"OpenInNewWindow",
+				"OpenInPrivateWindow",
+				"Separator",
+				"BlockUrl"
+			],
+			"initialized": false,
+			"dedupeConfigurations": [
+				{
+					"id": "topstories",
+					"dedupeFrom": [
+						"highlights"
+					]
+				}
+			]
+		},
+		{
+			"title": {
+				"id": "newtab-section-header-recent-activity"
+			},
+			"rows": [],
+			"enabled": false,
+			"id": "highlights",
+			"pref": {
+				"titleString": {
+					"id": "home-prefs-recent-activity-header"
+				},
+				"descString": {
+					"id": "home-prefs-recent-activity-description"
+				},
+				"nestedPrefs": [
+					{
+						"name": "section.highlights.includeVisited",
+						"titleString": "home-prefs-highlights-option-visited-pages"
+					},
+					{
+						"name": "section.highlights.includeBookmarks",
+						"titleString": "home-prefs-highlights-options-bookmarks"
+					},
+					{
+						"name": "section.highlights.includeDownloads",
+						"titleString": "home-prefs-highlights-option-most-recent-download"
+					},
+					{
+						"name": "section.highlights.includePocket",
+						"titleString": "home-prefs-highlights-option-saved-to-pocket",
+						"hidden": false
+					}
+				],
+				"feed": "feeds.section.highlights"
+			},
+			"shouldHidePref": false,
+			"eventSource": "HIGHLIGHTS",
+			"icon": "chrome://global/skin/icons/highlights.svg",
+			"compactCards": true,
+			"rowsPref": "section.highlights.rows",
+			"maxRows": 4,
+			"emptyState": {
+				"message": {
+					"id": "newtab-empty-section-highlights"
+				},
+				"icon": "chrome://global/skin/icons/highlights.svg"
+			},
+			"shouldSendImpressionStats": false,
+			"options": {},
+			"initialized": false
+		}
+	],
+	"Notifications": {
+		"showNotifications": false,
+		"toastCounter": 0,
+		"toastId": "",
+		"toastQueue": []
+	},
+	"Pocket": {
+		"isUserLoggedIn": null,
+		"pocketCta": {},
+		"waitingForSpoc": true
+	},
+	"Personalization": {
+		"lastUpdated": 1744005479732,
+		"initialized": true
+	},
+	"DiscoveryStream": {
+		"config": {
+			"api_key_pref": "extensions.pocket.oAuthConsumerKey",
+			"collapsible": true,
+			"enabled": true
+		},
+		"layout": [
+			{
+				"width": 12,
+				"components": [
+					{
+						"type": "TopSites",
+						"header": {
+							"title": {
+								"id": "newtab-section-header-topsites"
+							}
+						},
+						"properties": {}
+					},
+					{
+						"type": "Message",
+						"essentialReadsHeader": false,
+						"editorsPicksHeader": false,
+						"header": {
+							"title": {
+								"id": "newtab-section-header-stories"
+							},
+							"subtitle": "",
+							"link_text": {
+								"id": "newtab-pocket-learn-more"
+							},
+							"link_url": "",
+							"icon": "chrome://global/skin/icons/pocket.svg"
+						},
+						"properties": {
+							"spocMessageVariant": ""
+						},
+						"styles": {
+							".ds-message": "margin-bottom: -20px"
+						}
+					},
+					{
+						"type": "CardGrid",
+						"properties": {
+							"items": 24,
+							"hybridLayout": false,
+							"hideCardBackground": false,
+							"fourCardLayout": false,
+							"compactGrid": false,
+							"essentialReadsHeader": false,
+							"editorsPicksHeader": false,
+							"onboardingExperience": false,
+							"ctaButtonSponsors": [
+								""
+							],
+							"ctaButtonVariant": "",
+							"spocMessageVariant": ""
+						},
+						"widgets": {
+							"positions": [],
+							"data": [
+								{
+									"type": "TopicsWidget"
+								}
+							]
+						},
+						"cta_variant": "link",
+						"header": {
+							"title": ""
+						},
+						"placement": {
+							"name": "newtab_spocs",
+							"ad_types": [
+								3617
+							],
+							"zone_ids": [
+								217758,
+								217995
+							]
+						},
+						"feed": {
+							"embed_reference": null,
+							"url": "https://merino.services.mozilla.com/api/v1/curated-recommendations"
+						},
+						"spocs": {
+							"probability": 1,
+							"positions": [
+								{
+									"index": 1
+								},
+								{
+									"index": 5
+								},
+								{
+									"index": 7
+								},
+								{
+									"index": 11
+								},
+								{
+									"index": 18
+								},
+								{
+									"index": 20
+								}
+							]
+						}
+					},
+					{
+						"type": "Navigation",
+						"newFooterSection": false,
+						"properties": {
+							"alignment": "left-align",
+							"extraLinks": [
+								{
+									"name": "Career",
+									"url": "https://getpocket.com/explore/career?utm_source=pocket-newtab"
+								},
+								{
+									"name": "Technology",
+									"url": "https://getpocket.com/explore/technology?utm_source=pocket-newtab"
+								}
+							],
+							"privacyNoticeURL": {
+								"url": "https://www.mozilla.org/privacy/firefox/#recommend-relevant-content",
+								"title": {
+									"id": "newtab-section-menu-privacy-notice"
+								}
+							}
+						},
+						"styles": {
+							".ds-navigation": "margin-top: -10px;"
+						}
+					}
+				]
+			}
+		],
+		"isPrivacyInfoModalVisible": false,
+		"isCollectionDismissible": true,
+		"topicsLoading": false,
+		"feeds": {
+			"data": {
+				"https://merino.services.mozilla.com/api/v1/curated-recommendations": {
+					"lastUpdated": 1744008769419,
+					"personalized": true,
+					"data": {
+						"settings": {},
+						"sections": [],
+						"recommendations": [
+							{
+								"id": "1f5794c1-7389-4372-83ca-a5f102664f2b",
+								"scheduled_corpus_item_id": "efcfd845-75d2-4ed2-be89-eb48f2ddbe76",
+								"corpus_item_id": "1f5794c1-7389-4372-83ca-a5f102664f2b",
+								"url": "https://www.ndtv.com/world-news/us-tariffs-donald-trump-trump-tariffs-the-surprise-upside-for-india-8098423?utm_source=firefox-newtab-en-intl",
+								"title": "Trump Tariffs: The Surprise Upside for India",
+								"topic": null,
+								"excerpt": "As Indian equity markets panic turn and exporters brace for US President Donald Trump's \"Liberation Day\" tariffs to kick in, the question is - will it be as harsh as feared? Regardless of gloom forecasters, pragmatism is the key.",
+								"publisher": "NDTV",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/8e269f23-755c-4a53-b207-94121c0fbed5.jpeg",
+								"received_rank": 0,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "cb9eff53-0901-476d-a22b-429b4a46f4d3",
+								"scheduled_corpus_item_id": "a894b715-5521-4775-94fb-8ac0a140284a",
+								"corpus_item_id": "cb9eff53-0901-476d-a22b-429b4a46f4d3",
+								"url": "https://www.timesnownews.com/health/are-healthy-smoothies-making-you-gain-weight-heres-what-dietician-says-article-151356804?utm_source=firefox-newtab-en-intl",
+								"title": "Are ‘Healthy’ Smoothies Making You Gain Weight? Here’s What Dietician Says",
+								"topic": null,
+								"excerpt": "Are ‘Healthy’ Smoothies Making You Gain Weight? Here’s What Dietician Says ",
+								"publisher": "Times Now News",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/e2a4b26f-6297-4d55-b4de-4269502d87a2.jpeg",
+								"received_rank": 1,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "2acd5ebe-5bb0-4bf4-bc0d-4e369d6345c9",
+								"scheduled_corpus_item_id": "d2b77bab-e768-4ebb-aedb-0f5d5ed7854d",
+								"corpus_item_id": "2acd5ebe-5bb0-4bf4-bc0d-4e369d6345c9",
+								"url": "https://www.fortuneindia.com/personal-finance/is-fintech-consolidation-the-key-to-innovation-or-a-threat-to-consumerchoice/121642?utm_source=firefox-newtab-en-intl",
+								"title": "Is Fintech Consolidation the Key to Innovation or a Threat to Consumer Choice?",
+								"topic": null,
+								"excerpt": "Consolidation boosts scalability and efficiency, with larger, well-funded firms better positioned to offer improved rates and services.",
+								"publisher": "Fortune India",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/553ccafa-5417-4c70-a745-fc5d6f6849e5.jpeg",
+								"received_rank": 2,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "ea21111f-c4ca-4b44-af16-8200a17f7751",
+								"scheduled_corpus_item_id": "9c7a7e76-3fe2-4d4a-be03-c54897e4a437",
+								"corpus_item_id": "ea21111f-c4ca-4b44-af16-8200a17f7751",
+								"url": "https://www.businessinsider.com/cheating-tech-interviews-soaring-managers-lost-gen-ai-chatgpt-coding-2025-4?utm_source=firefox-newtab-en-intl",
+								"title": "Hiring for Tech Jobs Is Broken",
+								"topic": null,
+								"excerpt": "A ‘perfect storm’ has made coding interviews a cheater’s paradise",
+								"publisher": "Business Insider",
+								"raw_image_src": "https://i.insider.com/67ec55c769253ccddf9af461?width=1200&format=jpeg",
+								"received_rank": 3,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "805f848c-6585-49a8-b869-62b28e94519e",
+								"scheduled_corpus_item_id": "22a10d53-573d-47bc-8c42-814d072cd62e",
+								"corpus_item_id": "805f848c-6585-49a8-b869-62b28e94519e",
+								"url": "https://www.architecturaldigest.in/story/a-new-restaurant-in-bengaluru-gaia-finds-a-luxurious-home-in-a-forty-year-old-bungalow/?utm_source=firefox-newtab-en-intl",
+								"title": "A New Restaurant in Bengaluru, Gaia Finds a Luxurious Home in a Forty-Year-Old Bungalow",
+								"topic": null,
+								"excerpt": "Restored and designed by Andre Camara of Studio Camarada, Gaia combines the sustainability of tropical modernism with a vision of a bygone era.",
+								"publisher": "Architectural Digest",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/0424d1df-95e9-426d-81c0-ad98537aa075.jpeg",
+								"received_rank": 4,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "28a30a4b-86f6-4124-b56e-590987df59f6",
+								"scheduled_corpus_item_id": "0b9ac7fb-e312-40dc-9b3c-50866b2a42fd",
+								"corpus_item_id": "28a30a4b-86f6-4124-b56e-590987df59f6",
+								"url": "https://thewire.in/environment/decoding-the-land-fiasco-behind-controversial-deforestation-and-protest-at-hyderabad-university?utm_source=firefox-newtab-en-intl",
+								"title": "Decoding the Land Fiasco Behind Controversial Deforestation and Protest at Hyderabad University",
+								"topic": null,
+								"excerpt": "The forest land, which is situated within the Hyderabad University campus, was never registered in the five decades of the varsity’s existence. However, the university has been its custodian.",
+								"publisher": "The Wire",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/e32da2d7-dd42-4708-99f7-c928804d47a1.jpeg",
+								"received_rank": 5,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "3a7b4bce-2a42-4076-a2e5-43f081892194",
+								"scheduled_corpus_item_id": "68501f49-8a7d-4dc7-a2d5-a121f6d9f8d3",
+								"corpus_item_id": "3a7b4bce-2a42-4076-a2e5-43f081892194",
+								"url": "https://www.nytimes.com/2025/04/03/well/mind/brain-health-simple-tips.html?utm_source=firefox-newtab-en-intl",
+								"title": "10 Small Things Neurologists Wish You’d Do for Your Brain",
+								"topic": null,
+								"excerpt": "Small tweaks to your daily routine can go a long way toward protecting your body’s control center and preventing cognitive decline down the road.",
+								"publisher": "The New York Times",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/ea1d05c4-5609-4bec-ba67-5c3c509a0dee.jpeg",
+								"received_rank": 6,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "11609e00-1cd1-408b-96e0-fe9066e0fe23",
+								"scheduled_corpus_item_id": "871d9483-8b03-4fc2-afd7-ef2f59c137f9",
+								"corpus_item_id": "11609e00-1cd1-408b-96e0-fe9066e0fe23",
+								"url": "https://hbr.org/2018/08/boost-your-emotional-intelligence-with-these-3-questions?utm_source=firefox-newtab-en-intl",
+								"title": "Boost Your Emotional Intelligence with These 3 Questions",
+								"topic": null,
+								"excerpt": "Professionals sometimes founder as they try to improve their emotional intelligence, because they either don’t know where to focus their efforts or they haven’t understood how to improve these skills on a practical level.",
+								"publisher": "Harvard Business Review",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/bb076973-2a3f-42d5-ae9c-94da21802017.jpeg",
+								"received_rank": 7,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "6d73588c-5ec2-41e2-a796-d1f8d2091407",
+								"scheduled_corpus_item_id": "18cdc79a-fa28-4650-a14c-723a57f70cd4",
+								"corpus_item_id": "6d73588c-5ec2-41e2-a796-d1f8d2091407",
+								"url": "https://www.bbc.com/news/articles/cg70pprzegyo?utm_source=firefox-newtab-en-intl",
+								"title": "India’s Rivers Are Home to 6,000 Dolphins - but They Are in Trouble",
+								"topic": null,
+								"excerpt": "Gangetic and Indus river dolphins are found in over two-dozen rivers in India.",
+								"publisher": "BBC",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/e43f26ec-9c2f-43bb-80e4-76b29c67b374.jpeg",
+								"received_rank": 8,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "fd7a813f-bea3-418d-87cf-fb216ef8c20c",
+								"scheduled_corpus_item_id": "4020efd9-71a6-4a66-a44a-33dae26bd37a",
+								"corpus_item_id": "fd7a813f-bea3-418d-87cf-fb216ef8c20c",
+								"url": "https://thewire.in/culture/tomb-of-bibi-zarrina-dholpurs-hidden-treasure-now-rests-in-dust-and-decay?utm_source=firefox-newtab-en-intl",
+								"title": "Tomb of Bibi Zarrina, Dholpur’s Hidden Treasure, Now Rests in Dust and Decay",
+								"topic": null,
+								"excerpt": "Local inhabitants have long passed down an oral tradition that Bībī Zarrīna, mother of Sikandar Lodī died here in Dholpur, apparently while residing with her son in the final years of his reign.",
+								"publisher": "The Wire",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/4fca8881-5879-45d7-b1c2-ae34f44ddb80.jpeg",
+								"received_rank": 9,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "52bbf7a2-f560-4699-b86a-74b6d485cbb1",
+								"scheduled_corpus_item_id": "bf296079-ff69-4956-b003-b43228acdc17",
+								"corpus_item_id": "52bbf7a2-f560-4699-b86a-74b6d485cbb1",
+								"url": "https://www.nytimes.com/2025/04/05/world/americas/penguins-tariffs-island.html?utm_source=firefox-newtab-en-intl",
+								"title": "After Trump’s Tariffs, Stocks Plunged but Penguin Memes Ticked Up",
+								"topic": null,
+								"excerpt": "The internet poked fun at the Trump administration’s decision to impose new tariffs on Heard Island and McDonald Islands, Australian territories near Antarctica where many penguins but no people live.",
+								"publisher": "The New York Times",
+								"raw_image_src": "https://static01.nyt.com/images/2025/04/05/multimedia/05int-tariffs-penguins-kbgj/05int-tariffs-penguins-kbgj-facebookJumbo.jpg",
+								"received_rank": 10,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "e1224fe0-8e7b-4f41-9c8a-622e20e38cba",
+								"scheduled_corpus_item_id": "e2f60f24-30f5-4f2d-b9e7-3ce5c4ed9a32",
+								"corpus_item_id": "e1224fe0-8e7b-4f41-9c8a-622e20e38cba",
+								"url": "https://www.cnbc.com/2025/04/05/harvard-psychologist-phrases-narcissists-love-to-use-and-how-to-respond.html?utm_source=firefox-newtab-en-intl",
+								"title": "‘Highly Narcissistic’ People Love to Say These 7 Phrases—Here’s How to Respond: Harvard-Trained Psychologist",
+								"topic": null,
+								"excerpt": "It’s nearly impossible to avoid narcissists. To spot them, notice the phrases they use. Here are the ones they love to use, says Harvard psychologist Dr. Cortney Warren — and how she responds to them every time.",
+								"publisher": "CNBC",
+								"raw_image_src": "https://image.cnbcfm.com/api/v1/image/107232875-1682699784125-Narcissist_Feature_Image_Pink.jpg?v=1682863206&w=1920&h=1080",
+								"received_rank": 11,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "ef952031-2724-4afd-a00f-1ac73c3fbcf9",
+								"scheduled_corpus_item_id": "60e6f45b-790e-4603-af3c-438070623559",
+								"corpus_item_id": "ef952031-2724-4afd-a00f-1ac73c3fbcf9",
+								"url": "https://www.bbc.com/future/article/20250403-the-best-activities-for-finding-friends?utm_source=firefox-newtab-en-intl",
+								"title": "I Tested Some of the Most Popular Ways of Meeting New People. Here’s What I Found",
+								"topic": null,
+								"excerpt": "Journalist Molly Gorman tested which hobbies are best for meeting new people – and discovered surprising facts about how and why we bond as a species.",
+								"publisher": "BBC",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/497c2e02-5b4d-45ab-a63f-6c37fb507ec6.jpeg",
+								"received_rank": 12,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "cc3d880c-345e-4a6a-818e-3b4a5ca5c3b9",
+								"scheduled_corpus_item_id": "7978a302-a87c-421c-b757-81e214b4a10a",
+								"corpus_item_id": "cc3d880c-345e-4a6a-818e-3b4a5ca5c3b9",
+								"url": "https://www.nytimes.com/2025/04/05/opinion/globalization-collapse.html?utm_source=firefox-newtab-en-intl",
+								"title": "Opinion | Globalization Is Collapsing. Brace Yourselves.",
+								"topic": null,
+								"excerpt": "The world was just as intertwined 100 years ago, and its unraveling was a disaster. Can we avoid the same outcome?",
+								"publisher": "The New York Times",
+								"raw_image_src": "https://static01.nyt.com/images/2025/04/06/opinion/06SOcover/06SOcover-facebookJumbo.jpg",
+								"received_rank": 14,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "61a63a9e-8715-4cd3-9037-cfa454fdaafa",
+								"scheduled_corpus_item_id": "b3234e45-c775-43e6-ab67-4b043ded210f",
+								"corpus_item_id": "61a63a9e-8715-4cd3-9037-cfa454fdaafa",
+								"url": "https://www.npr.org/2025/04/05/nx-s1-5311920/want-to-raise-bilingual-kids-first-let-go-of-a-common-myth?utm_source=firefox-newtab-en-intl",
+								"title": "Want to Raise Bilingual Kids? First, Let Go of a Common Myth",
+								"topic": null,
+								"excerpt": "Speech pathologists offer parents real-world advice on how to incorporate a second language with their kids at home — and demystify a misconception about bilingualism. ",
+								"publisher": "NPR",
+								"raw_image_src": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/7998x4499+0+556/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F64%2Ffb%2F7f1b1c2c413c8c1d19607689bd6e%2Flk-bilingual-1-lead.jpg",
+								"received_rank": 15,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "245c2a45-ebca-400c-b31f-3dab2a7c2b86",
+								"scheduled_corpus_item_id": "66672013-2a28-4144-b758-d7506b0dc9a6",
+								"corpus_item_id": "245c2a45-ebca-400c-b31f-3dab2a7c2b86",
+								"url": "https://timesofindia.indiatimes.com/business/india-business/govt-unlikely-to-ease-checks-on-investments-from-china/articleshow/120044427.cms?utm_source=firefox-newtab-en-intl",
+								"title": "Govt Unlikely to Ease Checks on Investments From China",
+								"topic": null,
+								"excerpt": "India Business News: The Indian government is unlikely to relax investment restrictions on Chinese companies due to concerns over their opaque ownership and ties with the ",
+								"publisher": "The Times of India",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/a772966b-577c-4d41-87f3-859d8ec7d159.jpeg",
+								"received_rank": 16,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "a6c930f2-f594-4479-9e97-2112c03c72ac",
+								"scheduled_corpus_item_id": "8b822961-9256-4125-8971-2986784be9fe",
+								"corpus_item_id": "a6c930f2-f594-4479-9e97-2112c03c72ac",
+								"url": "https://www.bbc.com/sport/cricket/articles/c8rg536x706o?utm_source=firefox-newtab-en-intl",
+								"title": "India Bowler Bumrah Set for IPL Return After Injury",
+								"topic": null,
+								"excerpt": "India fast bowler Jasprit Bumrah is set to make his return to competitive cricket in the Indian Premier League after three months out injured.",
+								"publisher": "BBC",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/dc5ee4b3-2c75-4948-b484-4b209c01fa7d.jpeg",
+								"received_rank": 17,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "7caa357e-f985-406f-b037-94c23f23220a",
+								"scheduled_corpus_item_id": "fa964e69-82ad-44ad-9bdf-ee0f9a2db5fa",
+								"corpus_item_id": "7caa357e-f985-406f-b037-94c23f23220a",
+								"url": "https://www.indiatoday.in/lifestyle/relationship/story/does-a-happy-relationship-really-make-you-gain-weight-2703613-2025-04-06?utm_source=firefox-newtab-en-intl",
+								"title": "Does Being in a Happy Relationship Really Make You Gain Weight?",
+								"topic": null,
+								"excerpt": "Experts explains that having a healthy relationship at times leads to one's weight gain, but it varies with everyone too. ",
+								"publisher": "India Today",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/c6e54028-f81d-41e9-a394-1556087fecb6.jpeg",
+								"received_rank": 18,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "4e4ce2f7-1da1-45e3-bfdb-ccca00254761",
+								"scheduled_corpus_item_id": "e9bd6b6e-f73b-4402-9d6b-7b9d148564e6",
+								"corpus_item_id": "4e4ce2f7-1da1-45e3-bfdb-ccca00254761",
+								"url": "https://www.cnbc.com/2025/04/05/economists-take-issue-with-trumps-tariff-formula-arguing-rate-is-inflated.html?utm_source=firefox-newtab-en-intl",
+								"title": "Economists Take Issue With Trump’s Tariff Formula, Arguing Rate Is Inflated",
+								"topic": null,
+								"excerpt": "The formula at the core of President Donald Trump's tariff announcement that continues to rattle markets is bewildering economists, who say it is based on flawed assumptions.",
+								"publisher": "CNBC",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/9bd04bdc-b6c0-4729-bd94-1ba893dc5233.jpeg",
+								"received_rank": 20,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "1f920ab4-d753-4953-a53c-9ee4fe417a47",
+								"scheduled_corpus_item_id": "fa929d72-ce87-4938-a1cd-3318ab092397",
+								"corpus_item_id": "1f920ab4-d753-4953-a53c-9ee4fe417a47",
+								"url": "https://www.ft.com/content/5f9e1573-8031-41ca-b858-6c20d3b019ca?utm_source=firefox-newtab-en-intl",
+								"title": "Welcome to Patti Smith’s Antique Book Club ",
+								"topic": null,
+								"excerpt": "The punk-poet legend and her daughter Jesse Paris Smith are bound by their shared love of rare books",
+								"publisher": "Financial Times",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/b0217f36-5252-4859-a9d7-37c950738ccb.jpeg",
+								"received_rank": 21,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "b9d50266-086a-411d-891a-9c193774fd50",
+								"scheduled_corpus_item_id": "ffdc5114-db8d-4ff3-9329-ee6d03248d50",
+								"corpus_item_id": "b9d50266-086a-411d-891a-9c193774fd50",
+								"url": "https://www.huffpost.com/entry/best-snacks-for-aging-well_l_67eaa6a4e4b008c5a2ecc111?utm_source=firefox-newtab-en-intl",
+								"title": "The Best Snacks for Aging Well and Preventing Cognitive Decline, According to Nutrition Experts",
+								"topic": null,
+								"excerpt": "Munch your way to longevity.",
+								"publisher": "HuffPost",
+								"raw_image_src": "https://img.huffingtonpost.com/asset/67eaec6f1700002400e1b4e0.jpeg?ops=1200_630",
+								"received_rank": 22,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "2c876a20-cef2-4c08-9e48-257f43270981",
+								"scheduled_corpus_item_id": "9adebcb3-a6ee-4de4-8ee1-7d624728eb0b",
+								"corpus_item_id": "2c876a20-cef2-4c08-9e48-257f43270981",
+								"url": "https://www.cntraveler.com/story/unwritten-rules-for-traveling-in-thailand?utm_source=firefox-newtab-en-intl",
+								"title": "15 Unwritten Rules for Traveling in Thailand",
+								"topic": null,
+								"excerpt": "From always carrying cash to keeping displays of affection private, this is what you need to know about Thai etiquette.",
+								"publisher": "Condé Nast Traveler",
+								"raw_image_src": "https://media.cntraveler.com/photos/67effd64e89015cbaf6eb516/16:9/w_1280,c_limit/GettyImages-1772867295.jpg",
+								"received_rank": 23,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "749c92a2-6bd9-4df5-949d-f3f698e73e94",
+								"scheduled_corpus_item_id": "dce7aec2-33ba-4f8b-ab9e-a1a532450573",
+								"corpus_item_id": "749c92a2-6bd9-4df5-949d-f3f698e73e94",
+								"url": "https://www.cnbc.com/2025/04/02/the-top-soft-skills-you-need-to-get-hired-in-2025-according-to-linkedin.html?utm_source=firefox-newtab-en-intl",
+								"title": "The No. 1 Soft Skill You Need to Get Hired Now—People Who Have It ‘Are Going to Win,’ Says LinkedIn Expert",
+								"topic": null,
+								"excerpt": "Soft skills made up a majority of LinkedIn’s 2025 Skills on the Rise. Here’s how a LinkedIn career expert suggests you show them in the job search.",
+								"publisher": "CNBC",
+								"raw_image_src": "https://image.cnbcfm.com/api/v1/image/108071386-1733337103519-gettyimages-1335872429-amv-coworkcenter1098.jpeg?v=1743104478&w=1920&h=1080",
+								"received_rank": 24,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "64686666-2e24-4b75-b410-dff07281867d",
+								"scheduled_corpus_item_id": "a6a3d917-7036-4f90-b8e0-a9ba47c8d5f0",
+								"corpus_item_id": "64686666-2e24-4b75-b410-dff07281867d",
+								"url": "https://scroll.in/article/1080864/jane-austen-at-250-shashi-deshpande-on-the-perfect-artist-who-reinvented-the-novel?utm_source=firefox-newtab-en-intl",
+								"title": "Jane Austen at 250: Shashi Deshpande on the ‘Perfect Artist’ Who Reinvented the Novel",
+								"topic": null,
+								"excerpt": "But, after her death, strangely enough, her family, even with the best intentions, wronged her. ",
+								"publisher": "Scroll",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/7139ccf7-7e1d-4ac0-87c7-7a170bee4a3f.jpeg",
+								"received_rank": 26,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "29fbfb4f-328c-428e-8567-f93da3425803",
+								"scheduled_corpus_item_id": "2f91ceda-aae2-4fdb-8944-afd2c08fa9c0",
+								"corpus_item_id": "29fbfb4f-328c-428e-8567-f93da3425803",
+								"url": "https://www.business-standard.com/finance/personal-finance/world-health-day-conduct-a-thorough-checkup-of-your-health-insurance-125040301401_1.html?utm_source=firefox-newtab-en-intl",
+								"title": "World Health Day: Conduct a thorough checkup of your health insurance",
+								"topic": null,
+								"excerpt": "Conduct a thorough checkup of your health insuranceEnsure the policy offers adequate sum insured to deal with even critical illnesses, and move out of policies with sub-limits",
+								"publisher": "Business Standard",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/85b89703-98e5-4e21-9215-90dccd6d5be8.jpeg",
+								"received_rank": 27,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "afb055f7-ac5f-49b0-a2af-adc6e76e813c",
+								"scheduled_corpus_item_id": "eae9f2df-0412-4d53-a3b1-eb3d3fea4027",
+								"corpus_item_id": "afb055f7-ac5f-49b0-a2af-adc6e76e813c",
+								"url": "https://www.livemint.com/mint-lounge/business-of-life/10-books-to-make-sense-of-the-internet-today-11743310443898.html?utm_source=firefox-newtab-en-intl",
+								"title": "10 Books to Make Sense of the Internet Today",
+								"topic": null,
+								"excerpt": "Explore the transformative effects of the internet and AI on society with these ten insightful books that provide diverse perspectives on how digital technologies are reshaping our lives and identities",
+								"publisher": "Mint",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/d7f34f02-fe1f-4169-b6e0-858eaf5c44b3.jpeg",
+								"received_rank": 13,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "b5dc0d15-0c8c-4278-9094-8f5f5e143dbb",
+								"scheduled_corpus_item_id": "123e04f1-d2e4-4698-bc9e-54a532704f8c",
+								"corpus_item_id": "b5dc0d15-0c8c-4278-9094-8f5f5e143dbb",
+								"url": "https://www.vogue.in/content/intergenerational-trauma-is-worsening-among-south-asians-heres-how-to-heal?utm_source=firefox-newtab-en-intl",
+								"title": "Intergenerational Trauma Is Worsening Among South Asians. Here’s How to Heal From the Past You Inherited",
+								"topic": null,
+								"excerpt": "Intergenerational trauma can be passed down even when subsequent generations don’t directly experience the original event, like Partition, for example",
+								"publisher": "Vogue",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/ba57159a-e025-44b8-957b-34be6bfb4bf7.jpeg",
+								"received_rank": 19,
+								"recommended_at": 1744008769277,
+								"score": 1
+							},
+							{
+								"id": "6248553c-4237-422a-b8b6-eedd8b143a28",
+								"scheduled_corpus_item_id": "79de87a8-8fab-4263-a84b-5fc4787c38e1",
+								"corpus_item_id": "6248553c-4237-422a-b8b6-eedd8b143a28",
+								"url": "https://www.indiatoday.in/lifestyle/society/story/gossip-can-be-good-heres-how-to-make-it-healthy-and-harmless-2704449-2025-04-05?utm_source=firefox-newtab-en-intl",
+								"title": "Gossip Can Be Good. Here’s How to Make It Healthy (and Harmless)",
+								"topic": null,
+								"excerpt": "Beyond its bad reputation, gossiping can also be positive and healthy. Psychologists call it ‘social glue’ that brings communities together. It is also deemed good for mental health (when it is harmless).",
+								"publisher": "India Today",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/39cfa6b5-cce0-4df4-bd36-253ef7586a8e.jpeg",
+								"received_rank": 25,
+								"recommended_at": 1744008769277,
+								"score": 1
+							}
+						],
+						"status": "success"
+					}
+				}
+			},
+			"loaded": true
+		},
+		"impressions": {
+			"feed": {
+				"b5dc0d15-0c8c-4278-9094-8f5f5e143dbb": 1744004776957,
+				"6248553c-4237-422a-b8b6-eedd8b143a28": 1744004776958,
+				"afb055f7-ac5f-49b0-a2af-adc6e76e813c": 1744004776958
+			}
+		},
+		"blocks": {},
+		"spocs": {
+			"spocs_endpoint": "https://spocs.getpocket.com/spocs",
+			"lastUpdated": 1744004634730,
+			"data": {},
+			"loaded": true,
+			"frequency_caps": [],
+			"blocked": [],
+			"placements": []
+		},
+		"experimentData": {
+			"utmSource": "pocket-newtab",
+			"utmCampaign": "hnt-weather-with-location-selector-non-eu-expansion",
+			"utmContent": "control"
+		},
+		"recentSavesData": [],
+		"isUserLoggedIn": false,
+		"recentSavesEnabled": false,
+		"showTopicSelection": false,
+		"pocketButtonEnabled": true,
+		"saveToPocketCard": true,
+		"hideDescriptions": false,
+		"compactImages": false,
+		"imageGradient": false,
+		"newSponsoredLabel": false,
+		"titleLines": 3,
+		"descLines": 3,
+		"readTime": true
+	},
+	"Search": {
+		"fakeFocus": false,
+		"hide": false
+	},
+	"Wallpapers": {
+		"wallpaperList": [
+			{
+				"theme": "light",
+				"title": "blue",
+				"schema": 1718643233937,
+				"category": "solid-colors",
+				"fluent_id": "newtab-wallpaper-blue",
+				"solid_color": "#76C1FF",
+				"id": "02c24a73-67fd-4459-b77a-6550c365d8ee",
+				"last_modified": 1718647622963
+			},
+			{
+				"theme": "light",
+				"title": "abstract-blue",
+				"schema": 1718906348500,
+				"category": "abstracts",
+				"fluent_id": "newtab-wallpaper-abstract-blue",
+				"attachment": {
+					"hash": "24d6733f3ff1aa1b0b23df697b3527d9d511964cdb30620184cf1bf6484f7d62",
+					"size": 182925,
+					"filename": "abstract-blue.avif",
+					"location": "main-workspace/newtab-wallpapers-v2/e1108381-5c19-4cb4-a630-69f9e45503fb.avif",
+					"mimetype": "image/avif"
+				},
+				"id": "081af855-daf4-4d11-9b43-b690e20acc1c",
+				"last_modified": 1718906679999,
+				"wallpaperUrl": "https://firefox-settings-attachments.cdn.mozilla.net/main-workspace/newtab-wallpapers-v2/e1108381-5c19-4cb4-a630-69f9e45503fb.avif"
+			},
+			{
+				"theme": "light",
+				"title": "light-green",
+				"schema": 1718643966390,
+				"category": "solid-colors",
+				"fluent_id": "newtab-wallpaper-light-green",
+				"solid_color": "#DAE8E0",
+				"id": "13af9c00-685a-41a3-8b35-80936ccc6961",
+				"last_modified": 1718647622955
+			},
+			{
+				"theme": "light",
+				"title": "green",
+				"schema": 1718644038276,
+				"category": "solid-colors",
+				"fluent_id": "newtab-wallpaper-green",
+				"solid_color": "#A8DF8E",
+				"id": "18fd6f2c-0b3e-4b17-af01-6ad9d84eeee2",
+				"last_modified": 1718647622953
+			},
+			{
+				"theme": "light",
+				"title": "abstract-green",
+				"schema": 1718875716751,
+				"category": "abstracts",
+				"fluent_id": "newtab-wallpaper-abstract-green",
+				"attachment": {
+					"hash": "0cdfae1997d508d8ae25a3f4d0169b38b31e317e588a971008134db2327ab246",
+					"size": 68945,
+					"filename": "abstract-green.avif",
+					"location": "main-workspace/newtab-wallpapers-v2/13495d0e-f975-4218-b5f0-c841c69ce2e5.avif",
+					"mimetype": "image/avif"
+				},
+				"id": "1bbf4d6a-1720-4462-a471-8ca90cb8cffa",
+				"last_modified": 1718906680010,
+				"wallpaperUrl": "https://firefox-settings-attachments.cdn.mozilla.net/main-workspace/newtab-wallpapers-v2/13495d0e-f975-4218-b5f0-c841c69ce2e5.avif"
+			},
+			{
+				"theme": "dark",
+				"title": "dark-sky",
+				"schema": 1718637445591,
+				"category": "photographs",
+				"fluent_id": "newtab-wallpaper-dark-sky",
+				"attachment": {
+					"hash": "6ab2a71c1d5866c10f6c8bb555b019ed6127a48112e410694bedf6fe8d5cdab9",
+					"size": 461323,
+					"filename": "dark-sky.avif",
+					"location": "main-workspace/newtab-wallpapers-v2/e94b1e49-c518-40d6-98e3-dffab6cc370d.avif",
+					"mimetype": "image/avif"
+				},
+				"attribution": {
+					"name": {
+						"url": "https://unsplash.com/@felix_mittermeier",
+						"string": "Felix Mittermeier"
+					},
+					"webpage": {
+						"url": "https://unsplash.com/photos/lightning-strike-under-cloudy-sky-WLGHjbC0Cq4",
+						"string": "Unsplash"
+					}
+				},
+				"id": "1d182cca-5359-4126-a8c4-e5dc868fc21e",
+				"last_modified": 1718647622999,
+				"wallpaperUrl": "https://firefox-settings-attachments.cdn.mozilla.net/main-workspace/newtab-wallpapers-v2/e94b1e49-c518-40d6-98e3-dffab6cc370d.avif"
+			},
+			{
+				"theme": "dark",
+				"title": "dark-blue",
+				"schema": 1718644294471,
+				"category": "solid-colors",
+				"fluent_id": "newtab-wallpaper-dark-blue",
+				"solid_color": "#031A3E",
+				"id": "289ec57a-9875-450e-b0cf-46436d75c11f",
+				"last_modified": 1718647622934
+			},
+			{
+				"theme": "dark",
+				"title": "dark-purple",
+				"schema": 1718644320019,
+				"category": "solid-colors",
+				"fluent_id": "newtab-wallpaper-dark-purple",
+				"solid_color": "#450A54",
+				"id": "2bb4d4d4-ed76-450a-805c-e4d4af19f215",
+				"last_modified": 1718647622932
+			},
+			{
+				"theme": "dark",
+				"title": "dark-mountain",
+				"schema": 1718637174316,
+				"category": "photographs",
+				"fluent_id": "newtab-wallpaper-dark-mountain",
+				"attachment": {
+					"hash": "f5933a35945f5103ff98892f45ce03c59b2c3c1be35455faf45b10355492fd95",
+					"size": 308468,
+					"filename": "dark-mountain.avif",
+					"location": "main-workspace/newtab-wallpapers-v2/af6073d2-cbb2-4e28-b642-3327d14808b2.avif",
+					"mimetype": "image/avif"
+				},
+				"attribution": {
+					"name": {
+						"url": "https://unsplash.com/@heytowner",
+						"string": "John Towner"
+					},
+					"webpage": {
+						"url": "https://unsplash.com/photos/aerial-photo-of-brown-moutains-JgOeRuGD_Y4",
+						"string": "Unsplash"
+					}
+				},
+				"id": "2ccb7af0-28fc-48e6-9dbe-a1da930f7344",
+				"last_modified": 1718647623004,
+				"wallpaperUrl": "https://firefox-settings-attachments.cdn.mozilla.net/main-workspace/newtab-wallpapers-v2/af6073d2-cbb2-4e28-b642-3327d14808b2.avif"
+			},
+			{
+				"theme": "dark",
+				"title": "dark-green",
+				"schema": 1718644346535,
+				"category": "solid-colors",
+				"fluent_id": "newtab-wallpaper-dark-green",
+				"solid_color": "#19310D",
+				"id": "35f8a180-8579-461d-be72-3d5d889dba62",
+				"last_modified": 1718647622929
+			},
+			{
+				"theme": "light",
+				"title": "red",
+				"schema": 1718644265416,
+				"category": "solid-colors",
+				"fluent_id": "newtab-wallpaper-red",
+				"solid_color": "#9D242D",
+				"id": "42c4e7e1-c108-45d1-bc5a-4aa0031e9a3e",
+				"last_modified": 1718647622937
+			},
+			{
+				"theme": "dark",
+				"title": "dark-panda",
+				"schema": 1718637336167,
+				"category": "photographs",
+				"fluent_id": "newtab-wallpaper-dark-panda",
+				"attachment": {
+					"hash": "359ec1d08b10aec1ea6d5cb50ddb0ccbd7660301407ee2eb602cf877b1ab857a",
+					"size": 391823,
+					"filename": "dark-panda.avif",
+					"location": "main-workspace/newtab-wallpapers-v2/6b8eb3cf-f232-4c7b-a179-afd174555134.avif",
+					"mimetype": "image/avif"
+				},
+				"attribution": {
+					"name": {
+						"url": "https://unsplash.com/@willrust",
+						"string": "Will Rust"
+					},
+					"webpage": {
+						"url": "https://unsplash.com/photos/a-red-panda-yawns-in-a-tree-ERm7haDBW8k",
+						"string": "Unsplash"
+					}
+				},
+				"id": "4374cca0-fd79-4626-b55f-ccbe1eb13e2f",
+				"last_modified": 1718647623002,
+				"wallpaperUrl": "https://firefox-settings-attachments.cdn.mozilla.net/main-workspace/newtab-wallpapers-v2/6b8eb3cf-f232-4c7b-a179-afd174555134.avif"
+			},
+			{
+				"theme": "light",
+				"title": "orange",
+				"schema": 1718644150837,
+				"category": "solid-colors",
+				"fluent_id": "newtab-wallpaper-orange",
+				"solid_color": "#FEBE5E",
+				"id": "47a48447-d3e8-4711-a74e-33dcbd64c889",
+				"last_modified": 1718647622945
+			},
+			{
+				"theme": "light",
+				"title": "beige",
+				"schema": 1718644062923,
+				"category": "solid-colors",
+				"fluent_id": "newtab-wallpaper-beige",
+				"solid_color": "#EDD5B8",
+				"id": "59bd06d3-fa74-4059-ada2-046d48b71285",
+				"last_modified": 1718647622950
+			},
+			{
+				"theme": "light",
+				"title": "abstract-blue-purple",
+				"schema": 1718906311906,
+				"category": "abstracts",
+				"fluent_id": "newtab-wallpaper-abstract-blue-purple",
+				"attachment": {
+					"hash": "7f80fd687288944a9e90b2b4d324a3e8b33e1575b9dbf21f953b06da26b7cac4",
+					"size": 26236,
+					"filename": "abstract-noodles.avif",
+					"location": "main-workspace/newtab-wallpapers-v2/becfadf4-4c2d-4fad-bbbc-b060d12277e5.avif",
+					"mimetype": "image/avif"
+				},
+				"id": "604378cd-ff54-4219-bed3-137889283c5e",
+				"last_modified": 1718906680002,
+				"wallpaperUrl": "https://firefox-settings-attachments.cdn.mozilla.net/main-workspace/newtab-wallpapers-v2/becfadf4-4c2d-4fad-bbbc-b060d12277e5.avif"
+			},
+			{
+				"theme": "light",
+				"title": "light-pink",
+				"schema": 1718644236363,
+				"category": "solid-colors",
+				"fluent_id": "newtab-wallpaper-light-pink",
+				"solid_color": "#F4DBE9",
+				"id": "6ab3849e-2e09-4751-9620-1e815e0a0c03",
+				"last_modified": 1718647622940
+			},
+			{
+				"theme": "light",
+				"title": "light-blue",
+				"schema": 1718643826574,
+				"category": "solid-colors",
+				"fluent_id": "newtab-wallpaper-light-blue",
+				"solid_color": "#D4E7F6",
+				"id": "6beb382b-183d-428b-9b0e-c2f213d0c245",
+				"last_modified": 1718647622960
+			},
+			{
+				"theme": "light",
+				"title": "light-panda",
+				"schema": 1718638748651,
+				"category": "photographs",
+				"fluent_id": "newtab-wallpaper-light-red-panda",
+				"attachment": {
+					"hash": "f9a34f02573401aea9366a9e97a4cdc92f925ad6ac8d56d0bedfaf0dff9e86b1",
+					"size": 531549,
+					"filename": "light-panda.avif",
+					"location": "main-workspace/newtab-wallpapers-v2/dfd3762e-f77d-4b6e-ac75-32eb2549ef40.avif",
+					"mimetype": "image/avif"
+				},
+				"attribution": {
+					"name": {
+						"url": "https://unsplash.com/@_melsayed",
+						"string": "Mohamed Elsayed"
+					},
+					"webpage": {
+						"url": "https://unsplash.com/photos/red-panda-on-snow-covered-ground-during-daytime-DWpR-BpKlw0",
+						"string": "Unsplash"
+					}
+				},
+				"id": "74260419-d829-42ef-bb9f-4d93be63472a",
+				"last_modified": 1718647622985,
+				"wallpaperUrl": "https://firefox-settings-attachments.cdn.mozilla.net/main-workspace/newtab-wallpapers-v2/dfd3762e-f77d-4b6e-ac75-32eb2549ef40.avif"
+			},
+			{
+				"theme": "light",
+				"title": "light-fox-anniversary",
+				"schema": 1729617910248,
+				"category": "photographs",
+				"fluent_id": "newtab-wallpaper-light-fox-anniversary",
+				"attachment": {
+					"hash": "649c272fed6c4ba3d15c5179efc85a1c528d39a074259386cf91be89ea2f67f3",
+					"size": 140270,
+					"filename": "light-fox-anniversary-v2.avif",
+					"location": "main-workspace/newtab-wallpapers-v2/a5a041de-9275-4eb5-8f21-a0171c82d388.avif",
+					"mimetype": "image/avif"
+				},
+				"attribution": {
+					"name": {
+						"url": "https://unsplash.com/@sr_kike_",
+						"string": "Luis Enrique Ibarra"
+					},
+					"webpage": {
+						"url": "https://unsplash.com/photos/brown-and-white-fox-on-green-grass-field-during-daytime-SLOm_cfWTT4",
+						"string": "Unsplash"
+					}
+				},
+				"id": "77bf5044-7821-4125-b555-10f71af37fd4",
+				"last_modified": 1729618200381,
+				"wallpaperUrl": "https://firefox-settings-attachments.cdn.mozilla.net/main-workspace/newtab-wallpapers-v2/a5a041de-9275-4eb5-8f21-a0171c82d388.avif"
+			},
+			{
+				"theme": "light",
+				"title": "brown",
+				"schema": 1718644381622,
+				"category": "solid-colors",
+				"fluent_id": "newtab-wallpaper-brown",
+				"solid_color": "#401F00",
+				"id": "7a88dafb-3a82-4346-b34c-0b7d9232f497",
+				"last_modified": 1718647622926
+			},
+			{
+				"theme": "dark",
+				"title": "dark-fox-anniversary",
+				"schema": 1729617515102,
+				"category": "photographs",
+				"fluent_id": "newtab-wallpaper-dark-fox-anniversary",
+				"attachment": {
+					"hash": "eeb9526e6bcdb29b6fd5b59273d1d48ab99c4aee3d9e72584bb9eee6790e2218",
+					"size": 291301,
+					"filename": "dark-fox-anniversary-v2.avif",
+					"location": "main-workspace/newtab-wallpapers-v2/d8b71c77-9985-41d2-b98e-51bebc60e595.avif",
+					"mimetype": "image/avif"
+				},
+				"attribution": {
+					"name": {
+						"url": "https://unsplash.com/@obkim",
+						"string": "Qijin Xu"
+					},
+					"webpage": {
+						"url": "https://unsplash.com/photos/brown-and-white-fox-fJyO0eo6_aI",
+						"string": "Unsplash"
+					}
+				},
+				"id": "7e6ab485-8f0d-463f-8f40-1bd77a82e034",
+				"last_modified": 1729618200384,
+				"wallpaperUrl": "https://firefox-settings-attachments.cdn.mozilla.net/main-workspace/newtab-wallpapers-v2/d8b71c77-9985-41d2-b98e-51bebc60e595.avif"
+			},
+			{
+				"theme": "light",
+				"title": "light-landscape",
+				"schema": 1718638214844,
+				"category": "photographs",
+				"fluent_id": "newtab-wallpaper-light-landscape",
+				"attachment": {
+					"hash": "e03ad82c9a5c6da8873cbdd21a5186a61c2eab9fe582f68e8da84cbb79b97885",
+					"size": 223179,
+					"filename": "light-landscape.avif",
+					"location": "main-workspace/newtab-wallpapers-v2/d9289c5b-8c78-4b27-b5d8-afe7285ce7d1.avif",
+					"mimetype": "image/avif"
+				},
+				"attribution": {
+					"name": {
+						"url": "https://unsplash.com/@caroliniecavalli",
+						"string": "Carolinie Cavalli"
+					},
+					"webpage": {
+						"url": "https://unsplash.com/photos/birds-eye-view-photography-of-mountain-Qw3w0oBH63s",
+						"string": "Unsplash"
+					}
+				},
+				"id": "8039d4b1-18c9-4a7f-9ce7-9737b224d565",
+				"last_modified": 1718647622990,
+				"wallpaperUrl": "https://firefox-settings-attachments.cdn.mozilla.net/main-workspace/newtab-wallpapers-v2/d9289c5b-8c78-4b27-b5d8-afe7285ce7d1.avif"
+			},
+			{
+				"theme": "light",
+				"title": "light-purple",
+				"schema": 1718643868872,
+				"category": "solid-colors",
+				"fluent_id": "newtab-wallpaper-light-purple",
+				"solid_color": "#D3A3F3",
+				"id": "840007a0-7989-4a1c-a2a5-3fc422b9570d",
+				"last_modified": 1718647622958
+			},
+			{
+				"theme": "light",
+				"title": "light-color",
+				"schema": 1721056774979,
+				"category": "abstracts",
+				"fluent_id": "newtab-wallpaper-light-color",
+				"attachment": {
+					"hash": "cd28bc282ba8dda5f6660389eb2a7ba66a57691504de2eba3405ec20eeddd5a0",
+					"size": 288837,
+					"filename": "light-color.avif",
+					"location": "main-workspace/newtab-wallpapers-v2/a205885e-194a-41f9-ae47-e7da66a74041.avif",
+					"mimetype": "image/avif"
+				},
+				"id": "8f896365-c4e8-497a-b8c1-c5033e4a7456",
+				"last_modified": 1721068497119,
+				"wallpaperUrl": "https://firefox-settings-attachments.cdn.mozilla.net/main-workspace/newtab-wallpapers-v2/a205885e-194a-41f9-ae47-e7da66a74041.avif"
+			},
+			{
+				"theme": "light",
+				"title": "abstract-purple",
+				"schema": 1718906291053,
+				"category": "abstracts",
+				"fluent_id": "newtab-wallpaper-abstract-purple",
+				"attachment": {
+					"hash": "96fbb04dd5494fb8383541289d29c22ac08dcdee242a104a310f3526b902d8fd",
+					"size": 90925,
+					"filename": "abstract-purple.avif",
+					"location": "main-workspace/newtab-wallpapers-v2/6bf5c4ac-f55b-4de3-bbf5-1b0f2f56d488.avif",
+					"mimetype": "image/avif"
+				},
+				"id": "92c5a286-da38-4135-ad41-6a3d659e3563",
+				"last_modified": 1718906680006,
+				"wallpaperUrl": "https://firefox-settings-attachments.cdn.mozilla.net/main-workspace/newtab-wallpapers-v2/6bf5c4ac-f55b-4de3-bbf5-1b0f2f56d488.avif"
+			},
+			{
+				"theme": "light",
+				"title": "light-mountain",
+				"schema": 1718638685878,
+				"category": "photographs",
+				"fluent_id": "newtab-wallpaper-light-mountain",
+				"attachment": {
+					"hash": "f9fdf49580f9221ba2583d0a818d60ae79b9fd50246ef36798a264e6645b6709",
+					"size": 541196,
+					"filename": "light-mountain.avif",
+					"location": "main-workspace/newtab-wallpapers-v2/5344443f-f427-4029-bc6b-68bc22f83355.avif",
+					"mimetype": "image/avif"
+				},
+				"attribution": {
+					"name": {
+						"url": "https://unsplash.com/@daesign",
+						"string": "Sead Dedić"
+					},
+					"webpage": {
+						"url": "https://unsplash.com/photos/mountain-covered-with-snow-under-white-clouds-si8OYpuLVBY",
+						"string": "Unsplash"
+					}
+				},
+				"id": "98d063e5-1481-4df2-abed-e22e86b24e98",
+				"last_modified": 1718647622988,
+				"wallpaperUrl": "https://firefox-settings-attachments.cdn.mozilla.net/main-workspace/newtab-wallpapers-v2/5344443f-f427-4029-bc6b-68bc22f83355.avif"
+			},
+			{
+				"theme": "light",
+				"title": "yellow",
+				"schema": 1718644107243,
+				"category": "solid-colors",
+				"fluent_id": "newtab-wallpaper-yellow",
+				"solid_color": "#FFF7B2",
+				"id": "9b0e2e3c-bf01-4e06-b051-3b439ff32592",
+				"last_modified": 1718647622947
+			},
+			{
+				"theme": "dark",
+				"title": "dark-beach",
+				"schema": 1718636331169,
+				"category": "photographs",
+				"fluent_id": "newtab-wallpaper-dark-city",
+				"attachment": {
+					"hash": "7272b542d0b28513daa9c1bdb27ae09d606c189d1c144bc6d5b550b5020c67de",
+					"size": 713257,
+					"filename": "dark-beach.avif",
+					"location": "main-workspace/newtab-wallpapers-v2/966b18ad-3733-41c4-92f6-c89cdf1381d0.avif",
+					"mimetype": "image/avif"
+				},
+				"attribution": {
+					"name": {
+						"url": "https://unsplash.com/@yespanioly",
+						"string": "Yousef Espanioly"
+					},
+					"webpage": {
+						"url": "https://unsplash.com/photos/seashore-DA_tplYgTow",
+						"string": "Unsplash"
+					}
+				},
+				"id": "a01be688-31cf-4f68-ac3e-e2cec09cb15a",
+				"last_modified": 1718647623009,
+				"wallpaperUrl": "https://firefox-settings-attachments.cdn.mozilla.net/main-workspace/newtab-wallpapers-v2/966b18ad-3733-41c4-92f6-c89cdf1381d0.avif"
+			},
+			{
+				"theme": "light",
+				"title": "light-sky",
+				"schema": 1718906680116,
+				"category": "photographs",
+				"fluent_id": "newtab-wallpaper-light-sky",
+				"attachment": {
+					"hash": "40a84002cfaf92fd38300e3987146f7b2ec3f5255e0427afbd30a52d7830c0e8",
+					"size": 100634,
+					"filename": "light-sky.avif",
+					"location": "main-workspace/newtab-wallpapers-v2/45ecab20-ffb9-47b4-94ff-07a5f8b9f53f.avif",
+					"mimetype": "image/avif"
+				},
+				"attribution": {
+					"name": {
+						"url": "https://unsplash.com/@frostroomhead",
+						"string": "Rodion Kutsaiev"
+					},
+					"webpage": {
+						"url": "https://unsplash.com/photos/cloudy-sky-8P-uQaTd8rw",
+						"string": "Unsplash"
+					}
+				},
+				"id": "c4033968-1a5e-4d8b-8961-994e2214db5d",
+				"last_modified": 1721056774861,
+				"wallpaperUrl": "https://firefox-settings-attachments.cdn.mozilla.net/main-workspace/newtab-wallpapers-v2/45ecab20-ffb9-47b4-94ff-07a5f8b9f53f.avif"
+			},
+			{
+				"theme": "light",
+				"title": "gradient-orange",
+				"schema": 1718906280424,
+				"category": "abstracts",
+				"fluent_id": "newtab-wallpaper-gradient-orange",
+				"attachment": {
+					"hash": "d99c7953bf5fd96fc9778cc6c663063aa7521e32db3d461efadb397be71b745f",
+					"size": 348323,
+					"filename": "gradient-orange.avif",
+					"location": "main-workspace/newtab-wallpapers-v2/bd424c86-6366-4f2b-b8dc-74d21439c1fb.avif",
+					"mimetype": "image/avif"
+				},
+				"id": "d01275ae-cd01-42f1-9ccf-41734e939ee3",
+				"last_modified": 1718906680008,
+				"wallpaperUrl": "https://firefox-settings-attachments.cdn.mozilla.net/main-workspace/newtab-wallpapers-v2/bd424c86-6366-4f2b-b8dc-74d21439c1fb.avif"
+			},
+			{
+				"theme": "dark",
+				"title": "dark-color",
+				"schema": 1721057236130,
+				"category": "abstracts",
+				"fluent_id": "newtab-wallpaper-dark-color",
+				"attachment": {
+					"hash": "c433865edcc1eae2911f30caa95783adfe5642ec24e8bd41fcfc661276f93752",
+					"size": 206755,
+					"filename": "dark-color.avif",
+					"location": "main-workspace/newtab-wallpapers-v2/d357925c-b9cd-417e-8731-14272f28f556.avif",
+					"mimetype": "image/avif"
+				},
+				"attribution": {
+					"name": {
+						"url": "https://unsplash.com/@martz90",
+						"string": "Martin Martz"
+					},
+					"webpage": {
+						"url": "https://unsplash.com/photos/a-close-up-of-a-cell-phone-with-a-blurry-background-uuNCR2NpiNE",
+						"string": "Unsplash"
+					}
+				},
+				"id": "d4d8de2b-a32f-400d-83cc-ab136c197e7c",
+				"last_modified": 1721068497117,
+				"wallpaperUrl": "https://firefox-settings-attachments.cdn.mozilla.net/main-workspace/newtab-wallpapers-v2/d357925c-b9cd-417e-8731-14272f28f556.avif"
+			},
+			{
+				"theme": "light",
+				"title": "pink",
+				"schema": 1718644200528,
+				"category": "solid-colors",
+				"fluent_id": "newtab-wallpaper-pink",
+				"solid_color": "#FA87CC",
+				"id": "e3a76f3b-25ff-4285-b935-63de46bdd711",
+				"last_modified": 1718647622942
+			},
+			{
+				"theme": "light",
+				"title": "light-beach",
+				"schema": 1718637553213,
+				"category": "photographs",
+				"fluent_id": "newtab-wallpaper-light-beach",
+				"attachment": {
+					"hash": "ad65944319e9bb3fa4261e93d465cc51be35873608dfa71d46fe734ae4517c2a",
+					"size": 465893,
+					"filename": "light-beach.avif",
+					"location": "main-workspace/newtab-wallpapers-v2/56a7f3ae-70cc-45f2-82ec-1d39acdd3b8d.avif",
+					"mimetype": "image/avif"
+				},
+				"attribution": {
+					"name": {
+						"url": "https://unsplash.com/@oulashin",
+						"string": "Sean Oulashin"
+					},
+					"webpage": {
+						"url": "https://unsplash.com/photos/seashore-during-golden-hour-KMn4VEeEPR8",
+						"string": "Unsplash"
+					}
+				},
+				"id": "edc18c37-9d75-4cca-a854-5bcab5275407",
+				"last_modified": 1718647622996,
+				"wallpaperUrl": "https://firefox-settings-attachments.cdn.mozilla.net/main-workspace/newtab-wallpapers-v2/56a7f3ae-70cc-45f2-82ec-1d39acdd3b8d.avif"
+			},
+			{
+				"theme": "light",
+				"title": "abstract-orange",
+				"schema": 1718906302556,
+				"category": "abstracts",
+				"fluent_id": "newtab-wallpaper-abstract-orange",
+				"attachment": {
+					"hash": "82b7a7378c27e82936e09fd747cb65ed28d9909b0469537c405c24961135c3d1",
+					"size": 39943,
+					"filename": "abstract-orange.avif",
+					"location": "main-workspace/newtab-wallpapers-v2/32531fc6-1ea3-46de-a93c-f8a0c2f01916.avif",
+					"mimetype": "image/avif"
+				},
+				"id": "f7f89c99-c258-48b8-ad99-1b45465a0034",
+				"last_modified": 1718906680004,
+				"wallpaperUrl": "https://firefox-settings-attachments.cdn.mozilla.net/main-workspace/newtab-wallpapers-v2/32531fc6-1ea3-46de-a93c-f8a0c2f01916.avif"
+			},
+			{
+				"theme": "dark",
+				"title": "dark-landscape",
+				"schema": 1718616316643,
+				"category": "photographs",
+				"fluent_id": "newtab-wallpaper-dark-aurora",
+				"attachment": {
+					"hash": "dba39dab685c2bc6978354537c1bc8218a0abc455d0dd49c134c031264cfcd47",
+					"size": 437288,
+					"filename": "dark-aurora.avif",
+					"location": "main-workspace/newtab-wallpapers-v2/10e23599-85bc-4660-ae06-7a67befbbcf9.avif",
+					"mimetype": "image/avif"
+				},
+				"attribution": {
+					"name": {
+						"url": "https://unsplash.com/@lightscape",
+						"string": "Lightscape"
+					},
+					"webpage": {
+						"url": "https://unsplash.com/photos/northern-lights-over-snow-capped-mountian-LtnPejWDSAY",
+						"string": "Unsplash"
+					}
+				},
+				"id": "f81d9d10-7f90-4d1d-ae2e-8d49e1cf993a",
+				"last_modified": 1718647623012,
+				"wallpaperUrl": "https://firefox-settings-attachments.cdn.mozilla.net/main-workspace/newtab-wallpapers-v2/10e23599-85bc-4660-ae06-7a67befbbcf9.avif"
+			}
+		],
+		"highlightSeenCounter": {
+			"value": 0
+		},
+		"categories": [
+			"solid-colors",
+			"abstracts",
+			"photographs"
+		]
+	},
+	"Weather": {
+		"initialized": true,
+		"query": "",
+		"suggestions": [
+			{
+				"title": "Weather for Hyderabad",
+				"url": "https://www.accuweather.com/en/in/hyderabad/202190/current-weather/202190?lang=en-us&partner=web_mozilla_adc",
+				"provider": "accuweather",
+				"is_sponsored": false,
+				"score": 0.3,
+				"city_name": "Hyderabad",
+				"region_code": "TG",
+				"current_conditions": {
+					"url": "https://www.accuweather.com/en/in/hyderabad/202190/current-weather/202190?lang=en-us&partner=web_mozilla_adc",
+					"summary": "Hazy sunshine",
+					"icon_id": 5,
+					"temperature": {
+						"c": 35,
+						"f": 94
+					}
+				},
+				"forecast": {
+					"url": "https://www.accuweather.com/en/in/hyderabad/202190/daily-weather-forecast/202190?lang=en-us&partner=web_mozilla_adc",
+					"summary": "Mostly sunny this weekend",
+					"high": {
+						"c": 38,
+						"f": 101
+					},
+					"low": {
+						"c": 23,
+						"f": 73
+					}
+				},
+				"request_id": "6966b2fd4abd4bc3a122af5fc07c889e",
+				"source": "merino"
+			}
+		],
+		"locationData": {
+			"city": "Hyderabad",
+			"adminArea": "",
+			"country": ""
+		},
+		"searchActive": false,
+		"locationSearchString": "",
+		"suggestedLocations": []
+	}
+};
+
+8x�c��           g�vFH������       :about:home alt-data 1;88797,script version 20250325023649  �

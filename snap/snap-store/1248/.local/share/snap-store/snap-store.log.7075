@@ -1,0 +1,16 @@
+2025-02-10 12:37:13.345130 ERROR error_observer: Provider storeSnapProvider:StoreSnapProvider#84f95(null) failed
+	SnapdException: SnapdException(kind: null, message: invalid snap name: "/home/vbit/Downloads/Linear_regression_model_build.docx", status: Bad Request, statusCode: 400)
+2025-02-10 12:37:13.345373 ERROR error_observer: Provider snapModelProvider:SnapModelProvider#90ed8(null) failed
+	SnapdException: SnapdException(kind: null, message: invalid snap name: "/home/vbit/Downloads/Linear_regression_model_build.docx", status: Bad Request, statusCode: 400)
+2025-02-10 12:37:15.696626 ERROR error_observer: Provider storeSnapProvider:StoreSnapProvider#84f95(null) failed
+	SnapdException: SnapdException(kind: null, message: invalid snap name: "/home/vbit/Downloads/Linear_regression_model_build.docx", status: Bad Request, statusCode: 400)
+2025-02-10 12:37:15.696824 ERROR error_observer: Provider snapModelProvider:SnapModelProvider#90ed8(null) failed
+	SnapdException: SnapdException(kind: null, message: invalid snap name: "/home/vbit/Downloads/Linear_regression_model_build.docx", status: Bad Request, statusCode: 400)
+2025-02-10 12:37:16.096270 ERROR error_observer: Provider storeSnapProvider:StoreSnapProvider#84f95(null) failed
+	SnapdException: SnapdException(kind: null, message: invalid snap name: "/home/vbit/Downloads/Linear_regression_model_build.docx", status: Bad Request, statusCode: 400)
+2025-02-10 12:37:16.096535 ERROR error_observer: Provider snapModelProvider:SnapModelProvider#90ed8(null) failed
+	SnapdException: SnapdException(kind: null, message: invalid snap name: "/home/vbit/Downloads/Linear_regression_model_build.docx", status: Bad Request, statusCode: 400)
+2025-02-10 12:37:16.292712 ERROR error_observer: Provider storeSnapProvider:StoreSnapProvider#84f95(null) failed
+	SnapdException: SnapdException(kind: null, message: invalid snap name: "/home/vbit/Downloads/Linear_regression_model_build.docx", status: Bad Request, statusCode: 400)
+2025-02-10 12:37:16.292944 ERROR error_observer: Provider snapModelProvider:SnapModelProvider#90ed8(null) failed
+	SnapdException: SnapdException(kind: null, message: invalid snap name: "/home/vbit/Downloads/Linear_regression_model_build.docx", status: Bad Request, statusCode: 400)
