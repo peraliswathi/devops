@@ -1,0 +1,525 @@
+27-Sep-2024 09:38:32.217 INFO [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess Reloading memory user database [UserDatabase] from updated source [file:/home/vbit/web/apache-tomcat-10.1.30/conf/tomcat-users.xml]
+27-Sep-2024 09:38:37.482 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+27-Sep-2024 09:38:37.482 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 09:38:37.484 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+27-Sep-2024 09:38:37.497 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 09:38:37.506 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 09:39:04.467 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.30
+27-Sep-2024 09:39:04.469 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 13 2024 20:26:16 UTC
+27-Sep-2024 09:39:04.469 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.30.0
+27-Sep-2024 09:39:04.469 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+27-Sep-2024 09:39:04.469 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.8.0-41-generic
+27-Sep-2024 09:39:04.470 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+27-Sep-2024 09:39:04.470 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-21-openjdk-amd64
+27-Sep-2024 09:39:04.470 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.4+7-Ubuntu-1ubuntu224.04
+27-Sep-2024 09:39:04.470 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+27-Sep-2024 09:39:04.470 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 09:39:04.470 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 09:39:04.475 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/vbit/web/apache-tomcat-10.1.30/conf/logging.properties
+27-Sep-2024 09:39:04.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+27-Sep-2024 09:39:04.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+27-Sep-2024 09:39:04.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+27-Sep-2024 09:39:04.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+27-Sep-2024 09:39:04.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+27-Sep-2024 09:39:04.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+27-Sep-2024 09:39:04.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+27-Sep-2024 09:39:04.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+27-Sep-2024 09:39:04.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+27-Sep-2024 09:39:04.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 09:39:04.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 09:39:04.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/vbit/web/apache-tomcat-10.1.30/temp
+27-Sep-2024 09:39:04.517 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+27-Sep-2024 09:39:04.710 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 09:39:04.725 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [360] milliseconds
+27-Sep-2024 09:39:04.752 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+27-Sep-2024 09:39:04.752 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.30]
+27-Sep-2024 09:39:04.757 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/docs]
+27-Sep-2024 09:39:04.923 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/docs] has finished in [166] ms
+27-Sep-2024 09:39:04.923 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/examples]
+27-Sep-2024 09:39:05.058 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/examples] has finished in [135] ms
+27-Sep-2024 09:39:05.059 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/ROOT]
+27-Sep-2024 09:39:05.071 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/ROOT] has finished in [12] ms
+27-Sep-2024 09:39:05.071 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/host-manager]
+27-Sep-2024 09:39:05.089 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/host-manager] has finished in [18] ms
+27-Sep-2024 09:39:05.089 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/manager]
+27-Sep-2024 09:39:05.106 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/manager] has finished in [16] ms
+27-Sep-2024 09:39:05.109 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 09:39:05.114 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [388] milliseconds
+27-Sep-2024 09:39:44.793 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+27-Sep-2024 09:39:44.794 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 09:39:44.795 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+27-Sep-2024 09:39:44.810 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 09:39:44.818 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 10:02:25.991 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.30
+27-Sep-2024 10:02:25.994 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 13 2024 20:26:16 UTC
+27-Sep-2024 10:02:25.994 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.30.0
+27-Sep-2024 10:02:25.994 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+27-Sep-2024 10:02:25.994 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.8.0-41-generic
+27-Sep-2024 10:02:25.994 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+27-Sep-2024 10:02:25.994 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-21-openjdk-amd64
+27-Sep-2024 10:02:25.994 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.4+7-Ubuntu-1ubuntu224.04
+27-Sep-2024 10:02:25.994 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+27-Sep-2024 10:02:25.995 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 10:02:25.995 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 10:02:26.000 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/vbit/web/apache-tomcat-10.1.30/conf/logging.properties
+27-Sep-2024 10:02:26.000 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+27-Sep-2024 10:02:26.000 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+27-Sep-2024 10:02:26.001 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+27-Sep-2024 10:02:26.001 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+27-Sep-2024 10:02:26.001 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+27-Sep-2024 10:02:26.001 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+27-Sep-2024 10:02:26.001 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+27-Sep-2024 10:02:26.001 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+27-Sep-2024 10:02:26.001 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+27-Sep-2024 10:02:26.001 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 10:02:26.001 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 10:02:26.001 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/vbit/web/apache-tomcat-10.1.30/temp
+27-Sep-2024 10:02:26.002 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+27-Sep-2024 10:02:26.198 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 10:02:26.211 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [323] milliseconds
+27-Sep-2024 10:02:26.237 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+27-Sep-2024 10:02:26.238 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.30]
+27-Sep-2024 10:02:26.242 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/docs]
+27-Sep-2024 10:02:26.407 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/docs] has finished in [165] ms
+27-Sep-2024 10:02:26.408 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/examples]
+27-Sep-2024 10:02:26.541 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/examples] has finished in [134] ms
+27-Sep-2024 10:02:26.542 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/ROOT]
+27-Sep-2024 10:02:26.551 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/ROOT] has finished in [9] ms
+27-Sep-2024 10:02:26.551 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/host-manager]
+27-Sep-2024 10:02:26.565 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/host-manager] has finished in [14] ms
+27-Sep-2024 10:02:26.565 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/manager]
+27-Sep-2024 10:02:26.577 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/manager] has finished in [12] ms
+27-Sep-2024 10:02:26.580 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 10:02:26.586 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [373] milliseconds
+27-Sep-2024 10:02:55.131 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+27-Sep-2024 10:02:55.131 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 10:02:55.133 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+27-Sep-2024 10:02:55.146 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 10:02:55.155 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 10:19:58.658 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.30
+27-Sep-2024 10:19:58.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 13 2024 20:26:16 UTC
+27-Sep-2024 10:19:58.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.30.0
+27-Sep-2024 10:19:58.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+27-Sep-2024 10:19:58.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.8.0-45-generic
+27-Sep-2024 10:19:58.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+27-Sep-2024 10:19:58.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-21-openjdk-amd64
+27-Sep-2024 10:19:58.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.4+7-Ubuntu-1ubuntu224.04
+27-Sep-2024 10:19:58.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+27-Sep-2024 10:19:58.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 10:19:58.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 10:19:58.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/vbit/web/apache-tomcat-10.1.30/conf/logging.properties
+27-Sep-2024 10:19:58.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+27-Sep-2024 10:19:58.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+27-Sep-2024 10:19:58.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+27-Sep-2024 10:19:58.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+27-Sep-2024 10:19:58.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+27-Sep-2024 10:19:58.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+27-Sep-2024 10:19:58.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+27-Sep-2024 10:19:58.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+27-Sep-2024 10:19:58.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+27-Sep-2024 10:19:58.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 10:19:58.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 10:19:58.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/vbit/web/apache-tomcat-10.1.30/temp
+27-Sep-2024 10:19:58.674 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+27-Sep-2024 10:19:58.889 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 10:19:58.906 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [392] milliseconds
+27-Sep-2024 10:19:58.936 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+27-Sep-2024 10:19:58.936 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.30]
+27-Sep-2024 10:19:58.941 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/docs]
+27-Sep-2024 10:19:59.122 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/docs] has finished in [181] ms
+27-Sep-2024 10:19:59.123 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/examples]
+27-Sep-2024 10:19:59.280 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/examples] has finished in [157] ms
+27-Sep-2024 10:19:59.281 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/ROOT]
+27-Sep-2024 10:19:59.291 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/ROOT] has finished in [10] ms
+27-Sep-2024 10:19:59.291 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/host-manager]
+27-Sep-2024 10:19:59.306 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/host-manager] has finished in [15] ms
+27-Sep-2024 10:19:59.306 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/manager]
+27-Sep-2024 10:19:59.319 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/manager] has finished in [13] ms
+27-Sep-2024 10:19:59.321 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 10:19:59.328 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [420] milliseconds
+27-Sep-2024 10:20:59.338 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/vbit]
+27-Sep-2024 10:20:59.352 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/vbit] has finished in [14] ms
+27-Sep-2024 10:21:49.361 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/vbit]
+27-Sep-2024 10:21:49.362 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/vbit] has started
+27-Sep-2024 10:21:49.420 WARNING [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/jsp2-example-taglib.tld] and URI [http://tomcat.apache.org/jsp2-example-taglib]. The specified path does not exist.
+27-Sep-2024 10:21:49.421 WARNING [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/debug-taglib.tld] and URI [http://tomcat.apache.org/debug-taglib]. The specified path does not exist.
+27-Sep-2024 10:21:49.421 WARNING [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/example-taglib.tld] and URI [http://tomcat.apache.org/example-taglib]. The specified path does not exist.
+27-Sep-2024 10:21:49.422 SEVERE [Catalina-utility-1] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+27-Sep-2024 10:21:49.422 SEVERE [Catalina-utility-1] org.apache.catalina.core.StandardContext.startInternal Context [/vbit] startup failed due to previous errors
+27-Sep-2024 10:21:49.424 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/vbit] is completed
+27-Sep-2024 10:27:34.667 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.30
+27-Sep-2024 10:27:34.670 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 13 2024 20:26:16 UTC
+27-Sep-2024 10:27:34.670 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.30.0
+27-Sep-2024 10:27:34.670 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+27-Sep-2024 10:27:34.670 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.8.0-45-generic
+27-Sep-2024 10:27:34.670 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+27-Sep-2024 10:27:34.670 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-21-openjdk-amd64
+27-Sep-2024 10:27:34.670 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.4+7-Ubuntu-1ubuntu224.04
+27-Sep-2024 10:27:34.670 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+27-Sep-2024 10:27:34.670 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 10:27:34.670 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 10:27:34.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/vbit/web/apache-tomcat-10.1.30/conf/logging.properties
+27-Sep-2024 10:27:34.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+27-Sep-2024 10:27:34.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+27-Sep-2024 10:27:34.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+27-Sep-2024 10:27:34.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+27-Sep-2024 10:27:34.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+27-Sep-2024 10:27:34.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+27-Sep-2024 10:27:34.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+27-Sep-2024 10:27:34.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+27-Sep-2024 10:27:34.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+27-Sep-2024 10:27:34.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 10:27:34.677 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 10:27:34.677 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/vbit/web/apache-tomcat-10.1.30/temp
+27-Sep-2024 10:27:34.678 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+27-Sep-2024 10:27:34.874 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 10:27:34.882 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1030)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:525)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:957)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:708)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:731)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:565)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:239)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:194)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1304)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1317)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:633)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:79)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1028)
+		... 11 more
+27-Sep-2024 10:27:34.883 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [318] milliseconds
+27-Sep-2024 10:27:34.908 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+27-Sep-2024 10:27:34.908 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.30]
+27-Sep-2024 10:27:34.913 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/docs]
+27-Sep-2024 10:27:35.077 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/docs] has finished in [164] ms
+27-Sep-2024 10:27:35.077 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/examples]
+27-Sep-2024 10:27:35.212 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/examples] has finished in [135] ms
+27-Sep-2024 10:27:35.212 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/ROOT]
+27-Sep-2024 10:27:35.223 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/ROOT] has finished in [10] ms
+27-Sep-2024 10:27:35.223 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/vbit]
+27-Sep-2024 10:27:35.236 WARNING [main] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/jsp2-example-taglib.tld] and URI [http://tomcat.apache.org/jsp2-example-taglib]. The specified path does not exist.
+27-Sep-2024 10:27:35.236 WARNING [main] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/debug-taglib.tld] and URI [http://tomcat.apache.org/debug-taglib]. The specified path does not exist.
+27-Sep-2024 10:27:35.236 WARNING [main] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/example-taglib.tld] and URI [http://tomcat.apache.org/example-taglib]. The specified path does not exist.
+27-Sep-2024 10:27:35.238 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+27-Sep-2024 10:27:35.239 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [/vbit] startup failed due to previous errors
+27-Sep-2024 10:27:35.245 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/vbit] has finished in [21] ms
+27-Sep-2024 10:27:35.245 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/host-manager]
+27-Sep-2024 10:27:35.258 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/host-manager] has finished in [13] ms
+27-Sep-2024 10:27:35.259 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/manager]
+27-Sep-2024 10:27:35.270 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/manager] has finished in [11] ms
+27-Sep-2024 10:27:35.273 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [389] milliseconds
+27-Sep-2024 10:27:35.275 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:565)
+		at java.base/sun.nio.ch.Net.bind(Net.java:554)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:636)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:391)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:278)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:533)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:847)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+27-Sep-2024 10:27:35.275 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 10:27:35.275 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+27-Sep-2024 10:27:35.286 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 10:27:35.287 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 10:27:42.859 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+27-Sep-2024 10:27:42.859 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 10:27:42.861 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+27-Sep-2024 10:27:42.869 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 10:27:42.870 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 10:27:46.408 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.30
+27-Sep-2024 10:27:46.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 13 2024 20:26:16 UTC
+27-Sep-2024 10:27:46.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.30.0
+27-Sep-2024 10:27:46.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+27-Sep-2024 10:27:46.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.8.0-45-generic
+27-Sep-2024 10:27:46.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+27-Sep-2024 10:27:46.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-21-openjdk-amd64
+27-Sep-2024 10:27:46.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.4+7-Ubuntu-1ubuntu224.04
+27-Sep-2024 10:27:46.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+27-Sep-2024 10:27:46.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 10:27:46.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 10:27:46.416 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/vbit/web/apache-tomcat-10.1.30/conf/logging.properties
+27-Sep-2024 10:27:46.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+27-Sep-2024 10:27:46.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+27-Sep-2024 10:27:46.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+27-Sep-2024 10:27:46.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+27-Sep-2024 10:27:46.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+27-Sep-2024 10:27:46.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+27-Sep-2024 10:27:46.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+27-Sep-2024 10:27:46.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+27-Sep-2024 10:27:46.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+27-Sep-2024 10:27:46.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 10:27:46.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 10:27:46.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/vbit/web/apache-tomcat-10.1.30/temp
+27-Sep-2024 10:27:46.418 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+27-Sep-2024 10:27:46.613 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 10:27:46.627 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [320] milliseconds
+27-Sep-2024 10:27:46.678 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+27-Sep-2024 10:27:46.678 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.30]
+27-Sep-2024 10:27:46.683 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/docs]
+27-Sep-2024 10:27:46.847 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/docs] has finished in [164] ms
+27-Sep-2024 10:27:46.847 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/examples]
+27-Sep-2024 10:27:46.981 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/examples] has finished in [134] ms
+27-Sep-2024 10:27:46.981 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/ROOT]
+27-Sep-2024 10:27:46.995 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/ROOT] has finished in [13] ms
+27-Sep-2024 10:27:46.995 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/vbit]
+27-Sep-2024 10:27:47.008 WARNING [main] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/jsp2-example-taglib.tld] and URI [http://tomcat.apache.org/jsp2-example-taglib]. The specified path does not exist.
+27-Sep-2024 10:27:47.008 WARNING [main] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/debug-taglib.tld] and URI [http://tomcat.apache.org/debug-taglib]. The specified path does not exist.
+27-Sep-2024 10:27:47.008 WARNING [main] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/example-taglib.tld] and URI [http://tomcat.apache.org/example-taglib]. The specified path does not exist.
+27-Sep-2024 10:27:47.010 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+27-Sep-2024 10:27:47.010 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [/vbit] startup failed due to previous errors
+27-Sep-2024 10:27:47.016 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/vbit] has finished in [21] ms
+27-Sep-2024 10:27:47.016 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/host-manager]
+27-Sep-2024 10:27:47.029 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/host-manager] has finished in [13] ms
+27-Sep-2024 10:27:47.030 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/manager]
+27-Sep-2024 10:27:47.041 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/manager] has finished in [12] ms
+27-Sep-2024 10:27:47.043 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 10:27:47.049 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [395] milliseconds
+27-Sep-2024 12:26:38.843 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.30
+27-Sep-2024 12:26:38.847 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 13 2024 20:26:16 UTC
+27-Sep-2024 12:26:38.847 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.30.0
+27-Sep-2024 12:26:38.847 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+27-Sep-2024 12:26:38.847 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.8.0-45-generic
+27-Sep-2024 12:26:38.847 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+27-Sep-2024 12:26:38.847 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-21-openjdk-amd64
+27-Sep-2024 12:26:38.847 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.4+7-Ubuntu-1ubuntu224.04
+27-Sep-2024 12:26:38.847 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+27-Sep-2024 12:26:38.847 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 12:26:38.847 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 12:26:38.856 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/vbit/web/apache-tomcat-10.1.30/conf/logging.properties
+27-Sep-2024 12:26:38.856 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+27-Sep-2024 12:26:38.856 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+27-Sep-2024 12:26:38.856 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+27-Sep-2024 12:26:38.856 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+27-Sep-2024 12:26:38.856 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+27-Sep-2024 12:26:38.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+27-Sep-2024 12:26:38.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+27-Sep-2024 12:26:38.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+27-Sep-2024 12:26:38.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+27-Sep-2024 12:26:38.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 12:26:38.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 12:26:38.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/vbit/web/apache-tomcat-10.1.30/temp
+27-Sep-2024 12:26:38.858 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+27-Sep-2024 12:26:39.072 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 12:26:39.089 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [370] milliseconds
+27-Sep-2024 12:26:39.122 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+27-Sep-2024 12:26:39.122 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.30]
+27-Sep-2024 12:26:39.129 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/docs]
+27-Sep-2024 12:26:39.309 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/docs] has finished in [180] ms
+27-Sep-2024 12:26:39.309 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/examples]
+27-Sep-2024 12:26:39.465 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/examples] has finished in [156] ms
+27-Sep-2024 12:26:39.465 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/ROOT]
+27-Sep-2024 12:26:39.475 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/ROOT] has finished in [9] ms
+27-Sep-2024 12:26:39.475 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/vbit]
+27-Sep-2024 12:26:39.488 WARNING [main] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/jsp2-example-taglib.tld] and URI [http://tomcat.apache.org/jsp2-example-taglib]. The specified path does not exist.
+27-Sep-2024 12:26:39.488 WARNING [main] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/debug-taglib.tld] and URI [http://tomcat.apache.org/debug-taglib]. The specified path does not exist.
+27-Sep-2024 12:26:39.488 WARNING [main] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/example-taglib.tld] and URI [http://tomcat.apache.org/example-taglib]. The specified path does not exist.
+27-Sep-2024 12:26:39.490 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+27-Sep-2024 12:26:39.491 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [/vbit] startup failed due to previous errors
+27-Sep-2024 12:26:39.500 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/vbit] has finished in [25] ms
+27-Sep-2024 12:26:39.500 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/host-manager]
+27-Sep-2024 12:26:39.515 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/host-manager] has finished in [15] ms
+27-Sep-2024 12:26:39.515 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/manager]
+27-Sep-2024 12:26:39.527 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/manager] has finished in [11] ms
+27-Sep-2024 12:26:39.529 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 12:26:39.536 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [445] milliseconds
+27-Sep-2024 12:32:28.024 WARNING [http-nio-8080-exec-2] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/jsp2-example-taglib.tld] and URI [http://tomcat.apache.org/jsp2-example-taglib]. The specified path does not exist.
+27-Sep-2024 12:32:28.024 WARNING [http-nio-8080-exec-2] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/debug-taglib.tld] and URI [http://tomcat.apache.org/debug-taglib]. The specified path does not exist.
+27-Sep-2024 12:32:28.024 WARNING [http-nio-8080-exec-2] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/example-taglib.tld] and URI [http://tomcat.apache.org/example-taglib]. The specified path does not exist.
+27-Sep-2024 12:32:28.026 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+27-Sep-2024 12:32:28.026 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardContext.startInternal Context [/vbit] startup failed due to previous errors
+27-Sep-2024 12:32:43.509 WARNING [http-nio-8080-exec-8] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/jsp2-example-taglib.tld] and URI [http://tomcat.apache.org/jsp2-example-taglib]. The specified path does not exist.
+27-Sep-2024 12:32:43.509 WARNING [http-nio-8080-exec-8] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/debug-taglib.tld] and URI [http://tomcat.apache.org/debug-taglib]. The specified path does not exist.
+27-Sep-2024 12:32:43.510 WARNING [http-nio-8080-exec-8] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/example-taglib.tld] and URI [http://tomcat.apache.org/example-taglib]. The specified path does not exist.
+27-Sep-2024 12:32:43.511 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+27-Sep-2024 12:32:43.511 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardContext.startInternal Context [/vbit] startup failed due to previous errors
+27-Sep-2024 12:49:57.716 WARNING [http-nio-8080-exec-22] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/jsp2-example-taglib.tld] and URI [http://tomcat.apache.org/jsp2-example-taglib]. The specified path does not exist.
+27-Sep-2024 12:49:57.717 WARNING [http-nio-8080-exec-22] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/debug-taglib.tld] and URI [http://tomcat.apache.org/debug-taglib]. The specified path does not exist.
+27-Sep-2024 12:49:57.717 WARNING [http-nio-8080-exec-22] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/example-taglib.tld] and URI [http://tomcat.apache.org/example-taglib]. The specified path does not exist.
+27-Sep-2024 12:49:57.718 SEVERE [http-nio-8080-exec-22] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+27-Sep-2024 12:49:57.719 SEVERE [http-nio-8080-exec-22] org.apache.catalina.core.StandardContext.startInternal Context [/vbit] startup failed due to previous errors
+27-Sep-2024 12:50:08.615 WARNING [http-nio-8080-exec-17] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/jsp2-example-taglib.tld] and URI [http://tomcat.apache.org/jsp2-example-taglib]. The specified path does not exist.
+27-Sep-2024 12:50:08.615 WARNING [http-nio-8080-exec-17] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/debug-taglib.tld] and URI [http://tomcat.apache.org/debug-taglib]. The specified path does not exist.
+27-Sep-2024 12:50:08.615 WARNING [http-nio-8080-exec-17] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/example-taglib.tld] and URI [http://tomcat.apache.org/example-taglib]. The specified path does not exist.
+27-Sep-2024 12:50:08.616 SEVERE [http-nio-8080-exec-17] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+27-Sep-2024 12:50:08.616 SEVERE [http-nio-8080-exec-17] org.apache.catalina.core.StandardContext.startInternal Context [/vbit] startup failed due to previous errors
+27-Sep-2024 12:50:21.382 WARNING [http-nio-8080-exec-19] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/jsp2-example-taglib.tld] and URI [http://tomcat.apache.org/jsp2-example-taglib]. The specified path does not exist.
+27-Sep-2024 12:50:21.383 WARNING [http-nio-8080-exec-19] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/debug-taglib.tld] and URI [http://tomcat.apache.org/debug-taglib]. The specified path does not exist.
+27-Sep-2024 12:50:21.383 WARNING [http-nio-8080-exec-19] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/example-taglib.tld] and URI [http://tomcat.apache.org/example-taglib]. The specified path does not exist.
+27-Sep-2024 12:50:21.384 SEVERE [http-nio-8080-exec-19] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+27-Sep-2024 12:50:21.384 SEVERE [http-nio-8080-exec-19] org.apache.catalina.core.StandardContext.startInternal Context [/vbit] startup failed due to previous errors
+27-Sep-2024 12:50:24.655 WARNING [http-nio-8080-exec-16] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/jsp2-example-taglib.tld] and URI [http://tomcat.apache.org/jsp2-example-taglib]. The specified path does not exist.
+27-Sep-2024 12:50:24.655 WARNING [http-nio-8080-exec-16] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/debug-taglib.tld] and URI [http://tomcat.apache.org/debug-taglib]. The specified path does not exist.
+27-Sep-2024 12:50:24.655 WARNING [http-nio-8080-exec-16] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/example-taglib.tld] and URI [http://tomcat.apache.org/example-taglib]. The specified path does not exist.
+27-Sep-2024 12:50:24.656 SEVERE [http-nio-8080-exec-16] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+27-Sep-2024 12:50:24.656 SEVERE [http-nio-8080-exec-16] org.apache.catalina.core.StandardContext.startInternal Context [/vbit] startup failed due to previous errors
+27-Sep-2024 12:50:31.805 WARNING [http-nio-8080-exec-14] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/jsp2-example-taglib.tld] and URI [http://tomcat.apache.org/jsp2-example-taglib]. The specified path does not exist.
+27-Sep-2024 12:50:31.805 WARNING [http-nio-8080-exec-14] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/debug-taglib.tld] and URI [http://tomcat.apache.org/debug-taglib]. The specified path does not exist.
+27-Sep-2024 12:50:31.805 WARNING [http-nio-8080-exec-14] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/example-taglib.tld] and URI [http://tomcat.apache.org/example-taglib]. The specified path does not exist.
+27-Sep-2024 12:50:31.806 SEVERE [http-nio-8080-exec-14] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+27-Sep-2024 12:50:31.806 SEVERE [http-nio-8080-exec-14] org.apache.catalina.core.StandardContext.startInternal Context [/vbit] startup failed due to previous errors
+27-Sep-2024 12:50:36.813 WARNING [http-nio-8080-exec-28] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/jsp2-example-taglib.tld] and URI [http://tomcat.apache.org/jsp2-example-taglib]. The specified path does not exist.
+27-Sep-2024 12:50:36.813 WARNING [http-nio-8080-exec-28] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/debug-taglib.tld] and URI [http://tomcat.apache.org/debug-taglib]. The specified path does not exist.
+27-Sep-2024 12:50:36.814 WARNING [http-nio-8080-exec-28] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/example-taglib.tld] and URI [http://tomcat.apache.org/example-taglib]. The specified path does not exist.
+27-Sep-2024 12:50:36.815 SEVERE [http-nio-8080-exec-28] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+27-Sep-2024 12:50:36.815 SEVERE [http-nio-8080-exec-28] org.apache.catalina.core.StandardContext.startInternal Context [/vbit] startup failed due to previous errors
+27-Sep-2024 12:50:46.245 WARNING [http-nio-8080-exec-23] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/jsp2-example-taglib.tld] and URI [http://tomcat.apache.org/jsp2-example-taglib]. The specified path does not exist.
+27-Sep-2024 12:50:46.245 WARNING [http-nio-8080-exec-23] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/debug-taglib.tld] and URI [http://tomcat.apache.org/debug-taglib]. The specified path does not exist.
+27-Sep-2024 12:50:46.245 WARNING [http-nio-8080-exec-23] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/example-taglib.tld] and URI [http://tomcat.apache.org/example-taglib]. The specified path does not exist.
+27-Sep-2024 12:50:46.246 SEVERE [http-nio-8080-exec-23] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+27-Sep-2024 12:50:46.246 SEVERE [http-nio-8080-exec-23] org.apache.catalina.core.StandardContext.startInternal Context [/vbit] startup failed due to previous errors
+27-Sep-2024 12:50:52.356 WARNING [http-nio-8080-exec-27] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/jsp2-example-taglib.tld] and URI [http://tomcat.apache.org/jsp2-example-taglib]. The specified path does not exist.
+27-Sep-2024 12:50:52.356 WARNING [http-nio-8080-exec-27] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/debug-taglib.tld] and URI [http://tomcat.apache.org/debug-taglib]. The specified path does not exist.
+27-Sep-2024 12:50:52.356 WARNING [http-nio-8080-exec-27] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/example-taglib.tld] and URI [http://tomcat.apache.org/example-taglib]. The specified path does not exist.
+27-Sep-2024 12:50:52.357 SEVERE [http-nio-8080-exec-27] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+27-Sep-2024 12:50:52.358 SEVERE [http-nio-8080-exec-27] org.apache.catalina.core.StandardContext.startInternal Context [/vbit] startup failed due to previous errors
+27-Sep-2024 12:53:19.844 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/examples (Copy)]
+27-Sep-2024 12:53:19.906 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/examples (Copy)] has finished in [62] ms
+27-Sep-2024 12:53:30.408 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/examples (Copy)]
+27-Sep-2024 12:53:30.414 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/vbit1]
+27-Sep-2024 12:53:30.463 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/vbit1] has finished in [49] ms
+27-Sep-2024 12:54:14.413 WARNING [http-nio-8080-exec-27] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/jsp2-example-taglib.tld] and URI [http://tomcat.apache.org/jsp2-example-taglib]. The specified path does not exist.
+27-Sep-2024 12:54:14.413 WARNING [http-nio-8080-exec-27] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/debug-taglib.tld] and URI [http://tomcat.apache.org/debug-taglib]. The specified path does not exist.
+27-Sep-2024 12:54:14.413 WARNING [http-nio-8080-exec-27] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/example-taglib.tld] and URI [http://tomcat.apache.org/example-taglib]. The specified path does not exist.
+27-Sep-2024 12:54:14.415 SEVERE [http-nio-8080-exec-27] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+27-Sep-2024 12:54:14.415 SEVERE [http-nio-8080-exec-27] org.apache.catalina.core.StandardContext.startInternal Context [/vbit] startup failed due to previous errors
+27-Sep-2024 12:54:50.975 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/vbit1]
+27-Sep-2024 12:56:06.863 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+27-Sep-2024 12:56:06.863 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 12:56:06.865 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+27-Sep-2024 12:56:06.871 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 12:56:06.874 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 13:54:18.237 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.30
+27-Sep-2024 13:54:18.239 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 13 2024 20:26:16 UTC
+27-Sep-2024 13:54:18.239 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.30.0
+27-Sep-2024 13:54:18.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+27-Sep-2024 13:54:18.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.8.0-45-generic
+27-Sep-2024 13:54:18.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+27-Sep-2024 13:54:18.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-21-openjdk-amd64
+27-Sep-2024 13:54:18.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.4+7-Ubuntu-1ubuntu224.04
+27-Sep-2024 13:54:18.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+27-Sep-2024 13:54:18.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 13:54:18.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 13:54:18.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/vbit/web/apache-tomcat-10.1.30/conf/logging.properties
+27-Sep-2024 13:54:18.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+27-Sep-2024 13:54:18.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+27-Sep-2024 13:54:18.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+27-Sep-2024 13:54:18.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+27-Sep-2024 13:54:18.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+27-Sep-2024 13:54:18.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+27-Sep-2024 13:54:18.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+27-Sep-2024 13:54:18.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+27-Sep-2024 13:54:18.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+27-Sep-2024 13:54:18.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 13:54:18.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 13:54:18.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/vbit/web/apache-tomcat-10.1.30/temp
+27-Sep-2024 13:54:18.247 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+27-Sep-2024 13:54:18.448 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 13:54:18.465 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [329] milliseconds
+27-Sep-2024 13:54:18.497 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+27-Sep-2024 13:54:18.498 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.30]
+27-Sep-2024 13:54:18.503 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/docs]
+27-Sep-2024 13:54:18.669 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/docs] has finished in [166] ms
+27-Sep-2024 13:54:18.669 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/examples]
+27-Sep-2024 13:54:18.799 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/examples] has finished in [130] ms
+27-Sep-2024 13:54:18.799 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/ROOT]
+27-Sep-2024 13:54:18.808 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/ROOT] has finished in [9] ms
+27-Sep-2024 13:54:18.808 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/vbit]
+27-Sep-2024 13:54:18.820 WARNING [main] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/jsp2-example-taglib.tld] and URI [http://tomcat.apache.org/jsp2-example-taglib]. The specified path does not exist.
+27-Sep-2024 13:54:18.821 WARNING [main] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/debug-taglib.tld] and URI [http://tomcat.apache.org/debug-taglib]. The specified path does not exist.
+27-Sep-2024 13:54:18.821 WARNING [main] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/example-taglib.tld] and URI [http://tomcat.apache.org/example-taglib]. The specified path does not exist.
+27-Sep-2024 13:54:18.822 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+27-Sep-2024 13:54:18.823 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [/vbit] startup failed due to previous errors
+27-Sep-2024 13:54:18.828 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/vbit] has finished in [20] ms
+27-Sep-2024 13:54:18.828 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/host-manager]
+27-Sep-2024 13:54:18.841 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/host-manager] has finished in [13] ms
+27-Sep-2024 13:54:18.841 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/manager]
+27-Sep-2024 13:54:18.852 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/manager] has finished in [11] ms
+27-Sep-2024 13:54:18.855 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 13:54:18.861 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [394] milliseconds
+27-Sep-2024 13:59:42.690 WARNING [http-nio-8080-exec-6] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/jsp2-example-taglib.tld] and URI [http://tomcat.apache.org/jsp2-example-taglib]. The specified path does not exist.
+27-Sep-2024 13:59:42.690 WARNING [http-nio-8080-exec-6] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/debug-taglib.tld] and URI [http://tomcat.apache.org/debug-taglib]. The specified path does not exist.
+27-Sep-2024 13:59:42.691 WARNING [http-nio-8080-exec-6] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/example-taglib.tld] and URI [http://tomcat.apache.org/example-taglib]. The specified path does not exist.
+27-Sep-2024 13:59:42.692 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+27-Sep-2024 13:59:42.692 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardContext.startInternal Context [/vbit] startup failed due to previous errors
+27-Sep-2024 13:59:44.864 WARNING [http-nio-8080-exec-4] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/jsp2-example-taglib.tld] and URI [http://tomcat.apache.org/jsp2-example-taglib]. The specified path does not exist.
+27-Sep-2024 13:59:44.864 WARNING [http-nio-8080-exec-4] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/debug-taglib.tld] and URI [http://tomcat.apache.org/debug-taglib]. The specified path does not exist.
+27-Sep-2024 13:59:44.864 WARNING [http-nio-8080-exec-4] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/example-taglib.tld] and URI [http://tomcat.apache.org/example-taglib]. The specified path does not exist.
+27-Sep-2024 13:59:44.865 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+27-Sep-2024 13:59:44.866 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardContext.startInternal Context [/vbit] startup failed due to previous errors
+27-Sep-2024 14:12:26.916 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+27-Sep-2024 14:12:26.916 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 14:12:26.917 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+27-Sep-2024 14:12:26.926 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 14:12:26.928 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 15:56:52.551 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.30
+27-Sep-2024 15:56:52.553 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 13 2024 20:26:16 UTC
+27-Sep-2024 15:56:52.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.30.0
+27-Sep-2024 15:56:52.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+27-Sep-2024 15:56:52.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.8.0-45-generic
+27-Sep-2024 15:56:52.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+27-Sep-2024 15:56:52.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-21-openjdk-amd64
+27-Sep-2024 15:56:52.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.4+7-Ubuntu-1ubuntu224.04
+27-Sep-2024 15:56:52.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+27-Sep-2024 15:56:52.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 15:56:52.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 15:56:52.560 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/vbit/web/apache-tomcat-10.1.30/conf/logging.properties
+27-Sep-2024 15:56:52.560 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+27-Sep-2024 15:56:52.560 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+27-Sep-2024 15:56:52.560 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+27-Sep-2024 15:56:52.560 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+27-Sep-2024 15:56:52.560 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+27-Sep-2024 15:56:52.560 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+27-Sep-2024 15:56:52.560 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+27-Sep-2024 15:56:52.560 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+27-Sep-2024 15:56:52.561 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+27-Sep-2024 15:56:52.561 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 15:56:52.561 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/vbit/web/apache-tomcat-10.1.30
+27-Sep-2024 15:56:52.561 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/vbit/web/apache-tomcat-10.1.30/temp
+27-Sep-2024 15:56:52.562 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+27-Sep-2024 15:56:52.758 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 15:56:52.772 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [323] milliseconds
+27-Sep-2024 15:56:52.798 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+27-Sep-2024 15:56:52.798 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.30]
+27-Sep-2024 15:56:52.803 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/docs]
+27-Sep-2024 15:56:52.965 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/docs] has finished in [162] ms
+27-Sep-2024 15:56:52.965 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/examples]
+27-Sep-2024 15:56:53.097 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/examples] has finished in [132] ms
+27-Sep-2024 15:56:53.098 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/ROOT]
+27-Sep-2024 15:56:53.107 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/ROOT] has finished in [9] ms
+27-Sep-2024 15:56:53.107 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/vbit]
+27-Sep-2024 15:56:53.121 WARNING [main] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/jsp2-example-taglib.tld] and URI [http://tomcat.apache.org/jsp2-example-taglib]. The specified path does not exist.
+27-Sep-2024 15:56:53.121 WARNING [main] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/debug-taglib.tld] and URI [http://tomcat.apache.org/debug-taglib]. The specified path does not exist.
+27-Sep-2024 15:56:53.121 WARNING [main] org.apache.jasper.servlet.TldScanner.scanJspConfig Failed to process TLD with path [/WEB-INF/jsp/example-taglib.tld] and URI [http://tomcat.apache.org/example-taglib]. The specified path does not exist.
+27-Sep-2024 15:56:53.123 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+27-Sep-2024 15:56:53.123 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [/vbit] startup failed due to previous errors
+27-Sep-2024 15:56:53.129 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/vbit] has finished in [22] ms
+27-Sep-2024 15:56:53.129 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/host-manager]
+27-Sep-2024 15:56:53.142 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/host-manager] has finished in [13] ms
+27-Sep-2024 15:56:53.143 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/manager]
+27-Sep-2024 15:56:53.153 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vbit/web/apache-tomcat-10.1.30/webapps/manager] has finished in [10] ms
+27-Sep-2024 15:56:53.155 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 15:56:53.161 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [388] milliseconds
+27-Sep-2024 15:57:08.530 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+27-Sep-2024 15:57:08.530 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 15:57:08.532 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+27-Sep-2024 15:57:08.542 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+27-Sep-2024 15:57:08.555 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
